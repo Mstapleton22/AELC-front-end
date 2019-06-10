@@ -17,6 +17,9 @@ class App extends Component {
       programsImage: '',
       resources: '',
       staff: '',
+      contact: '',
+      accreditation: '',
+      tuition: ''
     }
   }
 
@@ -36,8 +39,14 @@ class App extends Component {
       <div>
         <NavbarPage
           image={this.state.image}
-          programsImage={this.state.programsImage} />
-        <FooterPage />
+          programsImage={this.state.programsImage}
+          resources={this.state.resources}
+          tuition={this.state.tuition}
+          staff={this.state.staff}
+        />
+        <FooterPage
+          contact={this.state.contact}
+          accreditation={this.state.accreditation} />
       </div>
     )
   }

@@ -45,8 +45,9 @@ class NavbarPage extends Component {
         <Route path="/ParentResources" render={(props) => <ParentResources resources={props.resources} />} />
         <Route path="/ProgramsPage" render={(props) => <ProgramsPage programsImage={props.programsImage} />} />
         <Route path="/StaffPage" render={(props) => <Staff staff={props.staff} />} />
-        );
-      }
-    }
-    
+      </Router>
+    );
+  }
+}
+
 export default NavbarPage;

@@ -1,9 +1,7 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
-const FooterPage = () => {
-
-  // ADD THIS.CONTACT... TO THE APPROPRIATE LI'S
+const FooterPage = (props) => {
   return (
     <div>
       <MDBFooter className="font-small pt-4 staticColor mt-4">
@@ -13,13 +11,16 @@ const FooterPage = () => {
               <h5 className="title">Contact Us</h5>
               <ul>
                 <li className="list-unstyled">
+                  {props.contact.hours}
                 </li>
                 <li className="list-unstyled">
+                  {props.contact.address}
                 </li>
                 <li className="list-unstyled">
+                  {props.contact.phone}
                 </li>
                 <li className="list-unstyled">
-                  <a href="edwards@augustanadenver.org"></a>
+                  <a href="edwards@augustanadenver.org">{props.contact.email}</a>
                 </li>
               </ul>
             </MDBCol>
@@ -37,4 +38,5 @@ const FooterPage = () => {
 }
 
 export default FooterPage;
+
 
