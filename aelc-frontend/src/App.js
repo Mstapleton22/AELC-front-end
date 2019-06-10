@@ -13,9 +13,9 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      image: '',
-      programsImage: '',
-      resources: '',
+      carousel: '',
+      programs: '',
+      parentHandbook: '',
       staff: '',
       contact: '',
       accreditation: '',
@@ -27,10 +27,10 @@ class App extends Component {
     fetch("http://localhost:3001/")
       .then(data => data.json())
       .then(JSONdata => {
-        console.log(JSONdata[0].image)
-        console.log(JSONdata[0].programsImage)
+        console.log(JSONdata[0].carousel)
+        console.log(JSONdata[0].programs)
         this.setState({
-          image: JSONdata[0].image
+          carousel: JSONdata[0].carousel
         })
       })
   }
@@ -38,9 +38,9 @@ class App extends Component {
     return (
       <div>
         <NavbarPage
-          image={this.state.image}
-          programsImage={this.state.programsImage}
-          resources={this.state.resources}
+          carousel={this.state.carousel}
+          programs={this.state.programs}
+          parentHandbook={this.state.parentHandbook}
           tuition={this.state.tuition}
           staff={this.state.staff}
         />

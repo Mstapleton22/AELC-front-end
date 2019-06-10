@@ -14,7 +14,7 @@ const ProgramsPage = (props) => {
               <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                 <img
                   className="img-fluid"
-                  src={props.programsImage}
+                  src={props.programs.image}
                   alt=""
                 />
                 <a href="#!">
@@ -24,14 +24,10 @@ const ProgramsPage = (props) => {
             </MDBCol>
             <MDBCol lg="7">
               <h3 className="font-weight-bold mb-3 p-0">
-                {/* <strong>Curriculum</strong> */}
+                <strong>{props.programs.name}</strong>
               </h3>
               <p>
-                {/* The Creative Curriculum is a
-                comprehensive, research based curriculum that
-                features exploration and discovery as a way of
-                learning, enabling children to develop confidence,
-                creativity and lifelong critical thinking skills. */}
+                {props.programs.body}
               </p>
             </MDBCol>
           </MDBRow>
@@ -45,7 +41,7 @@ const ProgramsPage = (props) => {
               <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                 <img
                   className="img-fluid"
-                  src="./tunnelbaby.jpg"
+                  src={props.programs.image}
                   alt=""
                 />
                 <a href="#!">
@@ -55,16 +51,10 @@ const ProgramsPage = (props) => {
             </MDBCol>
             <MDBCol lg="7">
               <h3 className="font-weight-bold mb-3 p-0">
-                {/* <strong>Outdoor Learning Experience</strong> */}
+                <strong>{props.programs.name}</strong>
               </h3>
               <p>
-                {/* Our Fairy Garden
-            is natural play learning environment and living
-            classroom collaboration with Originative Holistic
-            Designs that incorporates tinkering, sustainable
-            gardening, wild and domesticated plant taxonomy,
-            and bio-sculpture within an emergent science and
-            emotional development curriculum. */}
+                {props.programs.body}
               </p>
             </MDBCol>
           </MDBRow>

@@ -40,10 +40,11 @@ class NavbarPage extends Component {
 
 
 
-        <Route path="/" exact render={(props) => <HomePage image={props.image} />} />
+        <Route path="/" exact render={(props) => <HomePage carousel={props.carousel} />} />
         {/* <Route path="/whyus" component={userBook} /> */}
-        <Route path="/ParentResources" render={(props) => <ParentResources resources={props.resources} />} />
-        <Route path="/ProgramsPage" render={(props) => <ProgramsPage programsImage={props.programsImage} />} />
+        <Route path="/ParentResources" render={(props) => <ParentResources tuition={props.tuition}
+          parentHandbook={props.parentHandbook} />} />
+        <Route path="/ProgramsPage" render={(props) => <ProgramsPage programs={props.programs} />} />
         <Route path="/StaffPage" render={(props) => <Staff staff={props.staff} />} />
       </Router>
     );
