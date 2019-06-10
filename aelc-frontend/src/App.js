@@ -14,6 +14,9 @@ class App extends Component {
     super(props)
     this.state = {
       image: '',
+      programsImage: '',
+      resources: '',
+      staff: '',
     }
   }
 
@@ -22,7 +25,7 @@ class App extends Component {
       .then(data => data.json())
       .then(JSONdata => {
         console.log(JSONdata[0].image)
-
+        console.log(JSONdata[0].programsImage)
         this.setState({
           image: JSONdata[0].image
         })
@@ -31,7 +34,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavbarPage image={this.state.image} />
+        <NavbarPage
+          image={this.state.image}
+          programsImage={this.state.programsImage} />
         <FooterPage />
       </div>
     )
