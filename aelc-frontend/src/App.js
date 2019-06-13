@@ -2,10 +2,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import NavbarPage from './components/nav';
+import NavbarPage from './components/Nav';
 import HomePage from './components/Home';
-import FooterPage from './components/footer'
-import ProgramsPage from './components/programs'
+import FooterPage from './components/Footer'
+import ProgramsPage from './components/Programs'
 
 class App extends Component {
 
@@ -13,25 +13,93 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      carousel: '',
+      carousel: [],
       programs: '',
       parentHandbook: '',
       staff: '',
-      contact: '',
+      contact: [],
       accreditation: '',
       tuition: ''
     }
   }
+  // componentDidMount() {
+  //     fetch("http://localhost:3001/")
+  //       .then(data => data.json())
+  //       .then(JSONdata => {
+  //         console.log(JSONdata[0].image)
 
+  //         this.setState({
+  //           image: JSONdata[0].image
+  //         })
+  //       })
+  //   }
   componentDidMount() {
-    fetch("http://localhost:3001/")
+    fetch("https://boiling-everglades-64895.herokuapp.com")
       .then(data => data.json())
       .then(JSONdata => {
-        console.log(JSONdata[0].carousel)
-        console.log(JSONdata[0].programs)
+        console.log(JSONdata)
         this.setState({
-          carousel: JSONdata[0].carousel
+          carousel: JSONdata
         })
+        console.log(this.state.carousel[0].id)
+
+      })
+    fetch("https://boiling-everglades-64895.herokuapp.com/contact")
+      .then(data => data.json())
+      .then(JSONdata => {
+        // console.log(JSONdata)
+        this.setState({
+          contact: JSONdata
+        })
+      })
+    fetch("https://boiling-everglades-64895.herokuapp.com")
+      .then(data => data.json())
+      .then(JSONdata => {
+        console.log(JSONdata)
+        this.setState({
+          carousel: JSONdata
+        })
+        console.log(this.state.carousel[0].id)
+
+      })
+    fetch("https://boiling-everglades-64895.herokuapp.com/programs")
+      .then(data => data.json())
+      .then(JSONdata => {
+        console.log(JSONdata)
+        this.setState({
+          programs: JSONdata
+        })
+        console.log(this.state.programs)
+
+      })
+    fetch("https://boiling-everglades-64895.herokuapp.com/staff")
+      .then(data => data.json())
+      .then(JSONdata => {
+        console.log(JSONdata)
+        this.setState({
+          staff: JSONdata
+        })
+        console.log(this.state.staff)
+
+      })
+    fetch("https://boiling-everglades-64895.herokuapp.com/accreditation")
+      .then(data => data.json())
+      .then(JSONdata => {
+        console.log(JSONdata)
+        this.setState({
+          accreditation: JSONdata
+        })
+        console.log(this.state.accreditation)
+
+      })
+    fetch("https://boiling-everglades-64895.herokuapp.com/parentHandbook")
+      .then(data => data.json())
+      .then(JSONdata => {
+        console.log(JSONdata)
+        this.setState({
+          parentHandbook: JSONdata
+        })
+        console.log(this.state.parentHandbook)
       })
   }
   render() {
