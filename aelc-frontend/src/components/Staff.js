@@ -39,7 +39,7 @@ class StaffPage extends Component {
                     alt="teacher"
                   />
                   <h3 className="h3-responsive row justify-content-center">{staff.name}</h3>
-                  <p className="h3-responsive row justify-content-center">{staff.body}</p>
+                  <p className="h3-responsive row justify-content-center">{staff.bio}</p>
                 </MDBCardBody>
               </MDBCard>
             ))
