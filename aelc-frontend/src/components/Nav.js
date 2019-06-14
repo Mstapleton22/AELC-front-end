@@ -48,7 +48,8 @@ class NavbarPage extends Component {
           parentHandbook={props.parentHandbook} />} />
         <Route path="/ProgramsPage" render={(props) => <ProgramsPage programs={props.programs} />} />
         <Route path="/StaffPage" render={(props) => <StaffPage staff={props.staff} />} />
-        <Route path="/StaffPage" render={(props) => <Contact contact={props.contact} />} />
+
+        <Route path="/Contact" render={(props) => <Contact contact={props.contact} />} />
       </Router>
     );
   }
