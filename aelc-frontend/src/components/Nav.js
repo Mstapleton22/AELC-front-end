@@ -6,6 +6,7 @@ import {
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import HomePage from './Home';
 import Contact from './Contact';
+import Calendar from './Calendar';
 import ProgramsPage from './Programs';
 import StaffPage from './Staff'
 import ParentResources from './ParentResources'
@@ -36,6 +37,7 @@ class NavbarPage extends Component {
             <Link className="navItems" to="/ProgramsPage">Programs</Link>
             <Link className="navItems" to="/StaffPage">Staff</Link>
             <Link className="navItems" to="/Contact">Contact</Link>
+            <Link className="navItems" to="/Calendar">Calendar</Link>
           </MDBNavbarNav>
           {/* </MDBCollapse> */}
         </MDBNavbar>
@@ -50,6 +52,8 @@ class NavbarPage extends Component {
         <Route path="/StaffPage" render={(props) => <StaffPage staff={props.staff} />} />
 
         <Route path="/Contact" render={(props) => <Contact contact={props.contact} />} />
+        <Route path="/Calendar" render={(props) => <Calendar calendar={props.calendar} />} />
+
       </Router>
     );
   }
