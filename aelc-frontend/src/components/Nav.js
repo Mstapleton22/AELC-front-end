@@ -23,6 +23,8 @@ class NavbarPage extends Component {
   }
 
   render() {
+    // console.log(this.props.programs)
+
     return (
       <Router>
         <MDBNavbar className="staticColor nav" expand="md">
@@ -48,7 +50,7 @@ class NavbarPage extends Component {
         />} />
         <Route path="/ParentResources" render={(props) => <ParentResources tuition={props.tuition}
           parentHandbook={props.parentHandbook} />} />
-        <Route path="/ProgramsPage" render={(props) => <ProgramsPage programs={props.programs} />} />
+        <Route path="/ProgramsPage" component={ProgramsPage} />
         <Route path="/StaffPage" render={(props) => <StaffPage staff={props.staff} />} />
 
         <Route path="/Contact" render={(props) => <Contact contact={props.contact} />} />

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
 import { thisExpression } from "@babel/types";
+import StaffCard from "./StaffCard"
 
 class StaffPage extends Component {
   constructor() {
@@ -16,13 +17,13 @@ class StaffPage extends Component {
         this.setState({
           staff: JSONdata
         })
-        console.log('staff', this.state.staff)
+        // console.log('staff', this.state.staff)
 
       })
 
   }
   render() {
-    console.log(this.state.staff)
+    // console.log(this.state.staff.image_url)
     return (
       <div>
         <h2 className="h1-responsive font-weight-bold text-center my-3">
@@ -30,19 +31,9 @@ class StaffPage extends Component {
     </h2>
         <div className="row justify-content-center">
           {
-            this.state.staff.map((staff, i) => (
-              <MDBCard className="my-5 px-5 pb-3">
-                <MDBCardBody className=" justify-content-center mb-lg-0 mb-4" hover waves>
-                  <img
-                    className="img-fluid"
-                    src={staff.image}
-                    alt="teacher"
-                  />
-                  <h3 className="h3-responsive row justify-content-center">{staff.name}</h3>
-                  <p className="h3-responsive row justify-content-center">{staff.bio}</p>
-                </MDBCardBody>
-              </MDBCard>
-            ))
+            this.state.staff.map(item =>
+              <StaffCard id={item.id} name={item.name} image={item.image_url} bio={item.bio} />
+            )
           }
         </div>
       </div >

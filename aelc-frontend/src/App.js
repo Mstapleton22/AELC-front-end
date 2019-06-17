@@ -13,13 +13,13 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      carousel: [],
-      programs: '',
-      parentHandbook: '',
-      // staff: [],
+      // carousel: [],
+      programs: [],
+      parentHandbook: [],
+      staff: [],
       contact: [],
-      accreditation: '',
-      tuition: ''
+      accreditation: [],
+      tuition: []
     }
   }
   // componentDidMount() {
@@ -37,12 +37,11 @@ class App extends Component {
     fetch("https://boiling-everglades-64895.herokuapp.com")
       .then(data => data.json())
       .then(JSONdata => {
-        console.log(JSONdata)
+        // console.log(JSONdata)
         this.setState({
           carousel: JSONdata
         })
         // console.log(this.state.carousel[0].id)
-
       })
     fetch("https://boiling-everglades-64895.herokuapp.com/contact")
       .then(data => data.json())
@@ -52,26 +51,17 @@ class App extends Component {
           contact: JSONdata
         })
       })
-    fetch("https://boiling-everglades-64895.herokuapp.com")
-      .then(data => data.json())
-      .then(JSONdata => {
-        // console.log(JSONdata)
-        this.setState({
-          carousel: JSONdata
-        })
-        // console.log('carousel', this.state.carousel[0].id)
+    // fetch("https://boiling-everglades-64895.herokuapp.com")
+    //   .then(data => data.json())
+    //   .then(JSONdata => {
+    // console.log(JSONdata)
+    // this.setState({
+    //   carousel: JSONdata
+    // })
+    // console.log('carousel', this.state.carousel[0].id)
 
-      })
-    fetch("https://boiling-everglades-64895.herokuapp.com/programs")
-      .then(data => data.json())
-      .then(JSONdata => {
-        // console.log(JSONdata)
-        this.setState({
-          programs: JSONdata
-        })
-        console.log('programs', this.state.programs)
+    // })
 
-      })
     fetch("https://boiling-everglades-64895.herokuapp.com/staff")
       .then(data => data.json())
       .then(JSONdata => {
@@ -79,7 +69,7 @@ class App extends Component {
         this.setState({
           staff: JSONdata
         })
-        console.log('staff', this.state.staff)
+        // console.log('staff', this.state.staff)
 
       })
     fetch("https://boiling-everglades-64895.herokuapp.com/accreditation")
@@ -89,7 +79,7 @@ class App extends Component {
         this.setState({
           accreditation: JSONdata
         })
-        console.log('accred', this.state.accreditation)
+        // console.log('accred', this.state.accreditation)
 
       })
     fetch("https://boiling-everglades-64895.herokuapp.com/parentHandbook")
@@ -99,15 +89,15 @@ class App extends Component {
         this.setState({
           parentHandbook: JSONdata
         })
-        console.log('handbag', this.state.parentHandbook)
+        // console.log('handbook', this.state.parentHandbook)
       })
   }
   render() {
     return (
       <div>
         <NavbarPage
-          carousel={this.state.carousel}
-          programs={this.state.programs}
+          // carousel={this.state.carousel}
+          // programs={this.state.programs}
           parentHandbook={this.state.parentHandbook}
           tuition={this.state.tuition}
         // staff={this.state.staff}

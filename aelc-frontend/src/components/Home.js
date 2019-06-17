@@ -1,97 +1,31 @@
 import React, { Component } from "react";
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
   "mdbreact";
-
+import CarouselCard from './CarouselCard'
 class HomePage extends Component {
-  render() {
-    // console.log(this.props.carousel.image)
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      carousel: [],
+    };
+    fetch("https://boiling-everglades-64895.herokuapp.com/carousel")
+      .then(data => data.json())
+      .then(JSONdata => {
+        this.setState({
+          carousel: JSONdata
+        })
+      })
+  }
+  render() {
     return (
       <div>
         <div className="row">
-          <MDBContainer className="img-fluid container">
-            < MDBCarousel
-              activeItem={1}
-              length={5}
-              showControls={true}
-              showIndicators={true}
-              className="z-depth-1 homeCarousel"
-            >
-              <MDBCarouselInner>
-                <MDBCarouselItem itemId="1">
-                  <MDBView>
-                    <img
-                      className="desktop d-block carouselImage image-fluid  w-100"
-                      src={process.env.PUBLIC_URL + '/bicycleboy.jpg'}
-                      alt="First slide"
-                    />
-                    <MDBMask overlay="black-slight" />
-                  </MDBView>
-                  <MDBCarouselCaption>
-                    {/* <div className="smartphone font-weight-bold">{this.props.carousel.quote}</div> */}
-                    <p className="font-weight-bold smartphone1">{`– Zain & Lauren Master`}</p>
-                  </MDBCarouselCaption>
-                </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
-                  <MDBView>
-                    <img
-                      className="desktop d-block carouselImage1 w-100"
-                      src={process.env.PUBLIC_URL + '/playground.jpg'}
-                      alt="Second slide"
-                    />
-                    <MDBMask overlay="black-slight" />
-                  </MDBView>
-                  <MDBCarouselCaption>
-                    <div className="smartphone font-weight-bold">"We are dedicated to help your child develop academically and socially, but encourage their personalities and bring out their unique traits too."</div>
-                    <p className="font-weight-bold smartphone1">{`- Azra Beganovic (Augustana teacher for 21 years)`}</p>
-                  </MDBCarouselCaption>
-                </MDBCarouselItem>
-                <MDBCarouselItem itemId="3">
-                  <MDBView>
-                    <img
-                      className="desktop carouselImage w-100"
-                      src={process.env.PUBLIC_URL + '/tunnelkids.jpg'}
-                      alt="Third slide"
-                    />
-                    <MDBMask overlay="black-slight" />
-                  </MDBView>
-                  <MDBCarouselCaption>
-                    <div className="smartphone font-weight-bold">"My Jesse can't stop talking about their time spent in the fairy garden. I'm just excited to see them outdoors!"</div>
-                    <p className="font-weight-bold smartphone1">- Shelly Shermani</p>
-                  </MDBCarouselCaption>
-                </MDBCarouselItem>
-                <MDBCarouselItem itemId="4">
-                  <MDBView>
-                    <img
-                      className="desktop d-block carouselImage1 w-100"
-                      src={process.env.PUBLIC_URL + '/frontdoor.jpg'}
-                      alt="Fourth slide"
-                    />
-                    <MDBMask overlay="black-slight" />
-                  </MDBView>
-                  <MDBCarouselCaption>
-                    <div className="smartphone font-weight-bold">"The music program literally brings music to my ears! This is one of the reasons we chose AELC as a family."</div >
-                    <p className="font-weight-bold smartphone1">- Jared, Lexi and Michelle Growski</p>
-                  </MDBCarouselCaption>
-                </MDBCarouselItem>
-                <MDBCarouselItem itemId="5">
-                  <MDBView>
-                    <img
-                      className="desktop d-block carouselImage w-100"
-                      src={process.env.PUBLIC_URL + '/lunchboysmile.jpg'}
-                      alt="Fifth slide"
-                    />
-                    <MDBMask overlay="black-slight" />
-                  </MDBView>
-                  <MDBCarouselCaption>
-                    <div className="smartphone font-weight-bold">"Having joined the AELC family only just a year ago, I know that this is where my heart belongs. Creating an environment that allows young people to flourish is where I belong."</div>
-                    <p className="font-weight-bold smartphone1">- Ms. Wendie</p>
-                  </MDBCarouselCaption>
-                </MDBCarouselItem>
-              </MDBCarouselInner>
-            </MDBCarousel >
-          </MDBContainer >
+          {this.state.carousel.map(item =>
+            <CarouselCard id={item.id} image={item.image_url} imageName={item.image_name} quote={item.quote} quoter={item.quoter} />)}
         </div>
+
+
         <div className="aboutMe">
           <h1 className="row justify-content-center">About Us</h1>
           <div className="about row">
