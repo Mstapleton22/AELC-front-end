@@ -61,6 +61,15 @@
 .desktop {
   margin-top: -5%;
 }
+
+.image {
+  max-width: 70vh;
+  max-height: 100vh;
+}
+/* .font {
+  font-size: 1em;
+} */
+
 /* .carouselImage {
   margin-top: -50px;
 }
@@ -92,9 +101,9 @@
 .staticColor {
   background-color: #5e2b67 ;
 }
-.staff {
+/* .staff {
   padding: 5%
-}
+} */
 /* .mission {
   background-color: #9152f3;
   border-radius: 50%;
@@ -128,7 +137,7 @@
 } */
 
 /* CSS RESET  ********************************/
-html,
+/* html,
 body,
 div,
 button,
@@ -201,7 +210,7 @@ footer,
 header,
 hgroup,
 menu,
-/* nav, */
+nav,
 output,
 ruby,
 section,
@@ -228,7 +237,7 @@ footer,
 header,
 hgroup,
 menu,
-/* nav, */
+nav,
 section,
   {
   display: block;
@@ -256,7 +265,7 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
+} */
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

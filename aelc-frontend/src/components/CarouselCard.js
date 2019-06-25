@@ -12,7 +12,6 @@ class CarouselCard extends Component {
   }
 
   render() {
-    // console.log(this.props.image_url)
     return (
       < div >
         < MDBContainer className="img-fluid container" >

@@ -23,7 +23,6 @@ class NavbarPage extends Component {
   }
 
   render() {
-    // console.log(this.props.programs)
 
     return (
       <Router>

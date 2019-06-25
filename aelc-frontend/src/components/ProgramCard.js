@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
-import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBRow } from 'mdbreact';
 
 
 class ProgramCard extends Component {
@@ -23,15 +23,19 @@ class ProgramCard extends Component {
     console.log(this.props.image_url)
     return (
       < div >
-        <MDBCol>
-          <MDBCard style={{ width: "22rem" }}>
-            <MDBCardImage className="img-fluid" src={`${this.props.image}`} waves />
-            <MDBCardBody>
-              <MDBCardTitle>{this.props.name}</MDBCardTitle>
-              <MDBCardText>{this.props.body}</MDBCardText>
-            </MDBCardBody>
-          </MDBCard>
-        </MDBCol>
+        <MDBCard className="my-5 pt-5 px-5 pb-5" >
+          <MDBRow>
+            <MDBCol>
+              <MDBCardImage className="col-6 img-fluid image" src={`${this.props.image}`} waves />
+            </MDBCol>
+            <MDBCol>
+              <MDBCardBody>
+                <MDBCardTitle className="font-weight-bold " lg="7">{this.props.name}</MDBCardTitle>
+                <MDBCardText className="font-weight-bold" lg="7">{this.props.body}</MDBCardText>
+              </MDBCardBody>
+            </MDBCol>
+          </MDBRow>
+        </MDBCard>
       </div >
     )
   }

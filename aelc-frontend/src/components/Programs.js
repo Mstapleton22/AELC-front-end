@@ -26,14 +26,22 @@ class ProgramsPage extends Component {
     console.log(this.state.programs)
     return (
       this.state.loadedData ?
-        this.state.programs.map(item =>
-          <ProgramCard id={item.id} name={item.name} image={item.image_url} body={item.body}
-          />
-        )
+        <div>
+          <h2 className="h1-responsive font-weight-bold text-center my-5">
+            Programs We Offer
+          </h2>
+          {
+            this.state.programs.map(item =>
+              <ProgramCard id={item.id} name={item.name} image={item.image_url} body={item.body}
+              />
+            )
+          }
+        </div>
         :
         <div>
           Loading...
         </div>
+
     )
   }
 }
