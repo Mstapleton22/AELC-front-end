@@ -22,12 +22,12 @@ class FooterPage extends Component {
                 // </ul>
               )}
             </MDBCol>
-            <MDBCol md="6">
+            {/* <MDBCol md="6">
               <h5 className="title">Accreditation</h5>
               <img className="accreditation" src="ECADAlogo.gif " alt="accreditation" height="100" width="100" />
               <img className="accreditation" src="COShines_Accreditation.png" alt="accreditation" height="80" width="250" />
               <img className="accreditation" src="COShines_Program Quality Rating_4 Diamonds.png" alt="accreditation" height="80" width="250" />
-            </MDBCol>
+            </MDBCol> */}
           </MDBRow>
           {/* </MDBContainer> */}
         </MDBFooter>

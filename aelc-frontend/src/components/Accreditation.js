@@ -1,28 +1,13 @@
 import React, { Component } from "react";
-import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
-  "mdbreact";
-import CarouselCard from './CarouselCard'
-class HomePage extends Component {
+class Accreditation extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      carousel: [],
-    };
-    fetch("https://boiling-everglades-64895.herokuapp.com/carousel")
-      .then(data => data.json())
-      .then(JSONdata => {
-        this.setState({
-          carousel: JSONdata
-        })
-      })
-  }
   render() {
     return (
       <div>
+        <img className="accreditation" src={this.props.accredImage} alt="accreditation" />
       </div>
     )
   }
 }
 
-export default HomePage;
+export default Accreditation;
