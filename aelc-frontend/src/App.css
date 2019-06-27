@@ -90,8 +90,10 @@
   margin: 1%;
 }
 .footerRow {
-  /* display:flex;
-  align-items: space-between; */
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
 
 .fa-caret-square-down {
@@ -441,6 +443,10 @@ table {
     /* width: 100vw; */
     height: 40%;
   }
+  .ul{
+    padding-inline-start: -40px;
+   padding: -40px;  
+  }
   }
   
   /* Large screens ----------- */
@@ -484,7 +490,13 @@ table {
   .navbar .nav .fa-caret-square-down {
     padding: -20px;
   }
-
+  .ul{
+    padding-inline-start: -40px;
+   padding: -40px;  
+  }
+  .title {
+    padding-left: 2%;
+  }
   }
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
@@ -504,6 +516,13 @@ table {
   .navbar .nav .fa-caret-square-down {
     padding: -20px;
   }
+  .title {
+    padding-left: 2%;
+  }
+  .ul{
+    padding-inline-start: -40px;
+   padding: -40px;  
+  }
   }
   
   /* iPhone 6+, 7+, 8+ ----------- */
@@ -522,8 +541,15 @@ table {
     margin-top: 10%;
     padding: -5%;
   }
+  .title {
+    padding-left: 2%;
+  }
   .navbar .nav .fa-caret-square-down {
     padding: -20px;
+  }
+  .ul{
+    padding-inline-start: -40px;
+   padding: -40px;  
   }
   }
   
@@ -545,6 +571,13 @@ table {
   .navbar .nav .fa-caret-square-down {
     padding: -20px;
   }
+  .title {
+    padding-left: 2%;
+  }
+  .ul{
+    padding-inline-start: -40px;
+   padding: -40px;  
+  }
   
   }
   
@@ -565,15 +598,26 @@ table {
   }
   .navbar .nav .fa-caret-square-down {
     padding: -20px;
+  }  
+  .title {
+    padding-left: 12%;
   }
 
   .ul{
     padding-inline-start: -40px;
+   padding: -40px;  
   }
   }
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  /* .title {
+    padding-left: 2%;
+  } */
+  .footerRow {
+    padding-left: 3.5%;
+
+  }
   }
   
   /* iPhone XS Max, XR ----------- */

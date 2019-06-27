@@ -4,13 +4,13 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 class FooterPage extends Component {
   render() {
     return (
-      <div className="mt-5" style={{ position: 'relative', bottom: '0', width: '100%' }}>
+      <div className="footer" style={{ position: 'relative', bottom: '0', width: '100%' }}>
         <MDBFooter className="font-small pt-4 staticColor mt-4">
-          <MDBContainer className="text-center text-md-left">
-            <MDBRow>
-              <MDBCol md="6" className="footerRow">
+          {/* <MDBContainer className=""> */}
+            <MDBRow className="footerRow">
+              <MDBCol md="5">
                 <h5 className="title">Contact Us</h5>
-                {this.props.contact.map(contact => <ul className="ul"> <li className="list-unstyled">
+                {this.props.contact.map(contact => <ul style={{ padding: '-40px' }}> <li className="list-unstyled">
                   {contact.hours}</li>
                   <li className="list-unstyled">
                     {contact.address}</li>
@@ -27,7 +27,7 @@ class FooterPage extends Component {
                 <img className="accreditation" src="COShines_Program Quality Rating_4 Diamonds.png" alt="accreditation" height="80" width="250" />
               </MDBCol>
             </MDBRow>
-          </MDBContainer>
+          {/* </MDBContainer> */}
         </MDBFooter>
       </div >
     )
