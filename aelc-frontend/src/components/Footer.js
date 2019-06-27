@@ -4,13 +4,13 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 class FooterPage extends Component {
   render() {
     return (
-      <div>
+      <div className="mt-5" style={{ position: 'relative', bottom: '0', width: '100%' }}>
         <MDBFooter className="font-small pt-4 staticColor mt-4">
-          <MDBContainer fluid className="text-center text-md-left">
+          <MDBContainer className="text-center text-md-left">
             <MDBRow>
-              <MDBCol md="6">
+              <MDBCol md="6" className="footerRow">
                 <h5 className="title">Contact Us</h5>
-                {this.props.contact.map(contact => <ul> <li className="list-unstyled">
+                {this.props.contact.map(contact => <ul className="ul"> <li className="list-unstyled">
                   {contact.hours}</li>
                   <li className="list-unstyled">
                     {contact.address}</li>

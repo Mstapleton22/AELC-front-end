@@ -2,16 +2,16 @@ import React, { Component } from "react";
 
 const ParentResources = (props) => {
   return (
-    <div>
+    <div className="Site">
 
-      <div className='container'>
-        <div className="accordion md-accordion mt-5" id="accordionEx" role="tablist" aria-multiselectable="true">
-          <div className="card">
+      <div className='container mb Site-content'>
+        <div className=" Site-content accordion md-accordion mt-5" id="accordionEx" role="tablist" aria-multiselectable="true">
+          <div className="Site-content card">
 
             <div className="card-header" role="tab" id="headingOne1">
               <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
                 aria-controls="collapseOne1">
-                <h5 className="mb-0">
+                <h5 className="mb-0 resourceTitle">
                   Waitlist Application <i className="fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
@@ -36,18 +36,16 @@ const ParentResources = (props) => {
 
                 <input type="number" id="defaultRegisterPhonePassword" className="form-control mb-2" placeholder="Phone Number" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
-                <button className="btn btn-info my-4 btn-block" type="submit">Submit</button>
+                <button className="btn btn-success my-4 btn-block" type="submit">Submit</button>
               </div>
             </div>
           </div>
 
           <div className="card mt-5">
-
-
             <div className="card-header" role="tab" id="headingTwo2">
               <a className="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                 aria-expanded="false" aria-controls="collapseTwo2">
-                <h5 className="mb-0">
+                <h5 className="mb-0 resourceTitle">
                   Tuition Information <i className="fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
@@ -64,11 +62,11 @@ const ParentResources = (props) => {
               </div>
             </div>
           </div>
-          <div className="card mt-5 mb-5">
+          <div className="card mt-5 mb-5 ">
             <div className="card-header" role="tab" id="headingThree3">
               <a className="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
                 aria-expanded="false" aria-controls="collapseThree3">
-                <h5 className="mb-0">
+                <h5 className="resourceTitle">
                   Parent Handbook<i className="fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>

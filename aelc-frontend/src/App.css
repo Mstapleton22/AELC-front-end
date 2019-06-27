@@ -89,6 +89,26 @@
 .accreditation {
   margin: 1%;
 }
+.footerRow {
+  /* display:flex;
+  align-items: space-between; */
+}
+
+.fa-caret-square-down {
+  color: white;
+}
+
+.resourceTitle{
+  color: #5e2b67;
+}
+
+.resourceTitle:hover{
+  color: #ae76b8;
+}
+
+.mb {
+  padding-bottom: 4%;
+}
 
 .logo {
   width:10vw;
@@ -101,9 +121,51 @@
 .staticColor {
   background-color: #5e2b67 ;
 }
-/* .staff {
-  padding: 5%
-} */
+.staff {
+  display: flex;
+  flex-direction: row;
+}
+
+.bioBtn {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around; 
+  /* margin-left:100px; */
+}
+
+.bio {
+ 
+  margin: 7px;
+  border-radius: 10%;
+  width: 60px;
+  height: 30px;
+  background-color: #5e2b67;
+  color: white;
+}
+.bio:hover {
+  background-color:#ae76b8;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  justify-content: center;
+}
+.card-body {
+  padding: 0;
+}
+.staff {
+  display:flex;
+  justify-content: center;
+}
+.staffImage{
+  border-radius: 170px;
+  height: 50%;
+  width: 100%;
+  margin-top: 10%;
+  padding: 5%;
+}
 /* .mission {
   background-color: #9152f3;
   border-radius: 50%;
@@ -135,6 +197,8 @@
     margin-top: 10px;
   }
 } */
+
+
 
 /* CSS RESET  ********************************/
 /* html,
@@ -285,34 +349,76 @@ table {
   justify-content: start;
   
 }
-.desktop {
-  /* margin-top: 5%; */
+/* .desktop {
+  margin-top: 5%;
+} */
+.staffImage{
+  border-radius: 170px;
+  height: 50%;
+  width: 100%;
+  margin-top: 10%;
+  padding: -5%;
 }
   }
   
   /* Smartphones (landscape) ----------- */
   @media only screen and (min-width : 321px) {
   /* Styles */
+  .staffImage{
+    border-radius: 170px;
+    height: 50%;
+    width: 100%;
+    margin-top: 10%;
+    padding: -5%;
   }
-  
+  }
+
   /* Smartphones (portrait) ----------- */
   @media only screen and (max-width : 320px) {
   /* Styles */
+  .staffImage{
+    border-radius: 170px;
+    height: 50%;
+    width: 100%;
+    margin-top: 10%;
+    padding: -5%;
   }
-  
+  }
+
   /* iPads (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   /* Styles */
+  .staffImage{
+    border-radius: 170px;
+    height: 50%;
+    width: 100%;
+    margin-top: 10%;
+    padding: -5%;
   }
-  
+  }
+ 
   /* iPads (landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .staffImage{
+      border-radius: 170px;
+      height: 50%;
+      width: 100%;
+      margin-top: 10%;
+      padding: -5%;
+    }
   /* Styles */
   }
-  
+
   /* iPads (portrait) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   /* Styles */
+  .staffImage{
+    border-radius: 170px;
+    height: 50%;
+    width: 100%;
+    margin-top: 10%;
+    padding: -5%;
+  }
   }
   /**********
   iPad 3
@@ -363,24 +469,107 @@ table {
   /* iPhone 6, 7, 8 ----------- */
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .row .staff{
+    padding: -10%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .staffImage{
+    border-radius: 170px;
+    height: 50%;
+    width: 100%;
+    margin-top: 10%;
+    padding: -5%;
+  }
+  .navbar .nav .fa-caret-square-down {
+    padding: -20px;
+  }
+
   }
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .row .no-gutters .staff {
+    padding: -10%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .staffImage{
+    border-radius: 170px;
+    height: 50%;
+    width: 100%;
+    margin-top: 10%;
+    padding: -5%;
+  }
+  .navbar .nav .fa-caret-square-down {
+    padding: -20px;
+  }
   }
   
   /* iPhone 6+, 7+, 8+ ----------- */
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .row .staff{
+    padding: -10%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+
+  }
+  .staffImage{
+    border-radius: 170px;
+    height: 50%;
+    width: 100%;
+    margin-top: 10%;
+    padding: -5%;
+  }
+  .navbar .nav .fa-caret-square-down {
+    padding: -20px;
+  }
   }
   
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .row .staff{
+    padding: -10%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+
+  }
+  .staffImage{
+    border-radius: 170px;
+    height: 50%;
+    width: 100%;
+    margin-top: 10%;
+    padding: -10%;
+  }
+  .navbar .nav .fa-caret-square-down {
+    padding: -20px;
+  }
+  
   }
   
   /* iPhone X ----------- */
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .row .staff{
+    padding: -10%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .staffImage{
+    border-radius: 170px;
+    height: 50%;
+    width: 100%;
+    margin-top: 10%;
+    padding: -10%;
+  }
+  .navbar .nav .fa-caret-square-down {
+    padding: -20px;
+  }
+
+  .ul{
+    padding-inline-start: -40px;
+  }
   }
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){

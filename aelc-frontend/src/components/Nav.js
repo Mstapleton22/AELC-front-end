@@ -30,18 +30,20 @@ class NavbarPage extends Component {
           <MDBNavbarBrand>
             <img className="logo" src="Augustana_Logo.png" alt="logo"></img>
           </MDBNavbarBrand>
-          <MDBNavbarToggler onClick={this.toggleCollapse} />
-          {/* <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar> */}
-          <MDBNavbarNav className="nav" right>
-            <Link className="navItems" to="/">Home</Link>
-            <Link className="navItems" to="/ParentResources">Resources</Link>
-            <Link className="navItems" to="/ProgramsPage">Programs</Link>
-            <Link className="navItems" to="/StaffPage">Staff</Link>
-            <Link className="navItems" to="/Contact">Contact</Link>
-            <Link className="navItems" to="/Calendar">Calendar</Link>
-          </MDBNavbarNav>
-          {/* </MDBCollapse> */}
-        </MDBNavbar>
+          <MDBNavbarToggler onClick={this.toggleCollapse} right>
+            <i class="far fa-caret-square-down" />
+          </MDBNavbarToggler>
+          <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} left navbar>
+            <MDBNavbarNav className="nav">
+              <Link className="navItems" to="/">Home</Link>
+              <Link className="navItems" to="/ParentResources">Resources</Link>
+              <Link className="navItems" to="/ProgramsPage">Programs</Link>
+              <Link className="navItems" to="/StaffPage">Staff</Link>
+              <Link className="navItems" to="/Contact">Contact</Link>
+              <Link className="navItems" to="/Calendar">Calendar</Link>
+            </MDBNavbarNav>
+          </MDBCollapse>
+        </MDBNavbar >
 
 
 
@@ -55,7 +57,7 @@ class NavbarPage extends Component {
         <Route path="/Contact" render={(props) => <Contact contact={props.contact} />} />
         <Route path="/Calendar" render={(props) => <Calendar calendar={props.calendar} />} />
 
-      </Router>
+      </Router >
     );
   }
 }
