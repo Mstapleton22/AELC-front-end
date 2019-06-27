@@ -578,6 +578,10 @@ table {
     padding-inline-start: -40px;
    padding: -40px;  
   }
+  .about {
+    padding-left: -40px;
+    padding-right: -40px;
+  }
   
   }
   
@@ -607,6 +611,10 @@ table {
     padding-inline-start: -40px;
    padding: -40px;  
   }
+  .about {
+    padding-left: -40px;
+    padding-right: -40px;
+  }
   }
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
@@ -615,8 +623,19 @@ table {
     padding-left: 2%;
   } */
   .footerRow {
-    padding-left: 3.5%;
-
+    padding: 10px;
+  }
+  .about {
+    padding-left: -40px;
+    padding-right: -40px;
+  }
+  /* .no-gutters {
+    padding: 0px;
+  } */
+  .footerCol{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
   }
   }
   

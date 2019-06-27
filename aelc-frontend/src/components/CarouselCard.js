@@ -14,7 +14,7 @@ class CarouselCard extends Component {
   render() {
     return (
       < div >
-        < MDBContainer className="img-fluid container" >
+        < MDBContainer className="img-fluid" >
           < MDBCarousel
             activeItem={1}
             length={5}

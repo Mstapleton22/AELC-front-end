@@ -20,7 +20,7 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <div className="row">
+        <div className="row no-gutters">
           {this.state.carousel.map(item =>
             <CarouselCard id={item.id} image={item.image_url} imageName={item.image_name} quote={item.quote} quoter={item.quoter} />)}
         </div>
