@@ -16,69 +16,63 @@ class App extends Component {
       parentHandbook: [],
       staff: [],
       contact: [],
-      accreditation: [],
+      accreditation: [{}],
       tuition: []
     }
   }
 
-componentDidMount() {
-  // fetch("https://boiling-everglades-64895.herokuapp.com")
-  //   .then(data => data.json())
-  //   .then(JSONdata => {
-  //     this.setState({
-  //       carousel: JSONdata
-  //     })
-  //   })
-  fetch("https://boiling-everglades-64895.herokuapp.com/contact")
-    .then(data => data.json())
-    .then(JSONdata => {
-      this.setState({
-        contact: JSONdata
+  componentDidMount() {
+    fetch("https://boiling-everglades-64895.herokuapp.com/contact")
+      .then(data => data.json())
+      .then(JSONdata => {
+        this.setState({
+          contact: JSONdata
+        })
       })
-    })
-  fetch("https://boiling-everglades-64895.herokuapp.com/staff")
-    .then(data => data.json())
-    .then(JSONdata => {
-      // console.log(JSONdata)
-      this.setState({
-        staff: JSONdata
-      })
-      // console.log('staff', this.state.staff)
+    fetch("https://boiling-everglades-64895.herokuapp.com/staff")
+      .then(data => data.json())
+      .then(JSONdata => {
+        // console.log(JSONdata)
+        this.setState({
+          staff: JSONdata
+        })
+        // console.log('staff', this.state.staff)
 
-    })
-  fetch("https://boiling-everglades-64895.herokuapp.com/accreditation")
-    .then(data => data.json())
-    .then(JSONdata => {
-      // console.log(JSONdata)
-      this.setState({
-        accreditation: JSONdata
       })
-    })
-  fetch("https://boiling-everglades-64895.herokuapp.com/parentHandbook")
-    .then(data => data.json())
-    .then(JSONdata => {
-      // console.log(JSONdata)
-      this.setState({
-        parentHandbook: JSONdata
+    // fetch("https://boiling-everglades-64895.herokuapp.com/accreditation")
+    //   .then(data => data.json())
+    //   .then(JSONdata => {
+    //     // console.log(JSONdata)
+    //     this.setState({
+    //       accreditation: JSONdata
+    //     })
+    //   })
+    fetch("https://boiling-everglades-64895.herokuapp.com/parentHandbook")
+      .then(data => data.json())
+      .then(JSONdata => {
+        // console.log(JSONdata)
+        this.setState({
+          parentHandbook: JSONdata
+        })
       })
-    })
-}
-render() {
-  return (
-    <div>
-      <NavbarPage
-        // carousel={this.state.carousel}
-        // programs={this.state.programs}
-        parentHandbook={this.state.parentHandbook}
-        tuition={this.state.tuition}
-      // staff={this.state.staff}
-      />
-      <FooterPage
-        contact={this.state.contact}
-        accreditation={this.state.accreditation} />
-    </div>
-  )
-}
+  }
+  render() {
+    return (
+      <div>
+        <NavbarPage
+          // carousel={this.state.carousel}
+          // programs={this.state.programs}
+          parentHandbook={this.state.parentHandbook}
+          tuition={this.state.tuition}
+          accreditation={this.state.accreditation}
+        // staff={this.state.staff}
+        />
+        <FooterPage
+          contact={this.state.contact}
+        />
+      </div>
+    )
+  }
 }
 
 export default App;

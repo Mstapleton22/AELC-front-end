@@ -14,19 +14,19 @@ class CarouselCard extends Component {
   render() {
     return (
       < div >
-        < MDBContainer className="img-fluid container" >
+        < MDBContainer className="img-fluid no-gutters container" >
           < MDBCarousel
             activeItem={1}
             length={5}
             showControls={true}
             showIndicators={true}
-            className="z-depth-1 homeCarousel"
+            className="z-depth-1 no-gutters homeCarousel"
           >
             <MDBCarouselInner>
               <MDBCarouselItem itemId={`${this.props.id}`}>
                 <MDBView>
                   <img
-                    className="desktop d-block carouselImage image-fluid  w-100"
+                    className="desktop d-block carouselImage image-fluid no-gutters w-100"
                     src={`${this.props.image}`}
                     alt={`${this.props.imageName}`}
                   />
