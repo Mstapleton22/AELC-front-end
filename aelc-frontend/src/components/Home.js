@@ -46,12 +46,12 @@ class HomePage extends Component {
     // console.log(this.state.accreditation[0])
     return (
       <div>
-        {/* <div className="row">
+        <div className="row no-gutters">
           {this.state.carousel.map(item =>
             <CarouselCard id={item.id} image={item.image_url} imageName={item.image_name} quote={item.quote} quoter={item.quoter} />)}
-        </div> */}
+        </div>
         <div className="aboutMe no-gutters">
-          <h1 className="row about justify-content-center">About Us</h1>
+          <h1 className="row about no-gutters justify-content-center">About Us</h1>
           <div className="about no-gutters row">
             <div className="col-lg-2"></div>
             <p className="col-lg-8 alight-items-center mobile">The Augustana Day Care Center opened its doors on May 1, 1971, fulfilling a long held dream of the congregation's Social Ministry Committee. Since its inception the Center was welcomed children
@@ -67,20 +67,20 @@ and nurturing environment that promotes learning and enhances the child's well-b
               Believing that a balance of good nutrition, adequate rest, and ample opportunity for exploration and learning in developmentally appropriate ways is critical to the child's well-being.</p>
             <div className="col-lg-2"></div>
           </div>
-          <div className="accredAll">
-            <div className="row accredTitleRow">
-              <img className="accredTitle" src="accreditation.png" alt="logo"></img>
+          <div className="accredAll no-gutters">
+            <div className="row accredTitleRow no-gutters">
+              <img className="accredTitle no-gutters" src="accreditation.png" alt="logo"></img>
             </div>
-            <div className="row accredRow">
+            <div className="row accredRow no-gutters">
               {this.state.accreditation.map(item =>
-                <div className="accredBox">
+                <div className="accredBox no-gutters">
                   <Accreditation id={item.id} accredImage={item.image_url} name={item.name} imageName={item.image_name} />
                 </div>
               )}
             </div>
 
           </div>
-          <div className="missionAndVisionHeader">
+          <div className="missionAndVisionHeader no-gutters">
             {/* <div className="row">
               <div className="col-lg-6">
                 : Mission
@@ -90,9 +90,9 @@ and nurturing environment that promotes learning and enhances the child's well-b
           </div>
             </div> */}
             <div className="row missionRow no-gutters">
-              <div className="col-lg-1"></div>
-              <div className="col-lg-4 mission ">
-                <div className="missionText">
+              <div className="col-lg-1 no-gutters"></div>
+              <div className="col-lg-4 mission no-gutters ">
+                <div className="missionText no-gutters">
                   Augustana Early Learning Center serves children and their families through high quality, affordable care and education. We welcome children from diverse cultures, faith traditions, socioeconomic backgrounds, and national origins. We provide learning experiences that foster developmentally-appropriate growth to teach children to love themselves and others.
                 </div>
               </div>
