@@ -285,7 +285,7 @@ width: 420px; */
 
 .contact_text {
   color: white;
-  font-size: 20px;
+  font-size:50px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -307,7 +307,7 @@ width: 420px; */
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: #864193;
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -319,16 +319,40 @@ width: 420px; */
   height: auto;
 }
 .contact_icon {
-  /* margin-left: -2px; */
-  /* padding: 20%; */
-  padding:1%;
-
-  font-size:8em;
-}
-.contact_row {
+  padding:2%;
+  color: #864193;
+  font-size:6em;
   display: flex;
-  /* flex-flow: row nowrap; */
-  /* justify-content: center; */
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.clock {
+  /* background-color: #ae76b85a; */
+  /* background-color: #4ca468; */
+  background-color: #ebf0f3;
+  }
+  .address{
+    /* background-color: #70207e; */
+  /* background-color: #43d872; */
+  background-color: #cbcfd2;
+
+  }
+  .phone{
+    /* background-color: #864193; */
+    /* background-color: #7ac291; */
+  background-color: #a0a3a5;
+  
+  }
+  .email{
+    /* background-color: #bb69cb; */
+    /* background-color: #6ced95; */
+  background-color: #7e8082;
+  }
+.contact_row {
+  /* display: flex;
+  flex-flow: column nowrap;
+  align-items: center; */
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -352,6 +376,7 @@ width: 420px; */
   margin-top: 10%;
   padding: -5%;
 }
+
   }
   
   /* Smartphones (landscape) ----------- */
