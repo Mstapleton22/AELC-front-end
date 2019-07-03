@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://boiling-everglades-64895.herokuapp.com/contact")
+    fetch("http://localhost:5000/contact")
       .then(data => data.json())
       .then(JSONdata => {
         this.setState({
@@ -31,7 +31,7 @@ class App extends Component {
           loadedData: true
         })
       })
-    fetch("https://boiling-everglades-64895.herokuapp.com/staff")
+    fetch("http://localhost:5000/staff")
       .then(data => data.json())
       .then(JSONdata => {
         // console.log(JSONdata)
@@ -41,7 +41,7 @@ class App extends Component {
         // console.log('staff', this.state.staff)
       })
 
-    fetch("https://boiling-everglades-64895.herokuapp.com/parentHandbook")
+    fetch("http://localhost:5000/parentHandbook")
       .then(data => data.json())
       .then(JSONdata => {
         // console.log(JSONdata)

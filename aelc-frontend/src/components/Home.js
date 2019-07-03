@@ -15,7 +15,7 @@ class HomePage extends Component {
   }
 
   carouselFetch = () => {
-    fetch("https://boiling-everglades-64895.herokuapp.com/carousel")
+    fetch("http://localhost:5000/carousel")
       .then(data => data.json())
       .then(JSONdata => {
         this.setState({
@@ -25,7 +25,7 @@ class HomePage extends Component {
   }
 
   accredFetch = () => {
-    fetch("https://boiling-everglades-64895.herokuapp.com/accreditation")
+    fetch("http://localhost:5000/accreditation")
       .then(data => data.json())
       .then(JSONdata => {
         // console.log(JSONdata)

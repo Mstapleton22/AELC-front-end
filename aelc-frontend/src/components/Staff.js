@@ -10,7 +10,7 @@ class StaffPage extends Component {
       staff: [],
     }
 
-    fetch("https://boiling-everglades-64895.herokuapp.com/staff")
+    fetch("http://localhost:5000/staff")
       .then(data => data.json())
       .then(JSONdata => {
         // console.log(JSONdata)

@@ -11,7 +11,7 @@ class ProgramsPage extends Component {
       loadedData: false
     }
 
-    fetch("https://boiling-everglades-64895.herokuapp.com/programs")
+    fetch("http://localhost:5000/programs")
       .then(data => data.json())
       .then(JSONdata => {
         // console.log('bbom',JSONdata[0].name)
