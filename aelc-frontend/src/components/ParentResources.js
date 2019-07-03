@@ -26,7 +26,7 @@ class ParentResources extends Component {
     return (
       this.state.loadingData ?
 
-        <div className="Site">
+        <div className="site">
           <div className='container mb Site-content'>
             <div className=" Site-content accordion md-accordion mt-5" id="accordionEx" role="tablist" aria-multiselectable="true">
               <div className="Site-content card">
