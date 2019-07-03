@@ -1007,3 +1007,20 @@ width: 420px; */
   @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
   }
+
+
+/* date placeholders for waitlist */
+  .rb-date-picker.placeholder:focus::before{
+    width:0%;
+    content:"";
+}
+
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}

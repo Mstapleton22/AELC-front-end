@@ -1,7 +1,12 @@
 import React, { Component } from "react";
+import FormComponent from './FormComponent' 
 
 const ParentResources = (props) => {
   return (
+
+    // <div>
+    //   <FormComponent/>
+    // </div>
     <div className="Site">
 
       <div className='container mb Site-content'>
@@ -20,24 +25,7 @@ const ParentResources = (props) => {
 
             <div id="collapseOne1" className="collapse show" role="tabpanel" aria-labelledby="headingOne1"
               data-parent="#accordionEx">
-              <div className="card-body">
-
-                <input type="text" className="form-control mb-2" placeholder="Child's Name" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
-
-                <input type="text" className="form-control mb-2" placeholder="Birthdate" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
-
-                <input type="text" className="form-control mb-2" placeholder="Guardians's Full Name" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
-
-                <input type="text" className="form-control mb-2" placeholder="Relationship" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
-
-                <input type="text" className="form-control mb-2" placeholder="Address" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
-
-                <input type="email" className="form-control mb-2" placeholder="Email" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
-
-                <input type="number" id="defaultRegisterPhonePassword" className="form-control mb-2" placeholder="Phone Number" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
-
-                <button className="btn btn-success my-4 btn-block" type="submit">Submit</button>
-              </div>
+               <FormComponent/>
             </div>
           </div>
 
