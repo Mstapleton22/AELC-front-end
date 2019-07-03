@@ -66,7 +66,20 @@ class FormComponent extends Component {
 
         <input type="date" className="form-control mb-2" placeholder="Requested start date" aria-describedby="defaultRegisterFormPhoneHelpBlock"/>
 
-        
+        <select name="Classroom" size="5">
+          <option value="Firefly">Firefly (12 months - 2 years)</option>
+          <option value="Bumblebee">Bumblebee (2 - 3 years)</option>
+          <option value="Ladybug">Ladybug (2 1/2 - 3 1/2 years)</option>
+          <option value="Butterfly">Butterfly (3 - 4)</option>
+          <option value="Cricket">Cricket (4 years by October 1st)</option>
+        </select>
+
+        <select name="Classroom" size="5" multiple>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
 
         <input type="text" className="form-control mb-2" placeholder="Child's Name" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
