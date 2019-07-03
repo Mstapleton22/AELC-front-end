@@ -50,15 +50,6 @@ class App extends Component {
         })
       })
 
-    fetch("http://localhost:5000/tuition")
-      .then(data => data.json())
-      .then(JSONdata => {
-        // console.log("tuition", JSONdata)
-        this.setState({
-          tuition: JSONdata
-        })
-        // console.log("tuitionnn", this.state.tuition)
-      })
   }
   render() {
     console.log("tuition", this.state.tuition)

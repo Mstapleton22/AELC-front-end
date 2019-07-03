@@ -349,10 +349,16 @@ width: 420px; */
     /* background-color: #6ced95; */
   background-color: #7e8082;
   }
-.contact_row {
-  /* display: flex;
-  flex-flow: column nowrap;
-  align-items: center; */
+
+.tuition_image{
+  width:80%;
+  padding-bottom: 4%;
+  padding-top: 4%;
+}
+.tuition_row  {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around
 }
 
 /* Smartphones (portrait and landscape) ----------- */

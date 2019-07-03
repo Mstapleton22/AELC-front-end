@@ -25,62 +25,34 @@ class Contact extends Component {
 
         <div>
           <div className="row contact_row no-gutters">
-
-            {/* <div className="row  no-gutters" > */}
-            {/* <div className="col-lg-2">
-              <div className="contact_container">
-                <h3 className="">Contact Us: </h3>
-                <div className="contact_overlay">
-                  <div></div>
-                </div>
-              </div>
-            </div> */}
             <div className="col-lg-12 contact_row">
               <div className="contact_container contact_row  clock ">
                 <i className="contact_image contact_icon far fa-clock"></i>
                 <div className="contact_overlay">
                   <h3 className="contact_text">{this.state.contact[0].hours}</h3>
                 </div>
-
               </div>
-              {/* </div> */}
-              {/* <div className="col-lg-3"> */}
               <div className="contact_container address">
                 <i class="contact_image  contact_icon fas fa-map-marked-alt"></i>
                 <div className="contact_overlay">
                   <h3 className="contact_text">{this.state.contact[0].address}</h3>
                 </div>
               </div>
-              {/* </div>
-
-            <div className="col-lg-3"> */}
               <div className="contact_container phone">
                 <i class="contact_image  contact_icon fas fa-phone"></i>
                 <div className="contact_overlay">
                   <h3 className="contact_text">{this.state.contact[0].phone}</h3>
                 </div>
               </div>
-            {/* <div className="col-lg-3"> */}
               <div className="contact_container email">
                 <i class="contact_image  contact_icon fas fa-at"></i>
                 <div className="contact_overlay">
                   <h3 className="contact_text">{this.state.contact[0].email}</h3>
                 </div>
               </div>
-            {/* </div> */}
-            {/* <h3 className="justify-content-center">
-              {this.state.contact[0].hours}</h3> */}
-            {/* <h3 className="justify-content-center">
-              {this.state.contact[0].address}</h3> */}
-            {/* <h3 className="justify-content-center">
-              {this.state.contact[0].phone}</h3>
-            <h3 className="justify-content-center">
-              {this.state.contact[0].email}</h3> */}
-          </div>
-
+            </div>
           </div>
         </div>
-        // </div >
         :
         <div>
           Loading...
