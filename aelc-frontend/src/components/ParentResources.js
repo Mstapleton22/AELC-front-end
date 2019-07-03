@@ -3,7 +3,6 @@ import React, { Component } from "react";
 const ParentResources = (props) => {
   return (
     <div className="Site">
-
       <div className='container mb Site-content'>
         <div className=" Site-content accordion md-accordion mt-5" id="accordionEx" role="tablist" aria-multiselectable="true">
           <div className="Site-content card">
@@ -54,11 +53,16 @@ const ParentResources = (props) => {
 
             <div id="collapseTwo2" className="collapse" role="tabpanel" aria-labelledby="headingTwo2"
               data-parent="#accordionEx">
+              {
+                this.state.staff.map(item =>
+                  <div id={item.id} name={item.name} image={item.image_url} bio={item.bio} </div>
+            )
+          }
               <div className="card-body">
-                {/* {props.tuition.image1} */}
+                {props.tuition[0].image_url}
               </div>
               <div className="card-body">
-                {/* {props.tuition.image2} */}
+                {props.tuition[1].image_url}
               </div>
             </div>
           </div>
