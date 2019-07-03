@@ -37,11 +37,6 @@ class StaffCard extends Component {
   render() {
     return (
       < div >
-        <MDBContainer>
-
-        </MDBContainer>
-
-
         <MDBContainer style={{ width: "18rem" }} className="" >
           <MDBRow>
             <MDBCol md="12">
@@ -51,15 +46,15 @@ class StaffCard extends Component {
                     <MDBCardBody className="">
                       <MDBCardImage className="img-fluid staffImage" src={`${this.props.image}`} waves />
                       <MDBCardTitle className="h5-responsive staffName">{this.props.name}</MDBCardTitle>
-                        <div className="bioBtn">
-                          <button className="bio" onClick={this.toggle}>Bio</button>
-                        </div>
-                        <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
-                          <MDBModalHeader toggle={this.toggle}>{this.props.name}</MDBModalHeader>
-                          <MDBModalBody>
-                            {this.props.bio}
-                          </MDBModalBody>
-                        </MDBModal>
+                      <div className="bioBtn">
+                        <button className="bio" onClick={this.toggle}>Bio</button>
+                      </div>
+                      <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
+                        <MDBModalHeader toggle={this.toggle}>{this.props.name}</MDBModalHeader>
+                        <MDBModalBody>
+                          {this.props.bio}
+                        </MDBModalBody>
+                      </MDBModal>
                     </MDBCardBody>
                   </p>
                 </MDBTabPane>

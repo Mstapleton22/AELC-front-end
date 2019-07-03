@@ -63,7 +63,7 @@ without regard to faith, culture or ethnicity.</p>
 and nurturing environment that promotes learning and enhances the child's well-being.</p>
             <div className="col-lg-2"></div>
             <div className="col-lg-2"></div>
-            <p className="col-lg-8 alight-items-center mobile">
+            <p className="col-lg-8 alight-items-center mobile mobile3">
               Believing that a balance of good nutrition, adequate rest, and ample opportunity for exploration and learning in developmentally appropriate ways is critical to the child's well-being.</p>
             <div className="col-lg-2"></div>
           </div>
@@ -92,20 +92,28 @@ and nurturing environment that promotes learning and enhances the child's well-b
             <div className="row missionRow no-gutters">
               <div className="col-lg-1 no-gutters"></div>
               <div className="col-lg-4 mission no-gutters ">
-                <div className="missionText no-gutters">
-                  Augustana Early Learning Center serves children and their families through high quality, affordable care and education. We welcome children from diverse cultures, faith traditions, socioeconomic backgrounds, and national origins. We provide learning experiences that foster developmentally-appropriate growth to teach children to love themselves and others.
-                </div>
+                <MDBView hover className="">
+                  <div className="missionText no-gutters">
+                    <MDBMask className="flex-center hoverFont" overlay="green-strong">
+                      <p className="white-text h1-responsive">Mission</p>
+                    </MDBMask>
+                    Augustana Early Learning Center serves children and their families through high quality, affordable care and education. We welcome children from diverse cultures, faith traditions, socioeconomic backgrounds, and national origins. We provide learning experiences that foster developmentally-appropriate growth to teach children to love themselves and others.
+                  </div>
+                </MDBView>
               </div>
-
               <div className="col-lg-1"></div>
               <div className="col-lg-4 vision">
-                <div className="visionText">
-                  Augustana Early Learning Center is a community outreach ministry of Augustana Lutheran Church with a vision to love children and inspire them to become engaged, emotionally-intelligent, and curious learners.
-              </div>
+                <MDBView hover className="">
+                  <div className="visionText">
+                    <MDBMask className="flex-center hoverVision hoverFont" overlay="green-strong">
+                      <p className="white-text  h1-responsive">Vision</p>
+                    </MDBMask>
+                    Augustana Early Learning Center is a community outreach ministry of Augustana Lutheran Church with a vision to love children and inspire them to become engaged, emotionally-intelligent, and curious learners.
+                  </div>
+                </MDBView>
               </div>
               <div className="col-lg-1"></div>
             </div>
-
           </div>
         </div>
       </div >

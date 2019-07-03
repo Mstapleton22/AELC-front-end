@@ -70,16 +70,6 @@
   max-width: 70vh;
   max-height: 100vh;
 }
-/* .font {
-  font-size: 1em;
-} */
-
-/* .carouselImage {
-  margin-top: -50px;
-}
-.carouselImage1 {
-  margin-top: -300px;
-} */
 .about {
   /* padding-top: 25px; */
   padding-left: 40px;
@@ -87,14 +77,10 @@
   margin-bottom: -.5rem;
   background-color: #ebf0f3;
   padding: 3%;
-
 }
-
 .aboutMe {
   border-top: 15px #5cc87f solid;
 }
-
-
 .footerRow {
   display:flex;
   flex-direction: row;
@@ -232,11 +218,6 @@ width: 420px; */
   /* margin-right: 15%;
   margin-left: 15%; */
 }
-.accredBox {
-  /* margin-top: 5%;
-  margin-bottom: 1%; */
-
-}
 
 .missionRow{
   display:flex;
@@ -256,28 +237,24 @@ width: 420px; */
 .mission {
   border-left: 10px #5cc87f solid;
   border-bottom: 10px #5cc87f solid;
-  border-spacing: 15px 50px;
+  /* border-spacing: 15px 50px; */
   background-color: white;
-
   /* padding: 5%; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  padding-left: 3%; 
- padding-top: .7%;
+ /* padding-top: .7%; */
 
 }
 .vision {
     border-right: 10px #5cc87ea6 solid;
     border-top: 10px #5cc87ea6 solid;
-  border-spacing: 150px 50px;
+  /* border-spacing: 150px 50px; */
   background-color: white;
-
+  /* padding-bottom: 5%; */
     /*margin: 5%; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
  padding-right: 3%; 
-
 }
-
 .missionText {
   border-spacing: 15px 50px;
   padding: 5%;
@@ -285,6 +262,17 @@ width: 420px; */
 .visionText {
   border-spacing: 15px 50px;
   padding: 5%;
+  margin-bottom: 18.7%;
+}
+.hoverFont {
+  font-size: 2rem;
+  letter-spacing: 8px;
+  font-weight: bold;
+}
+.hoverVision {
+  /* margin-top: -20px; */
+  padding-bottom: 26px;
+
 }
 @keyframes App-logo-spin {
   from {
@@ -295,148 +283,53 @@ width: 420px; */
   }
 }
 
-/* @media only screen and (min-width: 1158px) {
-  .carouselImage {
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-  .carouselImage1 {
-    margin-top: 10px;
-  }
-} */
-
-
-
-/* CSS RESET  ********************************/
-/* html,
-body,
-div,
-button,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-.container,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video,
- {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  font-family: 'Roboto', sans-serif;
+.contact_text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: wrap;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-  {
+.contact_container {
+  position: relative;
+  width: 100%;
+}
+.contact_container:hover .contact_overlay {
+  width: 100%;
+  /* height: 100vh; */
+}
+.contact_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.contact_image {
   display: block;
-  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: auto;
 }
-body {
-  line-height: 1;
-  font-family: 'Roboto', sans-serif;
+.contact_icon {
+  /* margin-left: -2px; */
+  /* padding: 20%; */
+  padding:1%;
+
+  font-size:8em;
 }
-ol,
-ul {
-  list-style: none;
+.contact_row {
+  display: flex;
+  /* flex-flow: row nowrap; */
+  /* justify-content: center; */
 }
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-} */
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -451,15 +344,7 @@ table {
 .mobile {
   text-align: center;
 }
-/* #mission {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 100px;
-} */
-/* .desktop {
-  margin-top: 5%;
-} */
+
 .staffImage{
   border-radius: 170px;
   height: 50%;
@@ -496,6 +381,42 @@ table {
   /* iPads (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   /* Styles */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:60vw;
+    height: 100%;
+    position: relative;
+    margin-top: -108px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .footerRow {
+    padding: 10px;
+  }
+  .about {
+    padding-left: -40px;
+    padding-right: -40px;
+  }
+  .mobile {
+    text-align: center;
+  }
+  .mobile3{
+    padding-bottom: 6%;
+  }
+  
+  .footerCol{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
+  }
   .staffImage{
     border-radius: 170px;
     height: 50%;
@@ -503,6 +424,7 @@ table {
     margin-top: 10%;
     padding: -5%;
   }
+  
   }
  
   /* iPads (landscape) ----------- */
@@ -533,6 +455,40 @@ table {
   **********/
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -65px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .footerRow {
+    padding: 10px;
+  }
+  .about {
+    padding-left: -40px;
+    padding-right: -40px;
+  }
+
+  .mobile3{
+    padding-bottom: 6%;
+  }
+  
+  .footerCol{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
+  }
   }
   
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
@@ -541,14 +497,7 @@ table {
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 1224px) {
   /* Styles */
-  .carouselImage {
-    /* width: 100vw; */
-    /* height: 40%; */
-  }
-  .carouselImage1{
-    /* width: 100vw; */
-    /* height: 40%; */
-  }
+
   .ul{
     padding-inline-start: -40px;
    padding: -40px;  
@@ -558,34 +507,219 @@ table {
   /* Large screens ----------- */
   @media only screen  and (min-width : 1824px) {
   /* Styles */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -65px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .footerRow {
+    padding: 10px;
+  }
+  .about {
+    padding-left: -40px;
+    padding-right: -40px;
+  }
+
+  .mobile3{
+    padding-bottom: 6%;
+  }
+  
+  .footerCol{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
+  }
   }
   
   /* iPhone 4 ----------- */
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -65px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .footerRow {
+    padding: 10px;
+  }
+  .about {
+    padding-left: -40px;
+    padding-right: -40px;
+  }
+
+  .mobile3{
+    padding-bottom: 6%;
+  }
+  
+  .footerCol{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
+  }
   }
   
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -65px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .footerRow {
+    padding: 10px;
+  }
+  .about {
+    padding-left: -40px;
+    padding-right: -40px;
+  }
+
+  .mobile3{
+    padding-bottom: 6%;
+  }
+  
+  .footerCol{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
+  }
   }
   
   /* iPhone 5 ----------- */
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -65px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .footerRow {
+    padding: 10px;
+  }
+  .about {
+    padding-left: -40px;
+    padding-right: -40px;
+  }
+
+  .mobile3{
+    padding-bottom: 4%;
+  }
+  
+  .footerCol{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
+  }
   }
   
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -55px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .footerRow {
+    padding: 10px;
+  }
+  .about {
+    padding-left: -40px;
+    padding-right: -40px;
+  }
+
+  .mobile3{
+    padding-bottom: 5%;
+  }
+  
+  .footerCol{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
+  }
   }
   
   /* iPhone 6, 7, 8 ----------- */
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  /* .row .staff{
-    padding: -10%;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-  } */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -65px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .mobile3{
+    padding-bottom: 6%;
+  }
   .staffImage{
     border-radius: 170px;
     height: 50%;
@@ -607,11 +741,26 @@ table {
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  /* .row .no-gutters .staff {
-    padding: -10%;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-  } */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -65px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .mobile3{
+    padding-bottom: 6%;
+  }
   .staffImage{
     border-radius: 170px;
     height: 50%;
@@ -634,12 +783,26 @@ table {
   /* iPhone 6+, 7+, 8+ ----------- */
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  /* .row .staff{
-    padding: -10%;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-
-  } */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -65px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .mobile3{
+    padding-bottom: 6%;
+  }
   .staffImage{
     border-radius: 170px;
     height: 50%;
@@ -665,12 +828,26 @@ table {
   
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  /* .row .staff{
-    padding: -10%;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-
-  } */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -75px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .mobile3{
+    padding-bottom:6%;
+  }
   .staffImage{
     border-radius: 170px;
     height: 50%;
@@ -692,11 +869,6 @@ table {
     padding-left: -40px;
     padding-right: -40px;
   }
-  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    /* padding-left: -15px;
-    padding-right: -15px; */
-  }
-  
   }
   
   /* iPhone X ----------- */
@@ -707,6 +879,26 @@ table {
     margin-right: 0px !important;
     margin-left: 0px !important;
   } */
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -65px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .mobile3{
+    padding-bottom: 6%;
+  }
   .staffImage{
     border-radius: 170px;
     height: 50%;
@@ -738,9 +930,24 @@ table {
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
-  /* .title {
-    padding-left: 2%;
-  } */
+
+  .visionText {
+    border-spacing: 15px 50px;
+    padding: 5%;
+    margin-bottom: 0%;
+  }
+  .accredTitle {
+    /* background-color: gold; */
+     /* padding-right: 10%; */
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -65px;
+    z-index: 10;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
   .footerRow {
     padding: 10px;
   }
@@ -748,9 +955,11 @@ table {
     padding-left: -40px;
     padding-right: -40px;
   }
-  /* .no-gutters {
-    padding: 0px;
-  } */
+
+  .mobile3{
+    padding-bottom: 6%;
+  }
+  
   .footerCol{
     /* display: flex;
     flex-direction: row; */

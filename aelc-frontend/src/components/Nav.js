@@ -23,7 +23,7 @@ class NavbarPage extends Component {
   }
 
   render() {
-
+    console.log(this.props.contact)
     return (
       <Router>
         <MDBNavbar className="staticColor nav" expand="md">
