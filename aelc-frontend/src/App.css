@@ -274,6 +274,9 @@ width: 420px; */
   padding-bottom: 26px;
 
 }
+.hoverMission{
+  margin-bottom: -50px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -392,7 +395,25 @@ width: 420px; */
   padding-bottom: 4%;
   padding-top: 4%;
 }
-
+.contact_text {
+  color: white;
+  font-size: 18.3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: wrap;
+}
+.contact_icon {
+  padding:3%;
+  color: #864193;
+  font-size:5em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
   }
   
   /* Smartphones (landscape) ----------- */

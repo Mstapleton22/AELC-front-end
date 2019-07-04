@@ -94,7 +94,7 @@ and nurturing environment that promotes learning and enhances the child's well-b
               <div className="col-lg-4 mission no-gutters ">
                 <MDBView hover className="">
                   <div className="missionText no-gutters">
-                    <MDBMask className="flex-center hoverFont" overlay="green-strong">
+                    <MDBMask className="flex-center hoverMission hoverFont" overlay="green-strong">
                       <p className="white-text h1-responsive">Mission</p>
                     </MDBMask>
                     Augustana Early Learning Center serves children and their families through high quality, affordable care and education. We welcome children from diverse cultures, faith traditions, socioeconomic backgrounds, and national origins. We provide learning experiences that foster developmentally-appropriate growth to teach children to love themselves and others.

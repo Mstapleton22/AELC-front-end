@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
 import ProgramCard from './ProgramCard'
+import ProgramMenuBar from './ProgramMenuBar'
+
 
 class ProgramsPage extends Component {
 
@@ -27,15 +29,28 @@ class ProgramsPage extends Component {
     return (
       this.state.loadedData ?
         <div>
-          <h2 className="h1-responsive font-weight-bold text-center my-5">
+          <h2 className="h1-responsive font-weight-bold text-center ">
             Programs We Offer
           </h2>
-          {
-            this.state.programs.map(item =>
-              <ProgramCard id={item.id} name={item.name} image={item.image_url} body={item.body}
-              />
-            )
-          }
+          <div className="row">
+            <div className="col-lg-4">
+              {
+                this.state.programs.map(item =>
+                  <ProgramMenuBar id={item.id} name={item.name} image={item.image_url} body={item.body}
+                  />
+                )
+              }
+            </div>
+            <div className="col-lg-8">
+
+              {
+                this.state.programs.map(item =>
+                  <ProgramCard id={item.id} name={item.name} image={item.image_url} body={item.body}
+                  />
+                )
+              }
+            </div>
+          </div>
         </div>
         :
         <div>
