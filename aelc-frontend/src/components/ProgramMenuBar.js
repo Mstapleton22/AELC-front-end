@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
 import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBRow } from 'mdbreact';
+import ProgramCard from './ProgramCard'
 
 
-class ProgramCard extends Component {
+class ProgramMenuBar extends Component {
 
   constructor(props) {
     super(props);
@@ -23,22 +24,12 @@ class ProgramCard extends Component {
     console.log(this.props.image_url)
     return (
       < div >
-        <MDBCard className="my-5 pt-5 px-5 pb-5" >
-          <MDBRow>
-            <MDBCol>
-              <MDBCardImage className="col-6 img-fluid image" src={`${this.props.image}`} waves />
-            </MDBCol>
-            <MDBCol>
-              <MDBCardBody>
-                <MDBCardTitle className="font-weight-bold " lg="7">{this.props.name}</MDBCardTitle>
-                <MDBCardText className="font-weight-bold" lg="7">{this.props.body}</MDBCardText>
-              </MDBCardBody>
-            </MDBCol>
-          </MDBRow>
-        </MDBCard>
+        <MDBBtn className="font-weight-bold stickyTitle" lg="7">{this.props.name}</MDBBtn>
       </div >
     )
   }
 }
 
-export default ProgramCard
+export default ProgramMenuBar
+
+// onClick = {() => <ProgramCard />}

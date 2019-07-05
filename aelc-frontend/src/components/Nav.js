@@ -27,7 +27,7 @@ class NavbarPage extends Component {
     // console.log(this.props.contact)
     return (
       <Router>
-        <MDBNavbar className="staticColor nav" expand="md">
+        <MDBNavbar className="staticColor fontRegular nav" expand="md">
           <MDBNavbarBrand>
             <img className="logo" src="Augustana_Logo.png" alt="logo"></img>
           </MDBNavbarBrand>

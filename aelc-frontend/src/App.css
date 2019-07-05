@@ -23,6 +23,12 @@
   color: #61dafb;
 }
 
+.fontRegular {
+  font-family: "proxima-nova" , sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
 .navItems {
   text-decoration: none;
   color: white;
@@ -365,6 +371,15 @@ width: 420px; */
 }
 .site {
   padding-bottom: 4%;
+}
+
+.stickyTitle {
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: start; 
+
 }
 
 /* Smartphones (portrait and landscape) ----------- */

@@ -5,11 +5,12 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "mdbootstrap": "^4.8.2",
-    "mdbreact": "^4.16.0",
+    "mdbreact": "^4.17.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-sticky-box": "^0.8.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,7 +1,11 @@
 import React, { Component } from "react";
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+// import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+// import { MDBSticky, MDBStickyContent, MDBContainer } from "mdbreact";
+
 import ProgramCard from './ProgramCard'
 import ProgramMenuBar from './ProgramMenuBar'
+// import StickyPage from './ProgramsMenu'
+
 
 
 class ProgramsPage extends Component {
@@ -24,6 +28,8 @@ class ProgramsPage extends Component {
       })
   }
 
+
+
   render() {
     console.log(this.state.programs)
     return (
@@ -33,7 +39,7 @@ class ProgramsPage extends Component {
             Programs We Offer
           </h2>
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-4 stickyTitle">
               {
                 this.state.programs.map(item =>
                   <ProgramMenuBar id={item.id} name={item.name} image={item.image_url} body={item.body}
