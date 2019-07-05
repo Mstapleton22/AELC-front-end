@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
 import ProgramCard from './ProgramCard'
 import ProgramMenuBar from './ProgramMenuBar'
+import StickyBox from "react-sticky-box/dist/esnext"
 
 
 class ProgramsPage extends Component {
@@ -28,30 +29,41 @@ class ProgramsPage extends Component {
     console.log(this.state.programs)
     return (
       this.state.loadedData ?
-        <div>
-          <h2 className="h1-responsive font-weight-bold text-center ">
+        <div className="programHeader">
+          <h2 className="h1-responsive font-weight-bold programHeader text-center ">
             Programs We Offer
           </h2>
-          <div className="row">
-            <div className="col-lg-4">
-              {
-                this.state.programs.map(item =>
-                  <ProgramMenuBar id={item.id} name={item.name} image={item.image_url} body={item.body}
-                  />
-                )
-              }
-            </div>
-            <div className="col-lg-8">
+          <div style={{ height: "80vh", position: "relative", overflow: "auto" }}>
+            <div style={{ display: "flex" }}>
+              <div className="row" style={{ height: "100vh" }}>
 
-              {
-                this.state.programs.map(item =>
-                  <ProgramCard id={item.id} name={item.name} image={item.image_url} body={item.body}
-                  />
-                )
-              }
+                <div className="col-lg-3 ">
+
+                  <StickyBox className="stickyBar" style={{ height: "100vh" }}>
+                    {
+                      this.state.programs.map(item =>
+                        <ProgramMenuBar id={item.id} name={item.name} image={item.image_url} body={item.body}
+                        />
+                      )
+                    }
+                  </StickyBox>
+                </div>
+                {/* </div> */}
+
+                <div className="col-lg-9 programCards">
+                  {
+                    this.state.programs.map(item =>
+                      <ProgramCard id={item.id} name={item.name} image={item.image_url} body={item.body}
+                      />
+                    )
+                  }
+                </div>
+              </div>
             </div>
+
           </div>
-        </div>
+        </div >
+        // </div >
         :
         <div>
           Loading...

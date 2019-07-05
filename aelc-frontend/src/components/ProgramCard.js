@@ -23,7 +23,7 @@ class ProgramCard extends Component {
     console.log(this.props.image_url)
     return (
       < div >
-        <MDBCard className="my-5 pt-5 px-5 pb-5" >
+        <MDBCard className="my-3 pt-5 px-5 pb-5" >
           <MDBRow>
             <MDBCol>
               <MDBCardImage className="col-6 img-fluid image" src={`${this.props.image}`} waves />
