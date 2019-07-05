@@ -33,13 +33,12 @@ class ProgramsPage extends Component {
           <h2 className="h1-responsive font-weight-bold programHeader text-center ">
             Programs We Offer
           </h2>
-          <div style={{ height: "80vh", position: "relative", overflow: "auto" }}>
-            <div style={{ display: "flex" }}>
-              <div className="row" style={{ height: "100vh" }}>
+          <div style={{ height: "60vh", position: "relative", overflow: "auto" }}>
+            <div style={{ position: "absolute"}}>
+              <div className="row">
 
-                <div className="col-lg-3 ">
-
-                  <StickyBox className="stickyBar" style={{ height: "100vh" }}>
+                <div className="col-lg-3">
+                  <StickyBox className="stickyBar" style={{ height: "10vh" }}>
                     {
                       this.state.programs.map(item =>
                         <ProgramMenuBar id={item.id} name={item.name} image={item.image_url} body={item.body}

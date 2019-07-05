@@ -23,7 +23,7 @@ class ProgramCard extends Component {
     console.log(this.props.image_url)
     return (
       < div >
-        <MDBBtn className="font-weight-bold " lg="7">{this.props.name}</MDBBtn>
+        <MDBBtn className="font-weight-bold stickyBtn" color="#4ca468" lg="7">{this.props.name}</MDBBtn>
       </div >
     )
   }

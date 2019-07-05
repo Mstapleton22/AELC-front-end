@@ -67,7 +67,7 @@
 }
 
 .image {
-  max-width: 70vh;
+  max-width: 60vh;
   max-height: 100vh;
 }
 .about {
@@ -368,7 +368,10 @@ width: 420px; */
 }
 
 .stickyBar {
-  /* padding-top: 15%; */
+  /* padding-top: 40%;
+   */
+   position: sticky;
+
   background-color:  #ebf0f3;
 }
 .programHeader {
@@ -379,6 +382,12 @@ width: 420px; */
 .programCards {
   background-color:  white;
 
+}
+
+.stickyBtn{
+  padding: 4%;
+  background-color: #864193;
+  color: white;
 }
 
 
