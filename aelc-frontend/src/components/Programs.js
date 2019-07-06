@@ -30,15 +30,15 @@ class ProgramsPage extends Component {
     return (
       this.state.loadedData ?
         <div className="programHeader">
-          <h2 className="h1-responsive font-weight-bold programHeader text-center ">
+          <h2 className="h1-responsive font-weight-bold p-3 programHeader text-center ">
             Programs We Offer
           </h2>
-          <div style={{ height: "60vh", position: "relative", overflow: "auto" }}>
-            <div style={{ position: "absolute"}}>
-              <div className="row">
+          <div style={{ height: "80vh", position: "relative", overflow: "auto" }}>
+            <div style={{ position: "absolute" }}>
+              <div className="row no-gutters">
 
                 <div className="col-lg-3">
-                  <StickyBox className="stickyBar" style={{ height: "10vh" }}>
+                  <StickyBox className="stickyBar mobileStickyBar" style={{ height: "50vh" }}>
                     {
                       this.state.programs.map(item =>
                         <ProgramMenuBar id={item.id} name={item.name} image={item.image_url} body={item.body}

@@ -365,6 +365,8 @@ width: 420px; */
 }
 .site {
   padding-bottom: 4%;
+  padding-top: .5%;
+  background-color: #ebf0f3;
 }
 
 .stickyBar {
@@ -458,6 +460,9 @@ width: 420px; */
     padding-bottom: 4%;
     padding-top: 4%;
   } */
+  /* .mobileStickyBar {
+    display: none;
+  } */
   }
 
   /* Smartphones (portrait) ----------- */
@@ -478,6 +483,9 @@ width: 420px; */
     padding-bottom: 4%;
     padding-top: 4%;
   }
+  /* .mobileStickyBar {
+    display: none;
+  } */
   }
 
   /* iPads (portrait and landscape) ----------- */
@@ -559,6 +567,10 @@ width: 420px; */
   /* iPads (portrait) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   /* Styles */
+  .mobileStickyBar {
+    display: none;
+  }
+  
   .staffImage{
     border-radius: 170px;
     height: 50%;
@@ -574,12 +586,19 @@ width: 420px; */
     padding-bottom: 4%;
     padding-top: 4%;
   }
+  .image {
+    width: 50vw;
+    height: 100%;
+  }
   }
   /**********
   iPad 3
   **********/
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
+  .mobileStickyBar {
+    display: none;
+  }
   .visionText {
     border-spacing: 15px 50px;
     padding: 5%;
@@ -621,6 +640,10 @@ width: 420px; */
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
+  }
+  .image {
+    width: 40vw;
+    height: 100%;
   }
   }
   
@@ -650,6 +673,7 @@ width: 420px; */
   /* Large screens ----------- */
   @media only screen  and (min-width : 1824px) {
   /* Styles */
+ 
   .visionText {
     border-spacing: 15px 50px;
     padding: 5%;
@@ -692,6 +716,7 @@ width: 420px; */
     padding-bottom: 4%;
     padding-top: 4%;
   } */
+
   }
   
   /* iPhone 4 ----------- */
@@ -743,6 +768,9 @@ width: 420px; */
   
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
+  .mobileStickyBar {
+    display: none;
+  }
   .visionText {
     border-spacing: 15px 50px;
     padding: 5%;
@@ -836,6 +864,10 @@ width: 420px; */
   
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .image {
+    width: 85vw;
+    height: 100%;
+  }
   .visionText {
     border-spacing: 15px 50px;
     padding: 5%;
@@ -931,6 +963,10 @@ width: 420px; */
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .image {
+    width: 60vw;
+    height: 100%;
+  }
   .visionText {
     border-spacing: 15px 50px;
     padding: 5%;
@@ -981,6 +1017,7 @@ width: 420px; */
   /* iPhone 6+, 7+, 8+ ----------- */
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  
   .visionText {
     border-spacing: 15px 50px;
     padding: 5%;
@@ -1129,7 +1166,10 @@ width: 420px; */
   .title {
     padding-left: 12%;
   }
-
+  .image {
+    width: 40vw;
+    height: 100%;
+  }
   .ul{
     padding-inline-start: -40px;
    padding: -40px;  
@@ -1152,7 +1192,10 @@ width: 420px; */
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
-
+  .image {
+    width: 90vw;
+    height: 100%;
+  }
   .visionText {
     border-spacing: 15px 50px;
     padding: 5%;
