@@ -30,30 +30,26 @@ class NavbarPage extends Component {
     // console.log(this.props.contact)
     return (
       <Router>
-
-        {/* <StickyBox className="stickyBar mobileStickyBar" > */}
-        <MDBNavbar className="staticColor nav" expand="md">
-
-        <MDBNavbar className="staticColor fontRegular nav" expand="md">
-
-          <MDBNavbarBrand>
-            <img className="logo" src="Augustana_Logo.png" alt="logo"></img>
-          </MDBNavbarBrand>
-          <MDBNavbarToggler onClick={this.toggleCollapse} right>
-            <i class="far fa-caret-square-down" />
-          </MDBNavbarToggler>
-          <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} left navbar>
-            <MDBNavbarNav className="nav">
-              <Link className="navItems" to="/">Home</Link>
-              <Link className="navItems" to="/ParentResources">Resources</Link>
-              <Link className="navItems" to="/ProgramsPage">Programs</Link>
-              <Link className="navItems" to="/StaffPage">Staff</Link>
-              <Link className="navItems" to="/Contact">Contact</Link>
-              <Link className="navItems" to="/Calendar">Calendar</Link>
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBNavbar >
-        {/* </StickyBox> */}
+        <StickyBox className="stickyBar mobileStickyBar" >
+          <MDBNavbar className="staticColor nav" expand="md">
+            <MDBNavbarBrand>
+              <img className="logo" src="Augustana_Logo.png" alt="logo"></img>
+            </MDBNavbarBrand>
+            <MDBNavbarToggler onClick={this.toggleCollapse} right>
+              <i class="far fa-caret-square-down" />
+            </MDBNavbarToggler>
+            <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} left navbar>
+              <MDBNavbarNav className="nav">
+                <Link className="navItems" to="/">Home</Link>
+                <Link className="navItems" to="/ParentResources">Resources</Link>
+                <Link className="navItems" to="/ProgramsPage">Programs</Link>
+                <Link className="navItems" to="/StaffPage">Staff</Link>
+                <Link className="navItems" to="/Contact">Contact</Link>
+                <Link className="navItems" to="/Calendar">Calendar</Link>
+              </MDBNavbarNav>
+            </MDBCollapse>
+          </MDBNavbar >
+        </StickyBox>
         <Switch>
           <Route path="/ProgramsPage" component={ProgramsPage} />
 
