@@ -47,7 +47,6 @@ class ProgramsPage extends Component {
 
     return (
       this.state.loadedData ?
-
         <div className="programHeader" >
           <div style={{ height: "80vh", position: "relative" }}>
             <div style={{ position: "absolute" }}>
