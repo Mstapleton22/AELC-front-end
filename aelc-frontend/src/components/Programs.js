@@ -53,7 +53,7 @@ class ProgramsPage extends Component {
             <div style={{ position: "absolute" }}>
               <StickyBox className="stickyBar mobileStickyBar">
                 <div className="h1-responsive font-weight-bold p-2 text-center programsOffered">
-                  Programs We Offer
+                  Programs We Offerrr
           </div>
               </StickyBox>
               <div className="row no-gutters">
