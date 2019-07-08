@@ -44,11 +44,6 @@ class ProgramsPage extends Component {
     return (
       this.state.loadedData ?
         <div className="programHeader" >
-          {/* <StickyBox className="stickyBar mobileStickyBar">
-            <div className="h1-responsive font-weight-bold p-3 text-center programsOffered">
-              Programs We Offer
-          </div>
-          </StickyBox> */}
           <div style={{ height: "80vh", position: "relative" }}>
             <div style={{ position: "absolute" }}>
               <StickyBox className="stickyBar mobileStickyBar">
