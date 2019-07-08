@@ -370,20 +370,24 @@ width: 420px; */
 }
 
 .stickyBar {
-  /* padding-top: 40%;
-   */
-   position: sticky;
-
+  /* padding-top: 4%; */
+  
+  position: relative;
+  z-index: 1001;
   background-color:  #ebf0f3;
 }
 .programHeader {
   background-color:  #ebf0f3;
-
+}
+.programsOffered {
+  background-color:  #ebf0f3;
 }
 
 .programCards {
-  background-color:  white;
-
+  background-color:  #ebf0f3;
+  /* padding-top: 3%; */
+  /* position: absolute; */
+  /* z-index: -1; */
 }
 
 .stickyBtn{
@@ -391,17 +395,21 @@ width: 420px; */
   background-color: #864193;
   color: white;
 }
-
+.stickyBtnWrapper {
+  margin-top: 50px;
+}
+/* .footer {
+  position: relative;
+} */
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   /* Styles */
 .smartphone {
-  font-size: .70em
+  display:none;
 }
 .smartphone1 {
-  font-size: .70em;
-  padding-bottom: -50%;
+ display:none;
 }
 .mobile {
   text-align: center;

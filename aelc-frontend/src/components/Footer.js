@@ -4,7 +4,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 class FooterPage extends Component {
   render() {
     return (
-      <div className="footer" style={{ position: 'relative', bottom: '0', width: '100%' }}>
+      <div className="footer">
         <MDBFooter className="font-small staticColor pt-4" >
           <MDBRow className="footerRow no-gutters">
             <MDBCol md="5" className="footerCol">

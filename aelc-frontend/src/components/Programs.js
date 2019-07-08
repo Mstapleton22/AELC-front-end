@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
 import ProgramCard from './ProgramCard'
+import ScrollableAnchor, { configureAnchors, goToTop, goToAnchor, removeHash } from 'react-scrollable-anchor'
 import ProgramMenuBar from './ProgramMenuBar'
 import StickyBox from "react-sticky-box/dist/esnext"
-
+import FooterPage from "./Footer.js"
 
 class ProgramsPage extends Component {
 
@@ -11,7 +12,8 @@ class ProgramsPage extends Component {
     super(props);
     this.state = {
       programs: [],
-      loadedData: false
+      loadedData: false,
+      contact: {}
     }
 
     fetch("http://localhost:5000/programs")
@@ -23,43 +25,60 @@ class ProgramsPage extends Component {
           loadedData: true
         })
       })
+
+    fetch("http://localhost:5000/contact")
+      .then(data => data.json())
+      .then(JSONdata => {
+        this.setState({
+          contact: JSONdata,
+          loadedData: true
+        })
+      })
+  }
+  componentWillMount() {
+    configureAnchors({ offset: -105 })
   }
 
   render() {
-    console.log(this.state.programs)
+
     return (
       this.state.loadedData ?
-        <div className="programHeader">
-          <h2 className="h1-responsive font-weight-bold p-3 programHeader text-center ">
-            Programs We Offer
-          </h2>
-          <div style={{ height: "80vh", position: "relative", overflow: "auto" }}>
+        <div className="programHeader" >
+          {/* <StickyBox className="stickyBar mobileStickyBar">
+            <div className="h1-responsive font-weight-bold p-3 text-center programsOffered">
+              Programs We Offer
+          </div>
+          </StickyBox> */}
+          <div style={{ height: "80vh", position: "relative" }}>
             <div style={{ position: "absolute" }}>
+              <StickyBox className="stickyBar mobileStickyBar">
+                <div className="h1-responsive font-weight-bold p-2 text-center programsOffered">
+                  Programs We Offer
+          </div>
+              </StickyBox>
               <div className="row no-gutters">
 
-                <div className="col-lg-3">
-                  <StickyBox className="stickyBar mobileStickyBar" style={{ height: "50vh" }}>
+                <div className="col-lg-2">
+                  <StickyBox className="stickyBar stickyBtnWrapper mobileStickyBar" style={{ height: "100vh" }}>
                     {
                       this.state.programs.map(item =>
-                        <ProgramMenuBar id={item.id} name={item.name} image={item.image_url} body={item.body}
-                        />
+                        <ProgramMenuBar id={item.id} name={item.name} image={item.image_url} body={item.body} />
                       )
                     }
                   </StickyBox>
                 </div>
-                {/* </div> */}
 
-                <div className="col-lg-9 programCards">
+                <div className="col-lg-10 programCards">
                   {
                     this.state.programs.map(item =>
-                      <ProgramCard id={item.id} name={item.name} image={item.image_url} body={item.body}
+                      <ProgramCard key={item.id}
+                        style={{ height: '350px' }} id={item.id} name={item.name} image={item.image_url} body={item.body}
                       />
                     )
                   }
                 </div>
               </div>
             </div>
-
           </div>
         </div >
         // </div >

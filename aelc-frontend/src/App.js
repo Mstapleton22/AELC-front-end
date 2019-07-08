@@ -3,10 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import NavbarPage from './components/Nav';
-import HomePage from './components/Home';
 import FooterPage from './components/Footer'
-import ProgramsPage from './components/Programs'
-
+import { withRouter } from 'react-router-dom';
 class App extends Component {
   constructor(props) {
     super(props)
@@ -52,8 +50,18 @@ class App extends Component {
 
   }
   render() {
-    console.log("tuition", this.state.tuition)
-
+    // if (this.props.history.location.pathname === "/ProgramsPage/") {
+    //   return (
+    //     <div>
+    //       <NavbarPage
+    //         parentHandbook={this.state.parentHandbook}
+    //         tuition={this.state.tuition}
+    //         accreditation={this.state.accreditation}
+    //         contact={this.state.contact}
+    //       />
+    //     </div >
+    //   )
+    // } else {
     return (
       <div>
         <NavbarPage
@@ -62,11 +70,12 @@ class App extends Component {
           accreditation={this.state.accreditation}
           contact={this.state.contact}
         />
-        <FooterPage
+        {/* <FooterPage
           contact={this.state.contact}
-        />
+        /> */}
       </div>
     )
+    // }
   }
 }
 
