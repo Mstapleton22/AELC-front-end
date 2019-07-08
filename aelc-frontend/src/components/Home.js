@@ -54,16 +54,16 @@ class HomePage extends Component {
           <h1 className="row about no-gutters justify-content-center">About Us</h1>
           <div className="about no-gutters row">
             <div className="col-lg-2"></div>
-            <p className="col-lg-8 alight-items-center mobile">The Augustana Day Care Center opened its doors on May 1, 1971, fulfilling a long held dream of the congregation's Social Ministry Committee. Since its inception the Center was welcomed children
+            <p className="col-lg-8 fontRegular alight-items-center mobile">The Augustana Day Care Center opened its doors on May 1, 1971, fulfilling a long held dream of the congregation's Social Ministry Committee. Since its inception the Center was welcomed children
 without regard to faith, culture or ethnicity.</p>
             <div className="col-lg-2"></div>
             <div className="col-lg-2"></div>
-            <p className="col-lg-8 alight-items-center mobile">Seen as a congregational ministry to the broader community the Center has always had some
+            <p className="col-lg-8 fontRegular alight-items-center mobile">Seen as a congregational ministry to the broader community the Center has always had some
       spaces available to lower income families, providing assistance for those in need. The goal of the Center has been to provide care for children in a clean, safe,
 and nurturing environment that promotes learning and enhances the child's well-being.</p>
             <div className="col-lg-2"></div>
             <div className="col-lg-2"></div>
-            <p className="col-lg-8 alight-items-center mobile mobile3">
+            <p className="col-lg-8 fontRegular alight-items-center mobile mobile3">
               Believing that a balance of good nutrition, adequate rest, and ample opportunity for exploration and learning in developmentally appropriate ways is critical to the child's well-being.</p>
             <div className="col-lg-2"></div>
           </div>
@@ -93,7 +93,7 @@ and nurturing environment that promotes learning and enhances the child's well-b
               <div className="col-lg-1 no-gutters"></div>
               <div className="col-lg-4 mission no-gutters ">
                 <MDBView hover className="">
-                  <div className="missionText no-gutters">
+                  <div className="missionText fontRegular no-gutters">
                     <MDBMask className="flex-center hoverMission hoverFont" overlay="green-strong">
                       <p className="white-text h1-responsive">Mission</p>
                     </MDBMask>
@@ -104,7 +104,7 @@ and nurturing environment that promotes learning and enhances the child's well-b
               <div className="col-lg-1"></div>
               <div className="col-lg-4 vision">
                 <MDBView hover className="">
-                  <div className="visionText">
+                  <div className="visionText fontRegular">
                     <MDBMask className="flex-center hoverVision hoverFont" overlay="green-strong">
                       <p className="white-text  h1-responsive">Vision</p>
                     </MDBMask>

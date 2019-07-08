@@ -1,3 +1,4 @@
+
 import React, { Component, createRef } from "react";
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
 import ProgramCard from './ProgramCard'
@@ -5,6 +6,7 @@ import ScrollableAnchor, { configureAnchors, goToTop, goToAnchor, removeHash } f
 import ProgramMenuBar from './ProgramMenuBar'
 import StickyBox from "react-sticky-box/dist/esnext"
 import FooterPage from "./Footer.js"
+
 
 class ProgramsPage extends Component {
 
@@ -39,10 +41,13 @@ class ProgramsPage extends Component {
     configureAnchors({ offset: -105 })
   }
 
+
+
   render() {
 
     return (
       this.state.loadedData ?
+
         <div className="programHeader" >
           <div style={{ height: "80vh", position: "relative" }}>
             <div style={{ position: "absolute" }}>

@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
 
 
-
-class ProgramCard extends Component {
+class ProgramMenuBar extends Component {
 
   constructor(props) {
     super(props);
@@ -22,4 +21,6 @@ class ProgramCard extends Component {
   }
 }
 
-export default ProgramCard
+export default ProgramMenuBar
+
+// onClick = {() => <ProgramCard />}
