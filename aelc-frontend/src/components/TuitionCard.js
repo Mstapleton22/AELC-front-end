@@ -19,7 +19,7 @@ class TuitionCard extends Component {
   // }
 
   render() {
-    console.log(this.props.image_url)
+    // console.log(this.props.image_url)
     return (
       < div >
         <div className="row tuition_row no-gutters">

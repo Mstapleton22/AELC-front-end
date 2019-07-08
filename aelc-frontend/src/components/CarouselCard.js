@@ -21,7 +21,7 @@ const CarouselCard = (props) => {
                 alt={`${props.imageName}`}
                 alt="slide"
               />
-              {/* <MDBMask overlay="black-slight" /> */}
+              <MDBMask overlay="grey-light" />
             </MDBView>
             <MDBCarouselCaption>
               <div className="h3-responsive smartphone no-gutters font-weight-bold">{props.quote}</div>
