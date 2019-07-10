@@ -51,6 +51,7 @@ class HomePage extends Component {
             <CarouselCard id={item.id} image={item.image_url} imageName={item.image_name} quote={item.quote} quoter={item.quoter} />)}
         </div>
         <div className="aboutMe no-gutters">
+          <div className="arrow-down"></div>
           <h1 className="row about no-gutters justify-content-center">About Us</h1>
           <div className="about no-gutters row">
             <div className="col-lg-2"></div>
