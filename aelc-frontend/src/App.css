@@ -90,13 +90,23 @@ font-style: normal;
   padding: 3%;
 }
 .aboutMe {
-  border-top: 15px #5cc87f solid;
+  border-top: 20px #5cc87f solid;
+}
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  margin-left: 48%;
+  margin-top: -10px;
+  position: absolute;
+  z-index: 100;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-top: 35px solid #5cc87f;
 }
 .footerRow {
   display:flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
 .fa-caret-square-down {
@@ -298,6 +308,9 @@ font-style: normal;
 .hoverMission{
   margin-bottom: -50px;
 }
+.addressHover:hover {
+  color: #5cc87f;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -445,6 +458,24 @@ font-style: normal;
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   /* Styles */
+  .logo {
+    width:35vw;
+    height: 100%;
+  }
+  .aboutMe {
+    border-top: 15px #5cc87f solid;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 43%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #5cc87f;
+  }
 .smartphone {
   display:none;
 }

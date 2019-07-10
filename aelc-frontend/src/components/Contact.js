@@ -35,7 +35,7 @@ class Contact extends Component {
               <div className="contact_container address">
                 <i class="contact_image  contact_icon fas fa-map-marked-alt"></i>
                 <div className="contact_overlay">
-                  <h3 className="contact_text">{this.state.contact[0].address}</h3>
+                  <a href="https://goo.gl/maps/cFs2EqNe1b1iPBkf8" target="_blank" className="h3-responsive addressHover contact_text">{this.state.contact[0].address}</a>
                 </div>
               </div>
               <div className="contact_container phone">

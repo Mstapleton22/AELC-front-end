@@ -63,14 +63,6 @@ class ParentResources extends Component {
                     )
                   }
                 </div>
-                {/* name={item.name}  */}
-                {/* image_name={item.image_name} */}
-                {/* <div className="card-body"> */}
-                {/* {props.tuition[0].image_url} */}
-                {/* </div> */}
-                {/* <div className="card-body"> */}
-                {/* {props.tuition[1].image_url} */}
-                {/* </div> */}
               </div>
               <div className="card mt-5 mb-5 ">
                 <div className="card-header" role="tab" id="headingThree3">
