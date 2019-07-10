@@ -50,9 +50,10 @@ class ProgramsPage extends Component {
         <div className="programHeader" >
           <div style={{ height: "80vh", position: "relative" }}>
             <div style={{ position: "absolute" }}>
+              {/* <div className="col-lg-2"></div> */}
               <StickyBox className="stickyBar mobileStickyBar">
-                <div className="h1-responsive font-weight-bold p-2 text-center programsOffered">
-                  Programs We Offerrr
+                <div className="h1-responsive font-weight-bold p-2 programsOffered">
+                  Programs We Offer
           </div>
               </StickyBox>
               <div className="row no-gutters">

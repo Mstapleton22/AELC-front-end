@@ -50,18 +50,6 @@ class App extends Component {
 
   }
   render() {
-    // if (this.props.history.location.pathname === "/ProgramsPage/") {
-    //   return (
-    //     <div>
-    //       <NavbarPage
-    //         parentHandbook={this.state.parentHandbook}
-    //         tuition={this.state.tuition}
-    //         accreditation={this.state.accreditation}
-    //         contact={this.state.contact}
-    //       />
-    //     </div >
-    //   )
-    // } else {
     return (
       <div>
         <NavbarPage
@@ -75,7 +63,6 @@ class App extends Component {
         /> */}
       </div>
     )
-    // }
   }
 }
 

@@ -13,20 +13,17 @@ class StaffPage extends Component {
     fetch("http://localhost:5000/staff")
       .then(data => data.json())
       .then(JSONdata => {
-        // console.log(JSONdata)
         this.setState({
           staff: JSONdata
         })
-        // console.log('staff', this.state.staff)
 
-      })
+  })
 
   }
   render() {
-    // console.log(this.state.staff.image_url)
     return (
       <div>
-        <h2 className="h1-responsive font-weight-bold text-center my-3">
+        <h2 className="h1-responsive font-weight-bold no-gutters text-center my-3">
           Meet the Staff
     </h2>
         <div className="row no-gutters staff">

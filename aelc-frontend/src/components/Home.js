@@ -69,7 +69,7 @@ and nurturing environment that promotes learning and enhances the child's well-b
           </div>
           <div className="accredAll no-gutters">
             <div className="row accredTitleRow no-gutters">
-              <img className="accredTitle no-gutters" src="accreditation.png" alt="logo"></img>
+              <img className="accredTitle no-gutters" src="recognitions.png" alt="logo"></img>
             </div>
             <div className="row accredRow no-gutters">
               {this.state.accreditation.map(item =>
