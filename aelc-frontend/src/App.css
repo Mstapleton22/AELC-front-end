@@ -107,7 +107,6 @@ font-style: normal;
   display:flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
 .fa-caret-square-down {
@@ -459,6 +458,10 @@ font-style: normal;
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   /* Styles */
+  .logo {
+    width:35vw;
+    height: 100%;
+  }
   .aboutMe {
     border-top: 15px #5cc87f solid;
   }
