@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+ 
+}
+* {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 200;
+font-style: normal;
 }
 
 .App-logo {
@@ -24,12 +30,13 @@
 }
 
 .fontRegular {
-  font-family: "proxima-nova" , sans-serif;
+font-family: 'Heebo', sans-serif;
 font-weight: 400;
 font-style: normal;
 }
 
 .navItems {
+  /* font-family: 'Heebo', sans-serif; */
   text-decoration: none;
   color: white;
   margin-right: 1%;
@@ -38,15 +45,8 @@ font-style: normal;
   text-decoration: none;
   color: white;
   margin-right: 1%;
-  /* margin-left:-100px; */
 }
-/* .nav {
-  display: flex;
-  justify-content: space-between;
-  margin-left:-50px;
-} */
 .container {
-  /* background-color: #5e2b67; */
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -64,17 +64,22 @@ font-style: normal;
 }
 .smartphone1 {
   font-size: 1.75em;
-  padding-bottom: 25%;
+  padding-bottom: 5%;
   /* padding-top: 40%; */
 }
 
 .desktop {
   margin-top: -5%;
 }
-
+.carouselImage {
+  /* margin-top: -150px; */
+  /* max-width: 60vh; */
+  max-height: 92vh;
+}
 .image {
   max-width: 60vh;
   max-height: 100vh;
+  margin-right: -150px;
 }
 .about {
   /* padding-top: 25px; */
@@ -130,17 +135,24 @@ font-style: normal;
   display: flex;
   flex-direction: row; 
   justify-content: space-around; 
+  
   /* margin-left:100px; */
 }
 
 .bio {
- 
-  margin: 7px;
-  border-radius: 10%;
-  width: 60px;
-  height: 30px;
+  /* margin: 7px; */
+  padding: 8%;
+  /* border-radius: 10%; */
+  /* width: 60px;
+  height: 30px; */
+  margin-top: -29%;
+  margin-left: 23%;
+  position: absolute;
+  z-index: 1000;
   background-color: #5e2b67;
   color: white;
+  font-size: 1.5em;
+  border-radius: 50%;
 }
 .bio:hover {
   background-color:#ae76b8;
@@ -150,21 +162,44 @@ font-style: normal;
   display: flex;
   flex-direction: row;
   margin-top: 5px;
-  justify-content: center;
+  padding: 0px -15px;
+  justify-content: left;
+  color: #5e2b67
 }
+
+.programText {
+  color: black;
+  font-size: 1.2em;
+}
+
 .card-body {
   padding: 0;
+  display: flex;
+  padding: 0px -15px;
+  flex-direction: column;
+  margin-top: 5px;
+  justify-content: left;
+  color: black;
 }
 .staff {
   display:flex;
   justify-content: center;
+  /* padding: 15px; */
+  /* margin: 0px 20px; */
+}
+.staffName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* padding-right: 100px; */
+  font-size: 1.7em;
 }
 .staffImage{
   border-radius: 170px;
-  height: 50%;
+  /* height: 50%; */
   width: 100%;
   margin-top: 10%;
-  padding: 5%;
+  padding: 7%;
 }
 .accred_1 {
   margin-top: 10%;
@@ -172,15 +207,12 @@ font-style: normal;
   height: 100%;
   width: 25vw;
 }
-/* height: 150px;
-width: 420px; */
 .accred_2 {
   margin-top: 9%;
   padding: 3%;
   height: 100%;
   width: 23vw;
 }
-
 .accred_3 {
   padding: 5%;
   height: 90%;
@@ -188,43 +220,26 @@ width: 420px; */
 } 
 .accredAll {
   background-color:#ae76b85a;
-  /* position: relative;
-  z-index: 10; */
   padding: 2%;
 }
 .accredRow {
-  /* background-color:#ae76b856; */
   display:flex;
   flex-direction: row;
   justify-content: space-around;
-  /* margin-right: 15%;
-  margin-left: 15%; */
   position: relative;
   z-index: 10;
-  /* margin-bottom: 10%; */
-  /* box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-
 }
 .accredTitleRow {
   display:flex;
   flex-direction: row;
   justify-content: center;
-  /* margin-top: 2%; */
 }
-
-.accredTitle {
-  /* background-color: gold; */
-  /* padding-right: 10%;
-  padding-left: 10%; */  
-  width:40vw;
+.accredTitle { 
+  width:50vw;
   height: 100%;
   position: relative;
-  /* margin-bottom: -75px; */
   z-index: 10;
-  /* margin-right: 15%;
-  margin-left: 15%; */
 }
-
 .missionRow{
   display:flex;
   flex-direction: row;
@@ -335,6 +350,10 @@ width: 420px; */
   flex-flow: column nowrap;
   align-items: center;
 }
+.no-gutters {
+  padding-left: -15px;
+  padding-right: -15px;
+}
 
 .clock {
   /* background-color: #ae76b85a; */
@@ -387,6 +406,10 @@ width: 420px; */
 }
 .programsOffered {
   background-color:  #ebf0f3;
+  margin-left: 16%;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
 }
 
 .programCards {
@@ -395,14 +418,16 @@ width: 420px; */
   /* position: absolute; */
   /* z-index: -1; */
 }
-
+.programCardColumn {
+  padding:0px -20px;
+}
 .stickyBtn{
   padding: 4%;
   background-color: #864193;
   color: white;
 }
 .stickyBtnWrapper {
-  margin-top: 50px;
+  padding-top: 27%;
 }
 /* .footer {
   position: relative;
@@ -463,6 +488,26 @@ width: 420px; */
   flex-flow: column nowrap;
   align-items: center;
 }
+.accred_1 {
+  margin-top: 10%;
+  padding: 2%;
+  height: 100%;
+  width: 25vw;
+}
+/* height: 150px;
+width: 420px; */
+.accred_2 {
+  margin-top: 9%;
+  padding: 3%;
+  height: 100%;
+  width: 15vw;
+}
+
+.accred_3 {
+  padding: 5%;
+  height: 90%;
+  width: 90%;
+} 
   }
   
   /* Smartphones (landscape) ----------- */
@@ -969,6 +1014,7 @@ width: 420px; */
   }
   .navbar .nav .fa-caret-square-down {
     padding: -20px;
+    font-family: 'Heebo', sans-serif;
   }
   .ul{
     padding-inline-start: -40px;
@@ -1224,15 +1270,36 @@ width: 420px; */
     padding: 5%;
     margin-bottom: 0%;
   }
+  .accred_1 {
+    margin-top: 10%;
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+  }
+  /* height: 150px;
+  width: 420px; */
+  .accred_2 {
+    margin-top: 9%;
+    padding: 3%;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .accred_3 {
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+  } 
+
   .accredTitle {
     /* background-color: gold; */
      /* padding-right: 10%; */
-    padding-top: 2%;  
-    width:80vw;
+    /* padding-top: 2%;   */
+    width:100%;
     height: 100%;
     position: relative;
-    margin-top: -65px;
-    z-index: 10;
+    /* margin-top: -65px; */
+    /* z-index: 10; */
     /* margin-right: 15%;
     margin-left: 15%; */
   }

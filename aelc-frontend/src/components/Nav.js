@@ -30,7 +30,7 @@ class NavbarPage extends Component {
     // console.log(this.props.contact)
     return (
       <Router>
-        <StickyBox className="stickyBar mobileStickyBar" >
+        {/* <StickyBox className="stickyBar mobileStickyBar" > */}
           <MDBNavbar className="staticColor nav" expand="md">
             <MDBNavbarBrand>
               <img className="logo" src="Augustana_Logo.png" alt="logo"></img>
@@ -49,7 +49,7 @@ class NavbarPage extends Component {
               </MDBNavbarNav>
             </MDBCollapse>
           </MDBNavbar >
-        </StickyBox>
+        {/* </StickyBox> */}
         <Switch>
           <Route path="/ProgramsPage" component={ProgramsPage} />
 
