@@ -37,18 +37,18 @@ class StaffCard extends Component {
   render() {
     return (
       < div >
-        <MDBContainer style={{ width: "18rem" }} className="" >
-          <MDBRow>
-            <MDBCol md="12">
-              <MDBTabContent activeItem={this.state.items["default"]}>
-                <MDBTabPane className="row justify-content-center" tabId="1">
+        <MDBContainer style={{ width: "18rem" }} className="no-gutters" >
+          <MDBRow className="no-gutters" >
+            <MDBCol className="no-gutters" md="12">
+              {/* <MDBTabContent className="no-gutters" activeItem={this.state.items["default"]}>
+                <MDBTabPane className="row justify-content-center" tabId="1"> */}
                   <p>
-                    <MDBCardBody className="">
-                      <MDBCardImage className="img-fluid staffImage" src={`${this.props.image}`} waves />
-                      <MDBCardTitle className="h5-responsive staffName">{this.props.name}</MDBCardTitle>
-                      <div className="bioBtn">
-                        <button className="bio" onClick={this.toggle}>Bio</button>
+                    <MDBCardBody className="no-gutters">
+                      <MDBCardImage className="img-fluid no-gutters staffImage" src={`${this.props.image}`} waves />
+                      <div className="bioBtn no-gutters">
+                        <button className="bio no-gutters" onClick={this.toggle}>Bio</button>
                       </div>
+                      <MDBCardTitle className="h5-responsive staffName">{this.props.name}</MDBCardTitle>
                       <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
                         <MDBModalHeader toggle={this.toggle}>{this.props.name}</MDBModalHeader>
                         <MDBModalBody>
@@ -57,8 +57,8 @@ class StaffCard extends Component {
                       </MDBModal>
                     </MDBCardBody>
                   </p>
-                </MDBTabPane>
-              </MDBTabContent>
+                {/* </MDBTabPane>
+              </MDBTabContent> */}
             </MDBCol>
           </MDBRow>
           {/* </MDBCard> */}

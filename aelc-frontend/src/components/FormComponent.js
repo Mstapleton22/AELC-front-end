@@ -1,76 +1,197 @@
 import React, { Component } from 'react';
 
-const post = async (data) => {
-  const { url } = data;
-  const serverName = 'http://localhost:5000/api/contact'
-  delete data.url;
-  
-  const params = {
-    method: 'POST',
-    body: JSON.stringify(data),
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-    }
-  };
-
-  const response = await fetch(serverName, params);
-
-  if (response.status < 200 && response.status >= 300) {
-    const res = await response.json();
-
-    throw new Error(res);
-  }
-
-  return response.json();
-};
 
 class FormComponent extends Component {
   state = {
     error: null,
     submitted: false,
-    fields: { name: '', email: '', message: ''}
+      inquiry_date: '',
+      tour_date: '',
+      requested_date: '',
+      chosen_classroom: '',
+      circled: [],
+      child_name: '',
+      child_bday: '',
+      parent_one: '',
+      parent_two: '',
+      relationship_one: '',
+      relationship_two: '',
+      address_one: '',
+      address_two: '',
+      email_one: '',
+      email_two: '',
+      phone_one: '',
+      phone_two: ''
   };
-  
-  submitForm(event) {
-    const formElement = event.target;
-    const {name, email, message} = formElement.elements;
-    // build the request payload which includes the url of the end-point we want to hit
-    const payload = {
-      url: 'api/contact',
-      name: name,
-      email: email,
-      message: message,
-    };
+
+  convertDate = (inputDate) => {
+    var splitDate = inputDate.split('-');
+    if(splitDate.count === 0){
+        return '';
+    }
+    var year = splitDate[0];
+    var month = splitDate[1];
+    var day = splitDate[2]; 
     
-    // call the post helper function which returns a promise, which we can use to update the
-    // state of our component once returned
-    post(payload)
-      .then(() => {
-        // on success, clear any errors and set submitted state to true
-        this.setState({error: null, submitted: true});
-      })
-      .catch(error => {
-        // on error, update error state with the error message and set submitted to false
-        this.setState({error: error.message, submitted: false});
-      });
+    console.log(String(month + '\\' + day + '\\' + year) )
+    return (String(month + '\\' + day + '\\' + year) );
+}
+
+  saveTourDate = (e) => {
+    let tourDate = this.convertDate(e.target.value)
+    this.setState({
+      tour_date: tourDate
+    })
   }
+
+  saveStartDate =(e) => {
+    let startDate = this.convertDate(e.target.value)
+    this.setState({
+      requested_date: startDate
+    })
+  }
+
+  saveClassRoom = (e) => {
+    this.setState({
+      chosen_classroom: e.target.value
+    })
+  }
+
+  saveChildName = (e) => {
+    this.setState({
+      child_name: e.target.value
+    })
+  }
+
+  saveBday = (e) => {
+    let bday = this.convertDate(e.target.value)
+    this.setState({
+      child_bday: bday
+    })
+  }
+
+  saveCircledOptions = (e) => {
+    if(!this.state.circled.includes(e.target.id)){
+      this.setState({
+        circled: [...this.state.circled, e.target.id]
+      })
+      console.log(this.state.circled, e.target.value)
+    }else{
+      let newCircled = this.state.circled.filter(item => item !== e.target.id)
+      this.setState({
+        circled: newCircled
+      })
+      console.log(this.state.circled, e.target.value)
+    }  
+  }
+
+  saveParentNameOne = (e) => {
+      this.setState({
+        parent_one: e.target.value
+      })
+      console.log(this.state.parent_one)
+    }
+  
+
+  saveParentNameTwo = (e) => {
+    this.setState({
+      parent_two: e.target.value
+    })
+    console.log(e.target.value)
+  }
+
+  saveRelationship = (e) => {
+      this.setState({
+        relationship_one: e.target.value
+      })
+    }
+  
+  saveRelationshipTwo = (e) => {
+    this.setState({
+      relationship_two: e.target.value
+    })
+  }
+
+  saveAddressOne = (e) => {
+    this.setState({
+      address_one: e.target.value
+    })
+  }
+
+  saveAddressTwo = (e) => {
+    this.setState({
+      address_two: e.target.value
+    })
+  }
+
+  saveEmailOne = (e) => {
+    this.setState({email_one: e.target.value})
+  }
+
+  saveEmailTwo = (e) => {
+    this.setState({email_two: e.target.value})
+  }
+
+  savePhoneOne = (e) => {
+    this.setState({phone_one: e.target.value})
+  }
+
+  savePhoneTwo = (e) => {
+    this.setState({ephone_two: e.target.value})
+  }
+
+  getCurrentDate = () => {
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+    return(String(mm + '/' + dd + '/' + yyyy))
+  }
+
+
+  submitForm = async (props) => { 
+    let waitlist = {
+      inquiry_date: this.getCurrentDate(),
+      tour_date: this.state.tour_date,
+      requested_date: this.state.requested_date,
+      chosen_classroom: this.state.chosen_classroom,
+      circled: this.state.circled,
+      child_name: this.state.child_name,
+      child_bday: this.state.child_bday,
+      parent_name: [this.state.parent_one, this.state.parent_two],
+      relationship: [this.state.relationship_one, this.state.relationship_two],
+      address: [this.state.address_one, this.state.address_two],
+      email:[this.state.email_one, this.state.email_two],
+      phone: [this.state.phone_one, this.state.phone_two]
+    }
+
+    console.log(waitlist)
+
+    fetch(`http://localhost:5000/api/contact`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(
+           waitlist
+        )
+    })
+}
 
   render() {
     return (
-      <form ref={this.formElement}
-            onSubmit={(event) => this.submitForm(event)}>
+      <form>
       <div className="card-body mx-2">
         <h5 className='mt-3'>* Add disclaimer or note about process?</h5>
-        <input type="date" className="form-control mb-2 mt-3" placeholder="Tour Date" aria-describedby="defaultRegisterFormPhoneHelpBlock"/>
+        <input onChange={(e) => this.saveTourDate(e)} type="date" className="form-control mb-2 mt-3" placeholder="Tour Date" aria-describedby="defaultRegisterFormPhoneHelpBlock"/>
 
-        <input type="date" className="form-control mb-2" placeholder="Requested start date" aria-describedby="defaultRegisterFormPhoneHelpBlock"/>
+        <input onChange={(e) => this.saveStartDate(e)} type="date" className="form-control mb-2" placeholder="Requested start date" aria-describedby="defaultRegisterFormPhoneHelpBlock"/>
 
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <label class="input-group-text" for="inputGroupSelect01">Classroom:</label>
           </div>
-          <select class="custom-select" id="inputGroupSelect01">
+          <select onClick={(e)=> this.saveClassRoom(e)} class="custom-select" id="inputGroupSelect01">
           <option value="Firefly">Firefly (12 months - 2 years)</option>
           <option value="Bumblebee">Bumblebee (2 - 3 years)</option>
           <option value="Ladybug">Ladybug (2 1/2 - 3 1/2 years)</option>
@@ -84,7 +205,7 @@ class FormComponent extends Component {
           <div class="input-group mb-1">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="checkbox" aria-label="Checkbox for following text input"/>
+                <input onChange={(e) => this.saveCircledOptions(e)} id={'Current Family'} type="checkbox" aria-label="Checkbox for following text input"/>
               </div>
             </div>
             <div class="form-control" aria-label="Text input with checkbox">Current Family</div>
@@ -92,7 +213,7 @@ class FormComponent extends Component {
           <div class="input-group mb-1">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="checkbox" aria-label="Checkbox for following text input"/>
+                <input onChange={(e) => this.saveCircledOptions(e)} id="Staff" type="checkbox" aria-label="Checkbox for following text input"/>
               </div>
             </div>
             <div class="form-control" aria-label="Text input with checkbox">Staff</div>
@@ -100,7 +221,7 @@ class FormComponent extends Component {
           <div class="input-group mb-1">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="checkbox" aria-label="Checkbox for following text input"/>
+                <input onChange={(e) => this.saveCircledOptions(e)} id='Church Member' type="checkbox" aria-label="Checkbox for following text input"/>
               </div>
             </div>
             <div class="form-control" aria-label="Text input with checkbox">Church Member</div>
@@ -109,7 +230,7 @@ class FormComponent extends Component {
           <div class="input-group mb-1">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="checkbox" aria-label="Checkbox for following text input"/>
+                <input onChange={(e) => this.saveCircledOptions(e)} id='Sibling' type="checkbox" aria-label="Checkbox for following text input"/>
               </div>
             </div>
             <div class="form-control" aria-label="Text input with checkbox">Sibling</div>
@@ -118,46 +239,53 @@ class FormComponent extends Component {
           <div class="input-group mb-2">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="checkbox" aria-label="Checkbox for following text input"/>
+                <input onChange={(e) => this.saveCircledOptions(e)} id='New' type="checkbox" aria-label="Checkbox for following text input"/>
               </div>
             </div>
             <div class="form-control" aria-label="Text input with checkbox">New</div>
           </div>
       </div>
 
-        <input type="text" className="form-control mb-2" placeholder="Child's Name" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+        <input onChange={(e)=> this.saveChildName(e) } type="text" className="form-control mb-2" placeholder="Child's Name" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
-        <input type="date" className="form-control mb-2" placeholder="Birthdate" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+        <input onChange={(e) => this.saveBday(e)} type="date" className="form-control mb-2" placeholder="Birthdate" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
       <h5 className='my-2'>Parent/Guardian Information:</h5>
 
-        <input type="text" className="form-control mb-2" placeholder="Guardians's Full Name" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+        <input onChange={(e) => this.saveParentNameOne(e)} type="text" 
+        className="form-control mb-2" 
+        placeholder="Guardians's Full Name" 
+        aria-describedby="defaultRegisterFormPhoneHelpBlock" 
+        name="name"
+        id="name"
+        />
 
-        <input type="text" className="form-control mb-2" placeholder="Relationship" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+        <input onChange={(e) => this.saveRelationship(e)} type="text" className="form-control mb-2" placeholder="Relationship" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
-        <input type="text" className="form-control mb-2" placeholder="Address" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+        <input onChange={(e) => this.saveAddressOne(e)} type="text" className="form-control mb-2" placeholder="Address" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
-        <input type="email" className="form-control mb-2" placeholder="Email" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+        <input onChange={(e) => this.saveEmailOne(e)} type="email" className="form-control mb-2" placeholder="Email" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
-        <input type="number" id="defaultRegisterPhonePassword" className="form-control mb-2" placeholder="Phone Number" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+        <input onChange={(e) => this.savePhoneOne(e)} type="number" id="defaultRegisterPhonePassword" className="form-control mb-2" placeholder="Phone Number" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
         <div className='my-2'>
+          
           <h5>Second Parent/Guardian (Optional):</h5>
 
-          <input type="text" className="form-control mb-2" placeholder="Guardians's Full Name" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+          <input onChange={(e) => this.saveParentNameTwo(e)} type="text" className="form-control mb-2" placeholder="Guardians's Full Name" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
-          <input type="text" className="form-control mb-2" placeholder="Relationship" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+          <input onChange={(e) => this.saveRelationshipTwo(e)} type="text" className="form-control mb-2" placeholder="Relationship" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
-          <input type="text" className="form-control mb-2" placeholder="Address" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+          <input onChange={(e) => this.saveAddressTwo(e)} type="text" className="form-control mb-2" placeholder="Address" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
-          <input type="email" className="form-control mb-2" placeholder="Email" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+          <input onChange={(e) => this.saveEmailTwo(e)} type="email" className="form-control mb-2" placeholder="Email" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
-          <input type="number" id="defaultRegisterPhonePassword" className="form-control mb-2" placeholder="Phone Number" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+          <input onChange={(e) => this.savePhoneTwo(e)} type="number" id="defaultRegisterPhonePassword" className="form-control mb-2" placeholder="Phone Number" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
         </div>
 
-          
 
-          <button className="btn btn-success my-4 btn-block" type="submit">Submit</button>
+
+          <button onClick={()=> this.submitForm(this.props)}className="btn btn-success my-4 btn-block" type="submit">Submit</button>
         </div>
       
       </form>
