@@ -31,9 +31,9 @@ class NavbarPage extends Component {
     return (
       <Router>
         {/* <StickyBox className="stickyBar mobileStickyBar" > */}
-        <MDBNavbar className="staticColor nav" expand="md">
+        <MDBNavbar className="staticColorNav nav" expand="md">
           <MDBNavbarBrand>
-            <img className="logo" src="alc_elclogo_transparent.png" alt="logo"></img>
+            <img className="logo" src="alc_elclogo.png" alt="logo"></img>
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={this.toggleCollapse} right>
             <i class="far fa-caret-square-down" />

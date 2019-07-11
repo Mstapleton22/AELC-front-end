@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:5000/contact")
+    fetch("https://pure-fortress-15361.herokuapp.com/contact")
       .then(data => data.json())
       .then(JSONdata => {
         this.setState({
@@ -29,7 +29,7 @@ class App extends Component {
           loadedData: true
         })
       })
-    fetch("http://localhost:5000/staff")
+    fetch("https://pure-fortress-15361.herokuapp.com/staff")
       .then(data => data.json())
       .then(JSONdata => {
         // console.log(JSONdata)
@@ -39,7 +39,7 @@ class App extends Component {
         // console.log('staff', this.state.staff)
       })
 
-    fetch("http://localhost:5000/parentHandbook")
+    fetch("https://pure-fortress-15361.herokuapp.com/parentHandbook")
       .then(data => data.json())
       .then(JSONdata => {
         console.log(JSONdata)

@@ -38,7 +38,7 @@ font-style: normal;
 .navItems {
   /* font-family: 'Heebo', sans-serif; */
   text-decoration: none;
-  color: white;
+  color: #5e2b67;
   margin-right: 1%;
 }
 .navItemLast {
@@ -110,7 +110,7 @@ font-style: normal;
 }
 
 .fa-caret-square-down {
-  color: white;
+  color: #5e2b67;
 }
 
 .resourceTitle{
@@ -133,8 +133,12 @@ font-style: normal;
   width:100vw;
   height:90vh;
 }
+.staticColorNav {
+  /* background-color: #ae76b8; */
+  background-color: #dee2e4;
+}
 .staticColor {
-  background-color: #5e2b67 ;
+  background-color: #5e2b67;
 }
 .staff {
   display: flex;
@@ -204,10 +208,15 @@ font-style: normal;
   /* padding-right: 100px; */
   font-size: 1.7em;
 }
+.staffImgContainer {
+    width: 350px;
+    height: 100%;
+}
 .staffImage{
   border-radius: 170px;
   /* height: 50%; */
   width: 100%;
+  height: auto;
   margin-top: 10%;
   padding: 7%;
 }
