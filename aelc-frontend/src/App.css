@@ -164,6 +164,7 @@ font-style: normal;
   position: absolute;
   z-index: 1000;
   background-color: #5e2b67;
+  border-color: #5e2b67;
   color: white;
   font-size: 1.5em;
   border-radius: 50%;
@@ -211,15 +212,20 @@ font-style: normal;
 .staffImgContainer {
     width: 350px;
     height: 100%;
+  /* border-bottom: #5e2b67;
+  border-radius: 170px; */
+
 }
 .staffImage{
-  border-bottom: #5e2b67;
+  background-color: #5e2b67;
+  /* border-bottom: #5e2b67; */
+  
   border-radius: 170px;
   /* height: 50%; */
   width: 100%;
   height: auto;
   margin-top: 10%;
-  padding: 7%;
+  padding: 5%;
 }
 .accred_1 {
   margin-top: 10%;
@@ -235,8 +241,8 @@ font-style: normal;
 }
 .accred_3 {
   padding: 5%;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
 } 
 .accredAll {
   background-color:#ae76b85a;
@@ -255,7 +261,8 @@ font-style: normal;
   justify-content: center;
 }
 .accredTitle { 
-  width:50vw;
+  /* background-color: purple; */
+  max-width: 50vw;
   height: 100%;
   position: relative;
   z-index: 10;
@@ -497,6 +504,13 @@ font-style: normal;
 }
 .site {
   padding-bottom: 5%;
+}
+.accredTitle { 
+  /* background-color: purple; */
+  max-width: 90vw;
+  height: 100%;
+  position: relative;
+  z-index: 10;
 }
 .staffImage{
   border-bottom: #5e2b67;
