@@ -34,8 +34,8 @@ class FormComponent extends Component {
     var month = splitDate[1];
     var day = splitDate[2];
 
-    console.log(String(month + '\\' + day + '\\' + year))
-    return (String(month + '\\' + day + '\\' + year));
+    console.log(String(month + '//' + day + '//' + year))
+    return (String(month + '/' + day + '/' + year));
   }
 
   saveTourDate = (e) => {
@@ -168,7 +168,7 @@ class FormComponent extends Component {
 
     console.log(waitlist)
 
-    fetch(`http://localhost:5000/api/contact`, {
+    fetch(`https://pure-fortress-15361.herokuapp.com  /api/contact`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
