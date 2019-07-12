@@ -213,6 +213,7 @@ font-style: normal;
     height: 100%;
 }
 .staffImage{
+  border-bottom: #5e2b67;
   border-radius: 170px;
   /* height: 50%; */
   width: 100%;
@@ -498,6 +499,7 @@ font-style: normal;
   padding-bottom: 5%;
 }
 .staffImage{
+  border-bottom: #5e2b67;
   border-radius: 170px;
   height: 50%;
   width: 100%;
