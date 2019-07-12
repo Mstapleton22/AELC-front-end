@@ -10,7 +10,7 @@ class StaffPage extends Component {
       staff: [],
     }
 
-    fetch("http://localhost:5000/staff")
+    fetch("https://pure-fortress-15361.herokuapp.com/staff")
       .then(data => data.json())
       .then(JSONdata => {
         this.setState({

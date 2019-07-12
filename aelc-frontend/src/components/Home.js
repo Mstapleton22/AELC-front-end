@@ -15,7 +15,7 @@ class HomePage extends Component {
   }
 
   carouselFetch = () => {
-    fetch("http://localhost:5000/carousel")
+    fetch("https://pure-fortress-15361.herokuapp.com/carousel")
       .then(data => data.json())
       .then(JSONdata => {
         this.setState({
@@ -25,7 +25,7 @@ class HomePage extends Component {
   }
 
   accredFetch = () => {
-    fetch("http://localhost:5000/accreditation")
+    fetch("https://pure-fortress-15361.herokuapp.com/accreditation")
       .then(data => data.json())
       .then(JSONdata => {
         // console.log(JSONdata)

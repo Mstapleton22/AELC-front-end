@@ -11,7 +11,7 @@ class ParentResources extends Component {
       tuition: [],
       loadingData: false
     }
-    fetch("http://localhost:5000/tuition")
+    fetch("https://pure-fortress-15361.herokuapp.com/tuition")
       .then(data => data.json())
       .then(JSONdata => {
         // console.log("tuition", JSONdata)

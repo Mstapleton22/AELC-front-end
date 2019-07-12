@@ -18,7 +18,7 @@ class ProgramsPage extends Component {
       contact: {}
     }
 
-    fetch("http://localhost:5000/programs")
+    fetch("https://pure-fortress-15361.herokuapp.com/programs")
       .then(data => data.json())
       .then(JSONdata => {
         // console.log('bbom',JSONdata[0].name)
@@ -28,7 +28,7 @@ class ProgramsPage extends Component {
         })
       })
 
-    fetch("http://localhost:5000/contact")
+    fetch("https://pure-fortress-15361.herokuapp.com/contact")
       .then(data => data.json())
       .then(JSONdata => {
         this.setState({

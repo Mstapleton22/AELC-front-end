@@ -18,7 +18,7 @@ class ProgramCard extends Component {
     return (
       // <div className="mobileProgramCard">
       <ScrollableAnchor id={`${this.props.id}`}>
-        <MDBCard className="my-5 pt-3 px-3 pb-3">
+        <MDBCard className="my-5 pt-3 px-2 pb-3">
           <MDBRow>
             <div className="col-sm-5 no-gutters programCardColumn">
               <MDBCardImage className="image-fluid image" src={`${this.props.image}`} />

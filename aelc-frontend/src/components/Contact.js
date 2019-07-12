@@ -8,7 +8,7 @@ class Contact extends Component {
       contact: [],
       loadedData: false,
     };
-    fetch("http://localhost:5000/contact")
+    fetch("https://pure-fortress-15361.herokuapp.com/contact")
       .then(data => data.json())
       .then(JSONdata => {
         this.setState({

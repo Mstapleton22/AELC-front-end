@@ -37,27 +37,27 @@ class StaffCard extends Component {
   render() {
     return (
       < div >
-        <MDBContainer style={{ width: "18rem" }} className="no-gutters" >
+        <MDBContainer style={{ width: "18rem" }} className="no-gutters staffImgContainer" >
           <MDBRow className="no-gutters" >
             <MDBCol className="no-gutters" md="12">
               {/* <MDBTabContent className="no-gutters" activeItem={this.state.items["default"]}>
                 <MDBTabPane className="row justify-content-center" tabId="1"> */}
-                  <p>
-                    <MDBCardBody className="no-gutters">
-                      <MDBCardImage className="img-fluid no-gutters staffImage" src={`${this.props.image}`} waves />
-                      <div className="bioBtn no-gutters">
-                        <button className="bio no-gutters" onClick={this.toggle}>Bio</button>
-                      </div>
-                      <MDBCardTitle className="h5-responsive staffName">{this.props.name}</MDBCardTitle>
-                      <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
-                        <MDBModalHeader toggle={this.toggle}>{this.props.name}</MDBModalHeader>
-                        <MDBModalBody>
-                          {this.props.bio}
-                        </MDBModalBody>
-                      </MDBModal>
-                    </MDBCardBody>
-                  </p>
-                {/* </MDBTabPane>
+              <p>
+                <MDBCardBody className="no-gutters staffImgContainer">
+                  <MDBCardImage className="img-fluid no-gutters staffImage" src={`${this.props.image}`} waves />
+                  <div className="bioBtn no-gutters">
+                    <button className="bio no-gutters" onClick={this.toggle}>Bio</button>
+                  </div>
+                  <MDBCardTitle className="h5-responsive staffName">{this.props.name}</MDBCardTitle>
+                  <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
+                    <MDBModalHeader toggle={this.toggle}>{this.props.name}</MDBModalHeader>
+                    <MDBModalBody>
+                      {this.props.bio}
+                    </MDBModalBody>
+                  </MDBModal>
+                </MDBCardBody>
+              </p>
+              {/* </MDBTabPane>
               </MDBTabContent> */}
             </MDBCol>
           </MDBRow>
