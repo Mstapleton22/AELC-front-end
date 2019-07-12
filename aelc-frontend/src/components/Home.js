@@ -93,7 +93,7 @@ and nurturing environment that promotes learning and enhances the child's well-b
             <div className="row missionRow no-gutters">
               <div className="col-lg-1 no-gutters"></div>
               <div className="col-lg-4 mission no-gutters ">
-                <MDBView hover className="">
+                <MDBView hover className="hoverMission">
                   <div className="missionText fontRegular no-gutters">
                     <MDBMask className="flex-center hoverMission hoverFont" overlay="green-strong">
                       <p className="white-text h1-responsive">Mission</p>
@@ -104,10 +104,10 @@ and nurturing environment that promotes learning and enhances the child's well-b
               </div>
               <div className="col-lg-1"></div>
               <div className="col-lg-4 vision">
-                <MDBView hover className="">
+                <MDBView hover className="hoverVision">
                   <div className="visionText fontRegular">
-                    <MDBMask className="flex-center hoverVision hoverFont" overlay="green-strong">
-                      <p className="white-text  h1-responsive">Vision</p>
+                    <MDBMask className="flex-center p-5 hoverVision hoverFont" overlay="green-strong">
+                      <p className="white-text visionWord h1-responsive">Vision</p>
                     </MDBMask>
                     Augustana Early Learning Center is a community outreach ministry of Augustana Lutheran Church with a vision to love children and inspire them to become engaged, emotionally-intelligent, and curious learners.
                   </div>

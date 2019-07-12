@@ -34,8 +34,8 @@ class FormComponent extends Component {
     var month = splitDate[1];
     var day = splitDate[2];
 
-    console.log(String(month + '\\' + day + '\\' + year))
-    return (String(month + '\\' + day + '\\' + year));
+    console.log(String(month + '//' + day + '//' + year))
+    return (String(month + '/' + day + '/' + year));
   }
 
   saveTourDate = (e) => {
@@ -70,7 +70,6 @@ class FormComponent extends Component {
       child_bday: bday
     })
   }
-
   saveCircledOptions = (e) => {
     if (!this.state.circled.includes(e.target.id)) {
       this.setState({
@@ -168,7 +167,7 @@ class FormComponent extends Component {
 
     console.log(waitlist)
 
-    fetch(`http://localhost:5000/api/contact`, {
+    fetch(`https://pure-fortress-15361.herokuapp.com/api/contact`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -243,7 +242,6 @@ class FormComponent extends Component {
                   </div>
                   <div class="form-control" aria-label="Text input with checkbox">Church Member</div>
                 </div>
-
                 <div class="input-group mb-1">
                   <div class="input-group-prepend">
                     <div class="input-group-text">
@@ -276,7 +274,6 @@ class FormComponent extends Component {
                 name="name"
                 id="name"
               />
-
               <input onChange={(e) => this.saveRelationship(e)} type="text" className="form-control mb-2" placeholder="Relationship" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
               <input onChange={(e) => this.saveAddressOne(e)} type="text" className="form-control mb-2" placeholder="Address" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
@@ -302,7 +299,7 @@ class FormComponent extends Component {
 
 
 
-              <button onClick={() => this.submitForm(this.props)} className="btn btn-success my-4 btn-block" type="submit">Submit</button>
+              <button onClick={() => this.submitForm(this.props)} className="btn btn-success my-4   btn-block" type="submit">Submit</button>
             </div>
 
           </form>
@@ -315,3 +312,6 @@ class FormComponent extends Component {
 
 
 export default FormComponent;
+
+
+
