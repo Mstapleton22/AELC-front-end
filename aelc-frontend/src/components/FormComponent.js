@@ -168,7 +168,7 @@ class FormComponent extends Component {
 
     console.log(waitlist)
 
-    fetch(`https://pure-fortress-15361.herokuapp.com  /api/contact`, {
+    fetch(`https://pure-fortress-15361.herokuapp.com/api/contact`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -302,7 +302,7 @@ class FormComponent extends Component {
 
 
 
-              <button onClick={() => this.submitForm(this.props)} className="btn btn-success my-4 btn-block" type="submit">Submit</button>
+              <button onClick={() => this.submitForm(this.props)} className="btn btn-success my-4   btn-block" type="submit">Submit</button>
             </div>
 
           </form>
