@@ -4,7 +4,7 @@ class Accreditation extends Component {
   render() {
     return (
       <div>
-        <img className={`accreditation ${this.props.name}`} src={this.props.accredImage} alt="accreditation" />
+        <img className={`accreditation ${this.props.name} ${this.props.name}_footer`} src={this.props.accredImage} alt="accreditation" />
       </div>
     )
   }

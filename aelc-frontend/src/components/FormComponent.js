@@ -198,14 +198,44 @@ class FormComponent extends Component {
         return (
           <form>
             <div className="card-body mx-2">
-              <h5 className='mt-3'>* Add disclaimer or note about process?</h5>
-              <input onChange={(e) => this.saveTourDate(e)} type="date" className="form-control mb-2 mt-3" placeholder="Tour Date" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+              <div className="disclaimer">
+                <h6>Thank you for your interest in Augustana Early Learning Center. Choosing a quality care program is one of the more important decisions you will make.
+</h6>
+                <h6>In order to join our waitlist you must have signed and submitted your waitlist application and paid the $50 waitlist fee. This fee is non-refundable, and must be turned in on-site at Augustana Early Learning Center.
+</h6>
+                <h6>When your registration form AND fee are received, you will be placed on the waiting list. When space becomes available for your child, you will be contacted though email ONLY regarding the enrollment process.
+</h6>
+                <h4>General Waitlist Information</h4>
+                <h6>Our waitlist is organized according to…..</h6>
+                <ol>
+                  <li>Date of application submittal </li>
+                  <li>Age of Child
+</li>
+                  <li>Priority Positions*</li>
+                  <li>Requested start date </li>
+                </ol>
+                <h6>We will NOT inform families of their specific position on the waitlist due to the complexity and variables that can affect that position.  </h6>
+                <h4>Priority Positions*</h4>
+                <h6>AELC employee, Augustana Church employee, sibling and Augustana church members’ applications will be prioritized first. These children shall be placed on the waitlist according to the date of the application.</h6>
+                <h4>Considerations:</h4>
+                <h6>If we are able to offer your family the next open spot and you turn it down, you will need to pay full tuition to hold your spot or your application will be moved to the back of the waitlist.</h6>
+                <h6>Official acceptance into ALEC requires a signed contract and 1 month tuition as a deposit plus $25 activity fee.</h6>
+                <h6>Prior to enrollment, the Center Director or Office Coordinator will schedule a time for a home visit. This will allow you to meet with your child’s primary care givers, learn more about Augustana Early Learning Center program and develop a transition schedule for your child.  </h6>
+              </div>
+              <div className="required">
+                <input onChange={(e) => this.saveTourDate(e)} type="date" className="form-control mb-2 mt-3" placeholder="Tour Date" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+              </div>
 
-              <input onChange={(e) => this.saveStartDate(e)} type="date" className="form-control mb-2" placeholder="Requested start date" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+              <div className="required">
+                <input onChange={(e) => this.saveStartDate(e)} type="date" className="form-control mb-2" placeholder="Requested start date" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+              </div>
 
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                  <label class="input-group-text" for="inputGroupSelect01">Classroom:</label>
+                  <div className="required">
+                    <label class="input-group-text" for="inputGroupSelect01">
+                      Classroom:</label>
+                  </div>
                 </div>
                 <select onClick={(e) => this.saveClassRoom(e)} class="custom-select" id="inputGroupSelect01">
                   <option value="Firefly">Firefly (12 months - 2 years)</option>
@@ -216,12 +246,14 @@ class FormComponent extends Component {
                 </select>
               </div>
 
+
               <div>
-                <h5>Check all that apply:</h5>
+                <div className="required">
+                  <h5>Check all that apply:</h5></div>
                 <div class="input-group mb-1">
                   <div class="input-group-prepend">
                     <div class="input-group-text">
-                      <input onChange={(e) => this.saveCircledOptions(e)} id={'Current Family'} type="checkbox" aria-label="Checkbox for following text input" />
+                      <input onChange={(e) => this.saveCircledOptions(e)} id={'Current Family'} type="checkbox" aria-label="Checkbox for following text input" className="checkbox" />
                     </div>
                   </div>
                   <div class="form-control" aria-label="Text input with checkbox">Current Family</div>
@@ -229,7 +261,7 @@ class FormComponent extends Component {
                 <div class="input-group mb-1">
                   <div class="input-group-prepend">
                     <div class="input-group-text">
-                      <input onChange={(e) => this.saveCircledOptions(e)} id="Staff" type="checkbox" aria-label="Checkbox for following text input" />
+                      <input onChange={(e) => this.saveCircledOptions(e)} id="Staff" type="checkbox" aria-label="Checkbox for following text input" className="checkbox" />
                     </div>
                   </div>
                   <div class="form-control" aria-label="Text input with checkbox">Staff</div>
@@ -237,7 +269,7 @@ class FormComponent extends Component {
                 <div class="input-group mb-1">
                   <div class="input-group-prepend">
                     <div class="input-group-text">
-                      <input onChange={(e) => this.saveCircledOptions(e)} id='Church Member' type="checkbox" aria-label="Checkbox for following text input" />
+                      <input onChange={(e) => this.saveCircledOptions(e)} id='Church Member' type="checkbox" aria-label="Checkbox for following text input" className="checkbox" />
                     </div>
                   </div>
                   <div class="form-control" aria-label="Text input with checkbox">Church Member</div>
@@ -245,7 +277,7 @@ class FormComponent extends Component {
                 <div class="input-group mb-1">
                   <div class="input-group-prepend">
                     <div class="input-group-text">
-                      <input onChange={(e) => this.saveCircledOptions(e)} id='Sibling' type="checkbox" aria-label="Checkbox for following text input" />
+                      <input onChange={(e) => this.saveCircledOptions(e)} id='Sibling' type="checkbox" aria-label="Checkbox for following text input" className="checkbox" />
                     </div>
                   </div>
                   <div class="form-control" aria-label="Text input with checkbox">Sibling</div>
@@ -254,18 +286,24 @@ class FormComponent extends Component {
                 <div class="input-group mb-2">
                   <div class="input-group-prepend">
                     <div class="input-group-text">
-                      <input onChange={(e) => this.saveCircledOptions(e)} id='New' type="checkbox" aria-label="Checkbox for following text input" />
+                      <input onChange={(e) => this.saveCircledOptions(e)} id='New' type="checkbox" aria-label="Checkbox for following text input" className="checkbox" />
                     </div>
                   </div>
                   <div class="form-control" aria-label="Text input with checkbox">New</div>
                 </div>
               </div>
 
+              <div className="required">
+                <h5>Child information</h5>
+              </div>
               <input onChange={(e) => this.saveChildName(e)} type="text" className="form-control mb-2" placeholder="Child's Name" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
+
 
               <input onChange={(e) => this.saveBday(e)} type="date" className="form-control mb-2" placeholder="Birthdate" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
-              <h5 className='my-2'>Parent/Guardian Information:</h5>
+              <div className="required">
+                <h5 className='my-2 '> Parent/Guardian Information:</h5>
+              </div>
 
               <input onChange={(e) => this.saveParentNameOne(e)} type="text"
                 className="form-control mb-2"
@@ -274,6 +312,8 @@ class FormComponent extends Component {
                 name="name"
                 id="name"
               />
+
+
               <input onChange={(e) => this.saveRelationship(e)} type="text" className="form-control mb-2" placeholder="Relationship" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
 
               <input onChange={(e) => this.saveAddressOne(e)} type="text" className="form-control mb-2" placeholder="Address" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
