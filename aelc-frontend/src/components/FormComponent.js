@@ -184,8 +184,34 @@ class FormComponent extends Component {
   toggleSuccess = () => {
     return (
       <div>
-        <h1 className="success text-center">success</h1>
+      <div className="successHeader">
+        <h1 className="success text-center">Success!</h1>
         <h2 className="success text-center">Please read the disclaimer to follow waitlist procedure.</h2>
+        </div>
+        <div className="disclaimer">
+          <h6>Thank you for your interest in Augustana Early Learning Center. Choosing a quality care program is one of the more important decisions you will make.
+</h6>
+          <h6>In order to join our waitlist you must have signed and submitted your waitlist application and paid the $50 waitlist fee. This fee is non-refundable, and must be turned in on-site at Augustana Early Learning Center.
+</h6>
+          <h6>When your registration form AND fee are received, you will be placed on the waiting list. When space becomes available for your child, you will be contacted though email ONLY regarding the enrollment process.
+</h6>
+          <h4>General Waitlist Information</h4>
+          <h6>Our waitlist is organized according to…..</h6>
+          <ol>
+            <li>Date of application submittal </li>
+            <li>Age of Child
+</li>
+            <li>Priority Positions*</li>
+            <li>Requested start date </li>
+          </ol>
+          <h6>We will NOT inform families of their specific position on the waitlist due to the complexity and variables that can affect that position.  </h6>
+          <h4>Priority Positions*</h4>
+          <h6>AELC employee, Augustana Church employee, sibling and Augustana church members’ applications will be prioritized first. These children shall be placed on the waitlist according to the date of the application.</h6>
+          <h4>Considerations:</h4>
+          <h6>If we are able to offer your family the next open spot and you turn it down, you will need to pay full tuition to hold your spot or your application will be moved to the back of the waitlist.</h6>
+          <h6>Official acceptance into ALEC requires a signed contract and 1 month tuition as a deposit plus $25 activity fee.</h6>
+          <h6>Prior to enrollment, the Center Director or Office Coordinator will schedule a time for a home visit. This will allow you to meet with your child’s primary care givers, learn more about Augustana Early Learning Center program and develop a transition schedule for your child.  </h6>
+        </div>
       </div>
     )
   }

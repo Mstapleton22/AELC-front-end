@@ -1534,3 +1534,13 @@ input[type="text"]:before {
 .checkbox{
   margin: 5%;
 }
+/* .success {
+  background-color: #5cc87ebd;
+  padding: 2%;
+  margin-bottom: -1px;
+} */
+.successHeader {
+  background-color: #5cc87ebd;
+  padding: 2%;
+  margin-bottom: 25px;
+}
