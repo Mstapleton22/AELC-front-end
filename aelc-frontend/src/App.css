@@ -149,9 +149,10 @@ font-style: normal;
   display: flex;
   flex-direction: row; 
   justify-content: space-around; 
-  
+  text-decoration: none;
   /* margin-left:100px; */
 }
+button:focus {outline:0;}
 
 .bio {
   /* margin: 7px; */
@@ -195,6 +196,10 @@ font-style: normal;
   margin-top: 5px;
   justify-content: left;
   color: black;
+  padding-bottom: 3%;
+
+}
+.card {
 }
 .staff {
   display:flex;
@@ -267,6 +272,35 @@ font-style: normal;
   position: relative;
   z-index: 10;
 }
+.accredFooterBox {
+  max-width: 20%;
+  max-height: 100%;
+}
+.accredFooterRow {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+.accred_1_footer {
+  margin-top: 10%;
+  /* padding-right: 3%; */
+  padding: 2%;
+  height: 100%;
+  width: 13vw;
+}
+.accred_2_footer {
+  margin-top: 9%;
+  padding: 3%;
+  height: 100%;
+  width: 13vw;
+}
+.accred_3_footer {
+  margin-left: 30%;
+  padding: 5%;
+  height: 70%;
+  width: 70%;
+} 
 .missionRow{
   display:flex;
   flex-direction: row;
@@ -298,6 +332,7 @@ font-style: normal;
     border-top: 10px #5cc87ea6 solid;
   /* border-spacing: 150px 50px; */
   background-color: white;
+  /* margin-bottom: -50px; */
   /* padding-bottom: 5%; */
     /*margin: 5%; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -316,14 +351,23 @@ font-style: normal;
   font-size: 2rem;
   letter-spacing: 8px;
   font-weight: bold;
+  /* padding-bottom: 10%;
+  margin-bottom: 10%; */
+  padding-bottom: 20%;
+  padding-top: 20%;
+  /* color: purple; */
 }
 .hoverVision {
-  /* margin-top: -20px; */
-  padding-bottom: 26px;
+  /* margin-bottom: -200px; */
+  padding-bottom: 10%;
+  padding-top: 10%;
 
 }
 .hoverMission{
-  margin-bottom: -50px;
+  margin-bottom: -5px;
+  padding-bottom: 5%;
+  padding-top: 5%;
+
 }
 .addressHover:hover {
   color: #5cc87f;
@@ -419,7 +463,7 @@ font-style: normal;
   justify-content: space-around
 }
 .site {
-  padding-bottom: 4%;
+  padding-bottom: 19%;
   padding-top: .5%;
   background-color: #ebf0f3;
 }
@@ -443,10 +487,14 @@ font-style: normal;
 }
 
 .programCards {
-  background-color:  #ebf0f3;
+  background-color:#ebf0f3;
   /* padding-top: 3%; */
   /* position: absolute; */
   /* z-index: -1; */
+}
+.programCardBG {
+  /* background-color: transparent; */
+  /* border: none; */
 }
 .programCardColumn {
   padding:0px -20px;
@@ -1436,10 +1484,53 @@ width: 420px; */
 
 input[type="date"]:before {
   content: attr(placeholder) !important;
-  color: #aaa;
+  color: rgb(0, 0, 0);
   margin-right: 0.5em;
 }
 input[type="date"]:focus:before,
 input[type="date"]:valid:before {
   content: "";
+}
+input[type="text"]:before {
+  content: attr(placeholder) !important;
+  color: rgb(0, 0, 0);
+  margin-right: 0.5em;
+}
+.form-control{
+  color: black;
+  opacity: 1 !important;
+}
+/* .required {
+  color: red;
+} */
+
+/* .required label h5 {
+  font-weight: bold;
+} */
+.required h5:before{
+  color: #e32;
+  content: '* ';
+  display:inline;
+}
+
+.required label:before {
+  color: #e32;
+  content: '* ';
+  display:inline;
+  padding-right: 5%;
+}
+.required input:before {
+  color: #e32;
+  content: '* ';
+  display:inline;
+}
+
+.input-group-text {
+  color: black;
+}
+.disclaimer {
+  padding: 0% 10%;
+}
+.checkbox{
+  margin: 5%;
 }
