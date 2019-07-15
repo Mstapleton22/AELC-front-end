@@ -9,7 +9,8 @@ class ParentResources extends Component {
     super()
     this.state = {
       tuition: [],
-      loadingData: false
+      loadingData: false,
+      parenthandbook: ''
     }
     fetch("https://pure-fortress-15361.herokuapp.com/tuition")
       .then(data => data.json())
@@ -17,6 +18,17 @@ class ParentResources extends Component {
         // console.log("tuition", JSONdata)
         this.setState({
           tuition: JSONdata,
+          loadingData: true
+        })
+        // console.log("tuitionnn", this.state.tuition)
+      })
+
+      fetch("https://pure-fortress-15361.herokuapp.com/parenthandbook")
+      .then(data => data.json())
+      .then(JSONdata => {
+        // console.log("tuition", JSONdata)
+        this.setState({
+          parenthandbook: JSONdata[0].url,
           loadingData: true
         })
         // console.log("tuitionnn", this.state.tuition)
@@ -77,7 +89,11 @@ class ParentResources extends Component {
                 <div id="collapseThree3" className="collapse" role="tabpanel" aria-labelledby="headingThree3"
                   data-parent="#accordionEx">
                   <div className="card-body">
-                    {/* {props.parentHandbook.document} */}
+               
+                  <a href={`${this.state.parenthandbook}`} download>Click to download</a>
+
+
+                
                   </div>
                 </div>
 
