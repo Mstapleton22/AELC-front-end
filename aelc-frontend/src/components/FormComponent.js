@@ -184,9 +184,9 @@ class FormComponent extends Component {
   toggleSuccess = () => {
     return (
       <div>
-      <div className="successHeader">
-        <h1 className="success text-center">Success!</h1>
-        <h2 className="success text-center">Please read the disclaimer to follow waitlist procedure.</h2>
+        <div className="successHeader">
+          <h1 className="success text-center">Success!</h1>
+          <h2 className="success text-center">Please read the disclaimer to follow waitlist procedure.</h2>
         </div>
         <div className="disclaimer">
           <h6>Thank you for your interest in Augustana Early Learning Center. Choosing a quality care program is one of the more important decisions you will make.
@@ -363,11 +363,8 @@ class FormComponent extends Component {
                 <input onChange={(e) => this.savePhoneTwo(e)} type="number" id="defaultRegisterPhonePassword" className="form-control mb-2" placeholder="Phone Number" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
               </div>
 
-
-
               <button onClick={() => this.submitForm(this.props)} className="btn btn-success my-4   btn-block" type="submit">Submit</button>
             </div>
-
           </form>
         );
       }

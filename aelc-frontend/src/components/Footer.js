@@ -15,7 +15,6 @@ class FooterPage extends Component {
     fetch("https://pure-fortress-15361.herokuapp.com/accreditation")
       .then(data => data.json())
       .then(JSONdata => {
-        // console.log(JSONdata)
         this.setState({
           accreditation: JSONdata
         })
@@ -30,7 +29,7 @@ class FooterPage extends Component {
       <div className="footer">
         <MDBFooter className="font-small staticColor pt-4" >
           <MDBRow className="footerRow no-gutters">
-            <MDBCol md="5" className="footerCol text-left">
+            <MDBCol md="11" className="footerCol text-left">
               <h5 className="title">Contact Us</h5>
               {this.props.contact.map(contact => <p style={{ padding: '-40px' }}>
                 <li className="list-unstyled">
@@ -43,7 +42,7 @@ class FooterPage extends Component {
               </p>
               )}
             </MDBCol>
-            <MDBCol md="6">
+            {/* <MDBCol md="6">
               <div className=" accredFooterRow no-gutters">
                 {this.state.accreditation.map(item =>
                   <div className="accredFooterBox text-center no-gutters">
@@ -51,7 +50,7 @@ class FooterPage extends Component {
                   </div>
                 )}
               </div>
-            </MDBCol>
+            </MDBCol> */}
           </MDBRow>
         </MDBFooter>
       </div >

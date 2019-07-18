@@ -5,18 +5,8 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 class ProgramCard extends Component {
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      // modal: false
-    };
-  }
-
-
   render() {
     return (
-      // <div className="mobileProgramCard">
       <ScrollableAnchor id={`${this.props.id}`}>
         <MDBCard className="programCardBG my-5 pt-3 px-2 pb-3">
           <MDBRow>
@@ -32,7 +22,6 @@ class ProgramCard extends Component {
           </MDBRow>
         </MDBCard>
       </ScrollableAnchor>
-      // </div >
     )
   }
 }

@@ -19,7 +19,6 @@ class Contact extends Component {
   }
 
   render() {
-    // console.log("loaded", this.state.loadedData)
     return (
       this.state.loadedData ?
 
