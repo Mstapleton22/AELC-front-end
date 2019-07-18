@@ -1248,6 +1248,58 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
   
   /* iPhone 4 ----------- */
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    .aboutName {
+      text-transform: uppercase;
+      font-size: 2em;
+      padding: 5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      color: #ae76b8a9;
+      font-weight: bold;
+  }
+  .about {
+    padding: 3%;
+    letter-spacing: 0rem;
+    font-size: 1.1em;
+  }
+    .missionName {
+      text-transform: uppercase;
+      font-size: 2em;
+      color: #ae76b897;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-left: 10%;
+      margin-top: 20px;
+    }
+    .mobileName1 {
+      margin-top: 430px;
+      position: absolute;
+      z-index: 100;
+    }
+    .ampersand {
+      display: none;
+    }
+    .missionText {
+      padding: 5%;
+      font-size: 1em;
+      letter-spacing: 0rem;
+    }
+    .missionRow{
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 5%;
+      padding-top: 20%;
+    }
+    .vision {
+      padding-top: 40%;
+    }
+    .visionText {
+      font-size: 1em;
+      letter-spacing: 0rem;
+    }
   /* Styles */
   .visionText {
     border-spacing: 15px 50px;
@@ -1295,6 +1347,58 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
   
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+.about {
+  padding: 3%;
+  letter-spacing: 0rem;
+  font-size: 1.1em;
+}
+  .missionName {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ae76b897;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10%;
+    margin-top: 20px;
+  }
+  .mobileName1 {
+    margin-top: 430px;
+    position: absolute;
+    z-index: 100;
+  }
+  .ampersand {
+    display: none;
+  }
+  .missionText {
+    padding: 5%;
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .missionRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5%;
+    padding-top: 20%;
+  }
+  .vision {
+    padding-top: 40%;
+  }
+  .visionText {
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
   .mobileStickyBar {
     display: none;
   }
@@ -1345,10 +1449,68 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
   /* iPhone 5 ----------- */
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+.about {
+  padding: 3%;
+  letter-spacing: 0rem;
+  font-size: 1.1em;
+}
+  .missionName {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ae76b897;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10%;
+    margin-top: 20px;
+  }
+  .mobileName1 {
+    margin-top: 430px;
+    position: absolute;
+    z-index: 100;
+  }
+  .ampersand {
+    display: none;
+  }
+  .missionText {
+    padding: 5%;
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .missionRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5%;
+    padding-top: 20%;
+  }
+  .vision {
+    padding-top: 40%;
+  }
+  .visionText {
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
   .visionText {
     border-spacing: 15px 50px;
     padding: 5%;
     margin-bottom: 0%;
+  }
+  .smartphone{
+    display: none;
+  }
+  .smartphone1{
+    display: none;
   }
   .accredTitle {
     /* background-color: gold; */
@@ -1391,14 +1553,67 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
   
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+.about {
+  padding: 3%;
+  letter-spacing: 0rem;
+  font-size: 1.1em;
+}
+  .missionName {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ae76b897;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10%;
+    margin-top: 20px;
+  }
+  .mobileName1 {
+    margin-top: 145%;
+    position: absolute;
+    z-index: 100;
+  }
+  .ampersand {
+    display: none;
+  }
+  .missionText {
+    padding: 5%;
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .missionRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5%;
+    padding-top: 20%;
+  }
+  .vision {
+    padding-top: 40%;
+  }
+  .visionText {
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .smartphone{
+    display: none;
+  }
+  .smartphone1{
+    display: none;
+  }
   .image {
     width: 85vw;
     height: 100%;
-  }
-  .visionText {
-    border-spacing: 15px 50px;
-    padding: 5%;
-    margin-bottom: 0%;
   }
   .accredTitle {
     /* background-color: gold; */
@@ -1441,10 +1656,64 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
   /* iPhone 6, 7, 8 ----------- */
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  .visionText {
-    border-spacing: 15px 50px;
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
     padding: 5%;
-    margin-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+.about {
+  padding: 3%;
+  letter-spacing: 0rem;
+  font-size: 1.1em;
+}
+  .missionName {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ae76b897;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10%;
+    margin-bottom: -8%;
+    margin-top: 20px;
+  }
+  .mobileName1 {
+    margin-top: 48%;
+    position: absolute;
+    z-index: 100;
+  }
+  .ampersand {
+    display: none;
+  }
+  .missionText {
+    padding: 5%;
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .missionRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5%;
+    padding-top: 20%;
+  }
+  .vision {
+    padding-top: 25%;
+  }
+  .visionText {
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .smartphone{
+    display: none;
+  }
+  .smartphone1{
+    display: none;
   }
   .accredTitle {
     /* background-color: gold; */
@@ -1475,14 +1744,14 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     padding: -20px;
     font-family: 'Heebo', sans-serif;
   }
-  .ul{
+  .ul {
     padding-inline-start: -40px;
    padding: -40px;  
   }
   .title {
     padding-left: 2%;
   }
-  .tuition_image{
+  .tuition_image {
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
@@ -1491,30 +1760,82 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+.about {
+  padding: 3%;
+  letter-spacing: 0rem;
+  font-size: 1.1em;
+}
+  .missionName {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ae76b897;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10%;
+    margin-top: 20px;
+  }
+  .mobileName1 {
+    margin-top: 145%;
+    position: absolute;
+    z-index: 100;
+  }
+  .ampersand {
+    display: none;
+  }
+  .missionText {
+    padding: 5%;
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .missionRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5%;
+    padding-top: 20%;
+  }
+  .vision {
+    padding-top: 40%;
+  }
+  .visionText {
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .smartphone{
+    display: none;
+  }
+  .smartphone1{
+    display: none;
+  }
   .image {
     width: 60vw;
     height: 100%;
   }
-  .visionText {
-    border-spacing: 15px 50px;
-    padding: 5%;
-    margin-bottom: 0%;
-  }
   .site {
     padding-bottom: 18%;
   }
+
   .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
     padding-top: 2%;  
     width:80vw;
     height: 100%;
     position: relative;
     margin-top: -65px;
     z-index: 10;
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
+
   .mobile3{
     padding-bottom: 6%;
   }
@@ -1545,11 +1866,64 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
   /* iPhone 6+, 7+, 8+ ----------- */
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  
-  .visionText {
-    border-spacing: 15px 50px;
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
     padding: 5%;
-    margin-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+.about {
+  padding: 3%;
+  letter-spacing: 0rem;
+  font-size: 1.1em;
+}
+  .missionName {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ae76b897;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10%;
+    margin-bottom: -8%;
+    margin-top: 20px;
+  }
+  .mobileName1 {
+    margin-top: 48%;
+    position: absolute;
+    z-index: 100;
+  }
+  .ampersand {
+    display: none;
+  }
+  .missionText {
+    padding: 5%;
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .missionRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5%;
+    padding-top: 20%;
+  }
+  .vision {
+    padding-top: 25%;
+  }
+  .visionText {
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .smartphone{
+    display: none;
+  }
+  .smartphone1{
+    display: none;
   }
   .site {
     padding-bottom: 0%;
@@ -1599,22 +1973,77 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
   
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+.about {
+  padding: 3%;
+  letter-spacing: 0rem;
+  font-size: 1.1em;
+}
+  .missionName {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ae76b897;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10%;
+    margin-bottom: -8%;
+    margin-top: 20px;
+  }
+  .mobileName1 {
+    margin-top: 48%;
+    position: absolute;
+    z-index: 100;
+  }
+  .ampersand {
+    display: none;
+  }
+  .missionText {
+    padding: 5%;
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .missionRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5%;
+    padding-top: 20%;
+  }
+  .vision {
+    padding-top: 25%;
+  }
+  .visionText {
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+  .smartphone{
+    display: none;
+  }
+  .smartphone1{
+    display: none;
+  }
   .visionText {
     border-spacing: 15px 50px;
     padding: 5%;
     margin-bottom: 0%;
   }
   .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
     padding-top: 2%;  
     width:80vw;
     height: 100%;
     position: relative;
     margin-top: -75px;
     z-index: 10;
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
   .site {
     padding-bottom: 15%;
