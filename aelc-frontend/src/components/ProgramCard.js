@@ -1,22 +1,12 @@
 import React, { Component } from 'react'
-import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBRow } from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBRow } from 'mdbreact';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 class ProgramCard extends Component {
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      // modal: false
-    };
-  }
-
-
   render() {
     return (
-      // <div className="mobileProgramCard">
       <ScrollableAnchor id={`${this.props.id}`}>
         <MDBCard className="programCardBG my-5 pt-3 px-2 pb-3">
           <MDBRow>
@@ -32,7 +22,6 @@ class ProgramCard extends Component {
           </MDBRow>
         </MDBCard>
       </ScrollableAnchor>
-      // </div >
     )
   }
 }

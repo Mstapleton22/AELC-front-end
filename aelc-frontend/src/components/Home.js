@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
-  "mdbreact";
 import CarouselCard from './CarouselCard'
 import Accreditation from './Accreditation'
 
@@ -11,6 +9,7 @@ class HomePage extends Component {
     this.state = {
       carousel: [],
       accreditation: [],
+      missionAndVision: [{}, {}],
     };
   }
 
@@ -28,22 +27,32 @@ class HomePage extends Component {
     fetch("https://pure-fortress-15361.herokuapp.com/accreditation")
       .then(data => data.json())
       .then(JSONdata => {
-        // console.log(JSONdata)
         this.setState({
           accreditation: JSONdata
         })
       })
   }
 
-  componentDidMount() {
-    this.carouselFetch()
-    this.accredFetch()
+  missionFetch = () => {
+    fetch("https://pure-fortress-15361.herokuapp.com/missionandvision")
+      .then(data => data.json())
+      .then(JSONdata => {
+        console.log("data check", JSONdata)
+        this.setState({
+          missionAndVision: JSONdata,
+        })
+        console.log('mission', this.state.missionAndVision.body)
+      })
   }
 
 
-
+  componentDidMount() {
+    this.carouselFetch()
+    this.accredFetch()
+    this.missionFetch()
+  }
   render() {
-    // console.log(this.state.accreditation[0])
+    console.log(this.state.missionAndVision[1].id)
     return (
       <div>
         <div className="row no-gutters">
@@ -52,7 +61,11 @@ class HomePage extends Component {
         </div>
         <div className="aboutMe no-gutters">
           <div className="arrow-down"></div>
-          <h1 className="row about no-gutters justify-content-center">About Us</h1>
+          <div className="row about no-gutters justify-content-center">
+            <div className="aboutName ">
+              About Us
+            </div>
+          </div>
           <div className="about no-gutters row">
             <div className="col-lg-2"></div>
             <p className="col-lg-8 fontRegular alight-items-center mobile">The Augustana Day Care Center opened its doors on May 1, 1971, fulfilling a long held dream of the congregation's Social Ministry Committee. Since its inception the Center was welcomed children
@@ -81,37 +94,28 @@ and nurturing environment that promotes learning and enhances the child's well-b
             </div>
 
           </div>
-          <div className="missionAndVisionHeader no-gutters">
-            {/* <div className="row">
-              <div className="col-lg-6">
-                : Mission
-          </div>
-              <div className="col-lg-6">
-                Vision
-          </div>
-            </div> */}
-            <div className="row missionRow no-gutters">
-              <div className="col-lg-1 no-gutters"></div>
-              <div className="col-lg-4 mission no-gutters ">
-                <MDBView hover className="hoverMission">
-                  <div className="missionText fontRegular no-gutters">
-                    <MDBMask className="flex-center hoverMission hoverFont" overlay="green-strong">
-                      <p className="white-text h1-responsive">Mission</p>
-                    </MDBMask>
-                    Augustana Early Learning Center serves children and their families through high quality, affordable care and education. We welcome children from diverse cultures, faith traditions, socioeconomic backgrounds, and national origins. We provide learning experiences that foster developmentally-appropriate growth to teach children to love themselves and others.
-                  </div>
-                </MDBView>
+          <div className="">
+            <div className="missionName">
+              <div className="name mobileName">
+                {this.state.missionAndVision[0].name}
               </div>
-              <div className="col-lg-1"></div>
+              <div className="name mobileName1">
+                {this.state.missionAndVision[1].name}
+              </div>
+            </div>
+            <div className="ampersand ">{`&`}</div>
+            <div className="row missionRow no-gutters">
+              {/* <div className="col-lg-1 no-gutters"></div> */}
+              <div className="col-lg-5 mission no-gutters ">
+                <div className="missionText fontRegular no-gutters">
+                  {this.state.missionAndVision[0].body}
+                </div>
+              </div>
+              <div className="col-lg-2"></div>
               <div className="col-lg-4 vision">
-                <MDBView hover className="hoverVision">
-                  <div className="visionText fontRegular">
-                    <MDBMask className="flex-center p-5 hoverVision hoverFont" overlay="green-strong">
-                      <p className="white-text visionWord h1-responsive">Vision</p>
-                    </MDBMask>
-                    Augustana Early Learning Center is a community outreach ministry of Augustana Lutheran Church with a vision to love children and inspire them to become engaged, emotionally-intelligent, and curious learners.
-                  </div>
-                </MDBView>
+                <div className="visionText">
+                  {this.state.missionAndVision[1].body}
+                </div>
               </div>
               <div className="col-lg-1"></div>
             </div>

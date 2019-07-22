@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
-import { thisExpression } from "@babel/types";
 import StaffCard from "./StaffCard"
 
 class StaffPage extends Component {
@@ -16,9 +14,7 @@ class StaffPage extends Component {
         this.setState({
           staff: JSONdata
         })
-
   })
-
   }
   render() {
     return (
@@ -29,7 +25,7 @@ class StaffPage extends Component {
         <div className="row no-gutters staff">
           {
             this.state.staff.map(item =>
-              <StaffCard id={item.id} name={item.name} image={item.image_url} bio={item.bio} />
+              <StaffCard key={item.id} id={item.id} name={item.name} image={item.image_url} bio={item.bio} />
             )
           }
         </div>
