@@ -1,16 +1,8 @@
 import React, { Component } from 'react'
-import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
+import { MDBBtn } from 'mdbreact';
 
 
 class ProgramMenuBar extends Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      // modal: false
-    };
-  }
 
   render() {
     return (
@@ -22,5 +14,3 @@ class ProgramMenuBar extends Component {
 }
 
 export default ProgramMenuBar
-
-// onClick = {() => <ProgramCard />}

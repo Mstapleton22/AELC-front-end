@@ -1,15 +1,11 @@
 
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import NavbarPage from './components/Nav';
-import FooterPage from './components/Footer'
-import { withRouter } from 'react-router-dom';
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      // carousel: [],
       programs: [],
       parentHandbook: [],
       staff: [],
@@ -32,11 +28,9 @@ class App extends Component {
     fetch("https://pure-fortress-15361.herokuapp.com/staff")
       .then(data => data.json())
       .then(JSONdata => {
-        // console.log(JSONdata)
         this.setState({
           staff: JSONdata
         })
-        // console.log('staff', this.state.staff)
       })
 
     fetch("https://pure-fortress-15361.herokuapp.com/parentHandbook")
@@ -58,9 +52,6 @@ class App extends Component {
           accreditation={this.state.accreditation}
           contact={this.state.contact}
         />
-        {/* <FooterPage
-          contact={this.state.contact}
-        /> */}
       </div>
     )
   }

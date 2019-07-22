@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 class Contact extends Component {
   constructor(props) {
@@ -32,19 +31,19 @@ class Contact extends Component {
                 </div>
               </div>
               <div className="contact_container address">
-                <i class="contact_image  contact_icon fas fa-map-marked-alt"></i>
+                <i className="contact_image  contact_icon fas fa-map-marked-alt"></i>
                 <div className="contact_overlay">
                   <a href="https://goo.gl/maps/cFs2EqNe1b1iPBkf8" target="_blank" className="h3-responsive addressHover contact_text">{this.state.contact[0].address}</a>
                 </div>
               </div>
               <div className="contact_container phone">
-                <i class="contact_image  contact_icon fas fa-phone"></i>
+                <i className="contact_image  contact_icon fas fa-phone"></i>
                 <div className="contact_overlay">
                   <h3 className="contact_text">{this.state.contact[0].phone}</h3>
                 </div>
               </div>
               <div className="contact_container email">
-                <i class="contact_image  contact_icon fas fa-at"></i>
+                <i className="contact_image  contact_icon fas fa-at"></i>
                 <div className="contact_overlay">
                   <h3 className="contact_text">{this.state.contact[0].email}</h3>
                 </div>

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import Accreditation from "./Accreditation.js"
+import { MDBCol, MDBRow, MDBFooter } from "mdbreact";
 
 class FooterPage extends Component {
 
@@ -31,7 +30,7 @@ class FooterPage extends Component {
           <MDBRow className="footerRow no-gutters">
             <MDBCol md="11" className="footerCol text-left">
               <h5 className="title">Contact Us</h5>
-              {this.props.contact.map(contact => <p style={{ padding: '-40px' }}>
+              {this.props.contact.map(contact => <p key={contact.id} style={{ padding: '-40px' }}>
                 <li className="list-unstyled">
                   Hours: {contact.hours}</li>
                 <a href="https://goo.gl/maps/cFs2EqNe1b1iPBkf8" target="_blank" className=" list-unstyled">
@@ -42,15 +41,6 @@ class FooterPage extends Component {
               </p>
               )}
             </MDBCol>
-            {/* <MDBCol md="6">
-              <div className=" accredFooterRow no-gutters">
-                {this.state.accreditation.map(item =>
-                  <div className="accredFooterBox text-center no-gutters">
-                    <Accreditation id={item.id} accredImage={item.image_url} name={item.name} imageName={item.image_name} />
-                  </div>
-                )}
-              </div>
-            </MDBCol> */}
           </MDBRow>
         </MDBFooter>
       </div >

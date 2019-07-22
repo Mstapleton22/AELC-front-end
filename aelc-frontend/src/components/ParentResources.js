@@ -14,12 +14,10 @@ class ParentResources extends Component {
     fetch("https://pure-fortress-15361.herokuapp.com/tuition")
       .then(data => data.json())
       .then(JSONdata => {
-        // console.log("tuition", JSONdata)
         this.setState({
           tuition: JSONdata,
           loadingData: true
         })
-        // console.log("tuitionnn", this.state.tuition)
       })
   }
   render() {

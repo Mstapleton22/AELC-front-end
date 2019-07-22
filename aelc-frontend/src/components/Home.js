@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
-  "mdbreact";
 import CarouselCard from './CarouselCard'
 import Accreditation from './Accreditation'
 

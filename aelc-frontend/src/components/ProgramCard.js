@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBRow } from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBRow } from 'mdbreact';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 

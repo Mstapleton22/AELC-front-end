@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import {
-  MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-  MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
+  MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse
 } from "mdbreact";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import HomePage from './Home';
@@ -11,10 +10,6 @@ import ProgramsPage from './Programs';
 import StaffPage from './Staff'
 import ParentResources from './ParentResources'
 import FooterPage from './Footer'
-import StickyBox from "react-sticky-box/dist/esnext";
-
-
-
 
 class NavbarPage extends Component {
   state = {
@@ -26,8 +21,6 @@ class NavbarPage extends Component {
   }
 
   render() {
-    // console.log("tuition", this.props.tuition)
-    // console.log(this.props.contact)
     return (
       <Router>
         {/* <StickyBox className="stickyBar mobileStickyBar" > */}
@@ -36,7 +29,7 @@ class NavbarPage extends Component {
             <img className="logo" src="alc_elclogo.png" alt="logo"></img>
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={this.toggleCollapse} right>
-            <i class="far fa-caret-square-down" />
+            <i className="far fa-caret-square-down" />
           </MDBNavbarToggler>
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} left navbar>
             <MDBNavbarNav className="nav">

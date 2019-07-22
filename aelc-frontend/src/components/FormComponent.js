@@ -256,14 +256,14 @@ class FormComponent extends Component {
                 <input onChange={(e) => this.saveStartDate(e)} type="date" className="form-control mb-2" placeholder="Requested start date" aria-describedby="defaultRegisterFormPhoneHelpBlock" />
               </div>
 
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
+              <div className="input-group mb-3">
+                <div className="input-group-prepend">
                   <div className="required">
-                    <label class="input-group-text" for="inputGroupSelect01">
+                    <label className="input-group-text" for="inputGroupSelect01">
                       Classroom:</label>
                   </div>
                 </div>
-                <select onClick={(e) => this.saveClassRoom(e)} class="custom-select" id="inputGroupSelect01">
+                <select onClick={(e) => this.saveClassRoom(e)} className="custom-select" id="inputGroupSelect01">
                   <option value="Firefly">Firefly (12 months - 2 years)</option>
                   <option value="Bumblebee">Bumblebee (2 - 3 years)</option>
                   <option value="Ladybug">Ladybug (2 1/2 - 3 1/2 years)</option>
@@ -276,46 +276,46 @@ class FormComponent extends Component {
               <div>
                 <div className="required">
                   <h5>Check all that apply:</h5></div>
-                <div class="input-group mb-1">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
+                <div className="input-group mb-1">
+                  <div className="input-group-prepend">
+                    <div className="input-group-text">
                       <input onChange={(e) => this.saveCircledOptions(e)} id={'Current Family'} type="checkbox" aria-label="Checkbox for following text input" className="checkbox" />
                     </div>
                   </div>
-                  <div class="form-control" aria-label="Text input with checkbox">Current Family</div>
+                  <div className="form-control" aria-label="Text input with checkbox">Current Family</div>
                 </div>
-                <div class="input-group mb-1">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
+                <div className="input-group mb-1">
+                  <div className="input-group-prepend">
+                    <div className="input-group-text">
                       <input onChange={(e) => this.saveCircledOptions(e)} id="Staff" type="checkbox" aria-label="Checkbox for following text input" className="checkbox" />
                     </div>
                   </div>
-                  <div class="form-control" aria-label="Text input with checkbox">Staff</div>
+                  <div className="form-control" aria-label="Text input with checkbox">Staff</div>
                 </div>
-                <div class="input-group mb-1">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
+                <div className="input-group mb-1">
+                  <div className="input-group-prepend">
+                    <div className="input-group-text">
                       <input onChange={(e) => this.saveCircledOptions(e)} id='Church Member' type="checkbox" aria-label="Checkbox for following text input" className="checkbox" />
                     </div>
                   </div>
-                  <div class="form-control" aria-label="Text input with checkbox">Church Member</div>
+                  <div className="form-control" aria-label="Text input with checkbox">Church Member</div>
                 </div>
-                <div class="input-group mb-1">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
+                <div className="input-group mb-1">
+                  <div className="input-group-prepend">
+                    <div className="input-group-text">
                       <input onChange={(e) => this.saveCircledOptions(e)} id='Sibling' type="checkbox" aria-label="Checkbox for following text input" className="checkbox" />
                     </div>
                   </div>
-                  <div class="form-control" aria-label="Text input with checkbox">Sibling</div>
+                  <div className="form-control" aria-label="Text input with checkbox">Sibling</div>
                 </div>
 
-                <div class="input-group mb-2">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
+                <div className="input-group mb-2">
+                  <div className="input-group-prepend">
+                    <div className="input-group-text">
                       <input onChange={(e) => this.saveCircledOptions(e)} id='New' type="checkbox" aria-label="Checkbox for following text input" className="checkbox" />
                     </div>
                   </div>
-                  <div class="form-control" aria-label="Text input with checkbox">New</div>
+                  <div className="form-control" aria-label="Text input with checkbox">New</div>
                 </div>
               </div>
 

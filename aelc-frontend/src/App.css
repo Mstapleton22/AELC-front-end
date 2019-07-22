@@ -36,64 +36,63 @@ font-style: normal;
 }
 
 .navItems {
-  /* font-family: 'Heebo', sans-serif; */
   text-decoration: none;
   color: #5e2b67;
   margin-right: 1%;
 }
+
 .navItemLast {
   text-decoration: none;
   color: white;
   margin-right: 1%;
 }
+
 .container {
   padding-right: 0px;
   padding-left: 0px;
 }
+
 .homeCarousel{
   margin-right: -0px !important;
   margin-left: -0px !important;
-  /* height: 100vh; */
-  /* width: 100%; */
 }
 
 .smartphone {
-  /* padding-top: 200%; */
   font-size: 1.75em;
-  /* padding-bottom: 20%; */
 }
+
 .smartphone1 {
   font-size: 1.75em;
   padding-bottom: 5%;
-  /* padding-top: 40%; */
 }
 
 .desktop {
   margin-top: -5%;
 }
+
 .carouselImage {
-  /* margin-top: -150px; */
-  /* max-width: 60vh; */
   max-height: 92vh;
 }
+
 .image {
   max-width: 60vh;
   max-height: 100vh;
   margin-right: -150px;
 }
+
 .about {
-  /* padding-top: 25px; */
   padding-left: 40px;
   padding-right: 40px;
   margin-bottom: -.5rem;
   background-color: #ebf0f3;
   letter-spacing: .05rem;
   font-size: 1.3em;
-  /* padding: 3%; */
 }
+
 .aboutMe {
   border-top: 20px #5cc87f solid;
 }
+
 .aboutName {
     text-transform: uppercase;
     font-size: 11em;
@@ -103,6 +102,7 @@ font-style: normal;
     color: #ae76b834;
     font-weight: bold;
 }
+
 .arrow-down {
   width: 0; 
   height: 0; 
@@ -114,6 +114,7 @@ font-style: normal;
   border-right: 35px solid transparent;
   border-top: 35px solid #5cc87f;
 }
+
 .footerRow {
   display:flex;
   flex-direction: row;
@@ -140,17 +141,20 @@ font-style: normal;
   width:10vw;
   height: 100%;
 }
+
 .calendar{
   width:100vw;
   height:90vh;
 }
+
 .staticColorNav {
-  /* background-color: #ae76b8; */
   background-color: #dee2e4;
 }
+
 .staticColor {
   background-color: #5e2b67;
 }
+
 .staff {
   display: flex;
   flex-direction: row;
@@ -161,16 +165,12 @@ font-style: normal;
   flex-direction: row; 
   justify-content: space-around; 
   text-decoration: none;
-  /* margin-left:100px; */
 }
+
 button:focus {outline:0;}
 
 .bio {
-  /* margin: 7px; */
   padding: 8%;
-  /* border-radius: 10%; */
-  /* width: 60px;
-  height: 30px; */
   margin-top: -29%;
   margin-left: 23%;
   position: absolute;
@@ -181,6 +181,7 @@ button:focus {outline:0;}
   font-size: 1.5em;
   border-radius: 50%;
 }
+
 .bio:hover {
   background-color:#ae76b8;
 }
@@ -208,165 +209,133 @@ button:focus {outline:0;}
   justify-content: left;
   color: black;
   padding-bottom: 3%;
+}
 
-}
-.card {
-}
 .staff {
   display:flex;
   justify-content: center;
-  /* padding: 15px; */
-  /* margin: 0px 20px; */
 }
+
 .staffName {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* padding-right: 100px; */
   font-size: 1.7em;
 }
+
 .staffImgContainer {
     width: 350px;
     height: 100%;
-  /* border-bottom: #5e2b67;
-  border-radius: 170px; */
-
 }
+
 .staffImage{
   background-color: #5e2b67;
-  /* border-bottom: #5e2b67; */
   border-radius: 170px;
-  /* height: 50%; */
   width: 100%;
   height: auto;
   margin-top: 10%;
   padding: 5%;
 }
+
 .accred_1 {
   margin-top: 10%;
-  /* padding: 2%; */
   height: 100%;
   width: 25vw;
-  /* width: 30%; */
-
 }
+
 .accred_2 {
   margin-top: 9%;
-  /* padding: 3%; */
   height: 100%;
-  /* width: 50%; */
   width: 23vw;
 }
+
 .accred_3 {
-  /* padding: 5%; */
   height: 100%;
   max-width: 100%;
 } 
+
 .accredAll {
   background-color:#ae76b85a;
   padding: 2%;
 }
+
 .accredRow {
   display:flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .accredTitleRow {
   display:flex;
-  /* width: 100%; */
   flex-direction: row;
   justify-content: center;
 }
+
 .accredTitle { 
   max-width: 50vw;
   height: 100%;
 }
+
 .accredFooterBox {
   max-width: 20%;
   max-height: 100%;
 }
+
 .accredFooterRow {
   display:flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .missionRow{
   display:flex;
   flex-direction: row;
   justify-content: flex-end;
   padding: 2%;
-  /* padding-top: -12%; */
   padding-bottom: 1%;
-
 }
 
-.mission {
-  /* border-right: 10px #5cc87f solid;
-  border-top: 10px #5cc87f solid; */
-  /* border-spacing: 15px 50px; */
-  /* background-color: white; */
-  /* padding: 5%; */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
- /* padding-left: 3%;  */
- /* padding-top: .7%; */
-}
 .missionName {
-  /* margin-left: 40px; */
   text-transform: uppercase;
   font-size: 11em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* font-size: 5em; */
-  /* position: absolute; */
-  /* z-index: 100; */
-  /* margin-top: -75px; */
-  /* margin-bottom:-50px; */
   color: #ae76b834;
 }
-
 
 .name {
   margin-left: -25px;
   font-weight: bold;
 }
+
 .visionName {
   text-transform: uppercase;
   font-size: 11em;
-  /* font-kerning: -5%; */
   margin-top: 25px;
-  /* padding:20%; */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   position: absolute;
-  /* z-index: 100; */
   color: #7e80822b;
   font-weight: bold;
 }
+
 .ampersand {
   text-transform: uppercase;
   font-size: 26em;
-  /* margin-right: 25px;; */
   margin-top: -12%;
-  /* margin-bottom: -18%; */
   color: #ae76b837;
   padding-left: 40%;
   font-weight: bold;
   position: absolute;
   z-index: 0;
 }
+
 .vision {
-    /* border-left: 10px #5cc87ea6 solid;
-    border-top: 10px #5cc87ea6 solid; */
-  /* border-spacing: 150px 50px; */
-  /* background-color: transparent; */
-  /* margin-bottom: -50px; */
   padding-bottom: 6%;
-    /*margin: 5%; */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
- /* padding-right: 3%;  */
 }
+
 .missionText {
   border-spacing: 15px 50px;
   padding: 5%;
@@ -374,36 +343,24 @@ button:focus {outline:0;}
   letter-spacing: .08rem;
   margin-top: -100px;
 }
+
 .visionText {
   border-spacing: 15px 50px;
   font-size: 1.4em;
   letter-spacing: .1rem;
   margin-top: -100px;
 }
+
 .hoverFont {
   font-size: 2rem;
   letter-spacing: 8px;
   font-weight: bold;
-  /* padding-bottom: 10%;
-  margin-bottom: 10%; */
-  /* padding-bottom: 20%;
-  padding-top: 20%; */
-  /* color: purple; */
 }
-.hoverVision {
-  /* margin-bottom: -200px; */
-  /* padding-bottom: 10%; */
-  /* padding-top: 10%; */
-}
-.hoverMission{
-  /* margin-bottom: -5px;
-  padding-bottom: 5%;
-  padding-top: 5%; */
 
-}
 .addressHover:hover {
   color: #5cc87f;
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -424,14 +381,16 @@ button:focus {outline:0;}
   transform: translate(-50%, -50%);
   white-space: wrap;
 }
+
 .contact_container {
   position: relative;
   width: 100%;
 }
+
 .contact_container:hover .contact_overlay {
   width: 100%;
-  /* height: 100vh; */
 }
+
 .contact_overlay {
   position: absolute;
   bottom: 0;
@@ -443,11 +402,13 @@ button:focus {outline:0;}
   height: 100%;
   transition: .5s ease;
 }
+
 .contact_image {
   display: block;
   width: 100%;
   height: auto;
 }
+
 .contact_icon {
   padding:2%;
   color: #864193;
@@ -456,31 +417,25 @@ button:focus {outline:0;}
   flex-flow: column nowrap;
   align-items: center;
 }
+
 .no-gutters {
   padding-left: -15px;
   padding-right: -15px;
 }
 
 .clock {
-  /* background-color: #ae76b85a; */
-  /* background-color: #4ca468; */
   background-color: #ebf0f3;
   }
-  .address{
-    /* background-color: #70207e; */
-  /* background-color: #43d872; */
-  background-color: #cbcfd2;
 
+.address{
+  background-color: #cbcfd2;
   }
-  .phone{
-    /* background-color: #864193; */
-    /* background-color: #7ac291; */
+
+.phone{
   background-color: #a0a3a5;
-  
   }
-  .email{
-    /* background-color: #bb69cb; */
-    /* background-color: #6ced95; */
+
+.email{
   background-color: #7e8082;
   }
 
@@ -489,11 +444,13 @@ button:focus {outline:0;}
   padding-bottom: 4%;
   padding-top: 4%;
 }
+
 .tuition_row  {
   display:flex;
   flex-direction: row;
   justify-content: space-around
 }
+
 .site {
   padding-bottom: 19%;
   padding-top: .5%;
@@ -501,47 +458,37 @@ button:focus {outline:0;}
 }
 
 .stickyBar {
-  /* padding-top: 4%; */
-  
   position: relative;
   z-index: 1001;
   background-color:  #ebf0f3;
 }
+
 .programHeader {
   background-color:  #ebf0f3;
 }
+
 .programsOffered {
   background-color:  #ebf0f3;
   margin-left: 16%;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
 }
 
 .programCards {
   background-color:#ebf0f3;
-  /* padding-top: 3%; */
-  /* position: absolute; */
-  /* z-index: -1; */
 }
-.programCardBG {
-  /* background-color: transparent; */
-  /* border: none; */
-}
+
 .programCardColumn {
   padding:0px -20px;
 }
+
 .stickyBtn{
   padding: 4%;
   background-color: #864193;
   color: white;
 }
+
 .stickyBtnWrapper {
   padding-top: 27%;
 }
-/* .footer {
-  position: relative;
-} */
 
 .stickyTitle {
   position: absolute;
@@ -551,6 +498,70 @@ button:focus {outline:0;}
   justify-content: start; 
 
 }
+/* date placeholders for waitlist */
+.rb-date-picker.placeholder:focus::before{
+  width:0%;
+  content:"";
+}
+
+input[type="date"]:before {
+content: attr(placeholder) !important;
+color: rgb(0, 0, 0);
+margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+content: "";
+}
+input[type="text"]:before {
+content: attr(placeholder) !important;
+color: rgb(0, 0, 0);
+margin-right: 0.5em;
+}
+.form-control{
+color: black;
+opacity: 1 !important;
+}
+/* .required {
+color: red;
+} */
+
+/* .required label h5 {
+font-weight: bold;
+} */
+.required h5:before{
+color: #e32;
+content: '* ';
+display:inline;
+}
+
+.required label:before {
+color: #e32;
+content: '* ';
+display:inline;
+padding-right: 5%;
+}
+.required input:before {
+color: #e32;
+content: '* ';
+display:inline;
+}
+
+.input-group-text {
+color: black;
+}
+.disclaimer {
+padding: 0% 10%;
+}
+.checkbox{
+margin: 5%;
+}
+.successHeader {
+background-color: #5cc87ebd;
+padding: 2%;
+margin-bottom: 25px;
+}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -564,11 +575,13 @@ button:focus {outline:0;}
     color: #ae76b8a9;
     font-weight: bold;
 }
+
 .about {
   padding: 3%;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
+
   .missionName {
     text-transform: uppercase;
     font-size: 2em;
@@ -579,19 +592,23 @@ button:focus {outline:0;}
     padding-left: 10%;
     margin-top: 20px;
   }
+
   .mobileName1 {
     margin-top: 430px;
     position: absolute;
     z-index: 100;
   }
+
   .ampersand {
     display: none;
   }
+
   .missionText {
     padding: 5%;
     font-size: 1em;
     letter-spacing: 0rem;
   }
+
   .missionRow{
     display:flex;
     flex-direction: row;
@@ -599,21 +616,25 @@ button:focus {outline:0;}
     padding: 5%;
     padding-top: 20%;
   }
+
   .vision {
     padding-top: 40%;
   }
+
   .visionText {
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  /* Styles */
+
   .logo {
     width:35vw;
     height: 100%;
   }
+
   .aboutMe {
     border-top: 15px #5cc87f solid;
   }
+
   .arrow-down {
     width: 0; 
     height: 0; 
@@ -625,18 +646,23 @@ button:focus {outline:0;}
     border-right: 30px solid transparent;
     border-top: 30px solid #5cc87f;
   }
+
 .smartphone {
   display:none;
 }
+
 .smartphone1 {
  display:none;
 }
+
 .mobile {
   text-align: center;
 }
+
 .site {
   padding-bottom: 5%;
 }
+
 .accredTitle { 
   /* background-color: purple; */
   max-width: 90vw;
@@ -644,6 +670,7 @@ button:focus {outline:0;}
   position: relative;
   z-index: 10;
 }
+
 .staffImage{
   border-bottom: #5e2b67;
   border-radius: 170px;
@@ -652,11 +679,13 @@ button:focus {outline:0;}
   margin-top: 10%;
   padding: -5%;
 }
+
 .tuition_image{
   width:100%;
   padding-bottom: 4%;
   padding-top: 4%;
 }
+
 .contact_text {
   color: white;
   font-size: 18.3px;
@@ -668,6 +697,7 @@ button:focus {outline:0;}
   transform: translate(-50%, -50%);
   white-space: wrap;
 }
+
 .contact_icon {
   padding:3%;
   color: #864193;
@@ -676,14 +706,14 @@ button:focus {outline:0;}
   flex-flow: column nowrap;
   align-items: center;
 }
+
 .accred_1 {
   margin-top: 10%;
   padding: 2%;
   height: 100%;
   width: 25vw;
 }
-/* height: 150px;
-width: 420px; */
+
 .accred_2 {
   margin-top: 9%;
   padding: 3%;
@@ -719,72 +749,72 @@ width: 420px; */
   /* Smartphones (portrait) ----------- */
   @media only screen and (max-width : 320px) {
   /* Styles */
-  .staffImage{
+.staffImage{
     border-radius: 170px;
     height: 50%;
     width: 100%;
     margin-top: 10%;
     padding: -5%;
   }
-  .site {
+
+.site {
     padding-bottom: 13.5%;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
   }
-  /* .mobileStickyBar {
-    display: none;
-  } */
   }
 
   /* iPads (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   /* Styles */
   
-  .site {
+.site {
     padding-bottom: 13.5%;
   }
-  .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
+
+.accredTitle {
     padding-top: 2%;  
     width:60vw;
     height: 100%;
     position: relative;
     margin-top: -108px;
     z-index: 10;
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
-  .footerRow {
+
+.footerRow {
     padding: 10px;
   }
-  .about {
+
+.about {
     padding-left: -40px;
     padding-right: -40px;
   }
-  .mobile {
+
+.mobile {
     text-align: center;
   }
-  .mobile3{
+
+.mobile3{
     padding-bottom: 6%;
   }
   
-  .footerCol{
-    /* display: flex;
-    flex-direction: row; */
+.footerCol{
     text-align: center;
   }
-  .staffImage{
+
+.staffImage{
     border-radius: 170px;
     height: 50%;
     width: 100%;
     margin-top: 10%;
     padding: -5%;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
@@ -793,7 +823,7 @@ width: 420px; */
  
   /* iPads (landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-    .aboutName {
+.aboutName {
       text-transform: uppercase;
       font-size: 2em;
       padding: 3%;
@@ -803,12 +833,14 @@ width: 420px; */
       color: #ae76b8a9;
       font-weight: bold;
   }
-  .about {
+
+.about {
     padding: 3%;
     letter-spacing: 0rem;
     font-size: 1.1em;
   }
-    .missionName {
+
+.missionName {
       text-transform: uppercase;
       font-size: 2em;
       color: #ae76b897;
@@ -818,32 +850,33 @@ width: 420px; */
       padding-left: 10%;
       margin-top: 20px;
     }
-    .mobileName1 {
+
+.mobileName1 {
       padding-left: 50%;
     }
-    .ampersand {
+
+.ampersand {
       display: none;
     }
-    .missionText {
-      /* padding: 5%; */
+
+.missionText {
       font-size: 1em;
       letter-spacing: 0rem;
     }
-    .missionRow{
+
+.missionRow{
       display:flex;
       flex-direction: row;
       justify-content: flex-end;
-      /* padding: 5%; */
       padding-top: 10%;
-    }
-    .vision {
-      /* padding-top: 15%; */
-    }
-    .visionText {
+}
+
+.visionText {
       font-size: 1em;
       letter-spacing: 0rem;
     }
-    .staffImage{
+
+.staffImage{
       border-radius: 170px;
       height: 50%;
       width: 100%;
@@ -851,40 +884,44 @@ width: 420px; */
       padding: -5%;
     }
   
-    .smartphone {
+.smartphone {
       display:none;
     }
-    .smartphone1{
+
+.smartphone1{
       display:none;
   
     }
-    .visionText {
+
+.visionText {
       border-spacing: 15px 50px;
       padding: 5%;
       margin-bottom: 0%;
     }
-    .staffImage{
+
+.staffImage{
       border-radius: 170px;
       height: 50%;
       width: 100%;
       margin-top: 10%;
       padding: -5%;
     }
-    .site {
+
+.site {
       padding-bottom: 5%;
     }
-    .tuition_image{
+
+.tuition_image{
       width:100%;
       padding-bottom: 4%;
       padding-top: 4%;
     }
-  /* Styles */
   }
 
   /* iPads (portrait) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   /* Styles */
-  .aboutName {
+.aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 0%;
@@ -894,15 +931,16 @@ width: 420px; */
     color: #ae76b8a9;
     font-weight: bold;
 }
+
 .about {
   padding: 3%;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-  .missionName {
+
+.missionName {
     text-transform: uppercase;
     font-size: 2em;
-    /* color: green; */
     color: #ae76b897;
     display: flex;
     flex-direction: row;
@@ -910,65 +948,77 @@ width: 420px; */
     padding-left: 10%;
     margin-top: 20px;
   }
-  .mobileName1 {
+
+.mobileName1 {
     margin-top:35%;
     position: absolute;
     z-index: 100;
   }
-  .ampersand {
+
+.ampersand {
     display: none;
   }
-  .missionText {
+
+.missionText {
     padding: 5%;
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .missionRow{
+
+.missionRow{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 5%;
     padding-top: 10%;
   }
-  .vision {
+
+.vision {
     padding-top:18%;
   }
-  .visionText {
+
+.visionText {
     font-size: 1em;
     padding: 5%;
     letter-spacing: 0rem;
   }
-  .mobileStickyBar {
+
+.mobileStickyBar {
     display: none;
   }
   
-  .staffImage{
+.staffImage{
     border-radius: 170px;
     height: 50%;
     width: 100%;
     margin-top: 10%;
     padding: -5%;
   }
-  .site {
+
+.site {
     padding-bottom: 13.5%;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
   }
-  .image {
+
+.image {
     width: 50vw;
     height: 100%;
   }
-  .smartphone {
+
+.smartphone {
     font-size: 1em;
   }
-  .smartphone1 {
+
+.smartphone1 {
     font-size: 1em;
-    
   }
-  .contact_icon {
+
+.contact_icon {
     padding:6%;
     color: #864193;
     font-size:6em;
@@ -976,7 +1026,8 @@ width: 420px; */
     flex-flow: column nowrap;
     align-items: center;
   }
-  .contact_text {
+
+.contact_text {
     font-size: 1.5em;
   }
   }
@@ -985,52 +1036,53 @@ width: 420px; */
   **********/
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
-  .mobileStickyBar {
+.mobileStickyBar {
     display: none;
   }
-  .visionText {
+
+.visionText {
     border-spacing: 15px 50px;
     padding: 5%;
     margin-bottom: 0%;
   }
-  .site {
+
+.site {
     padding-bottom: 13.5%;
   }
-  .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
+
+.accredTitle {
     padding-top: 2%;  
     width:80vw;
     height: 100%;
     position: relative;
     margin-top: -65px;
     z-index: 10;
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
-  .footerRow {
+
+.footerRow {
     padding: 10px;
   }
-  .about {
+
+.about {
     padding-left: -40px;
     padding-right: -40px;
   }
 
-  .mobile3{
+.mobile3{
     padding-bottom: 6%;
   }
   
-  .footerCol{
-    /* display: flex;
-    flex-direction: row; */
+.footerCol{
     text-align: center;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
   }
-  .image {
+
+.image {
     width: 40vw;
     height: 100%;
   }
@@ -1038,28 +1090,16 @@ width: 420px; */
   /* Portrait */
 
   /* Desktops and laptops ----------- */
-  @media only screen  and (min-width : 1224px) {
-  /* Styles */
-  /* .site {
-    padding-bottom: 13.5%;
-  } */
-  .ul{
+  @media only screen  and (min-width : 1224px) {.ul{
     padding-inline-start: -40px;
-   padding: -40px;  
+    padding: -40px;  
   }
-  /* .tuition_image{
-    width:100%;
-    padding-bottom: 4%;
-    padding-top: 4%;
-  } */
   }
   
   /* Large screens ----------- */
   @media only screen  and (min-width : 1824px) {
   /* Styles */
- 
-
-  .accredTitle {
+.accredTitle {
     padding-top: 2%;  
     width:80vw;
     height: 100%;
@@ -1068,27 +1108,27 @@ width: 420px; */
     z-index: 10;
   }
 
-  .footerRow {
+.footerRow {
     padding: 10px;
   }
 
-  .about {
+.about {
     padding-left: -40px;
     padding-right: -40px;
   }
 
-  .mobile3{
+.mobile3{
     padding-bottom: 6%;
   }
   
-  .footerCol{
+.footerCol{
     text-align: center;
   }
   }
   
   /* iPhone 4 ----------- */
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-    .aboutName {
+.aboutName {
       text-transform: uppercase;
       font-size: 2em;
       padding: 5%;
@@ -1098,12 +1138,14 @@ width: 420px; */
       color: #ae76b8a9;
       font-weight: bold;
   }
-  .about {
+
+.about {
     padding: 3%;
     letter-spacing: 0rem;
     font-size: 1.1em;
   }
-    .missionName {
+
+.missionName {
       text-transform: uppercase;
       font-size: 2em;
       color: #ae76b897;
@@ -1113,72 +1155,77 @@ width: 420px; */
       padding-left: 10%;
       margin-top: 20px;
     }
-    .mobileName1 {
+
+.mobileName1 {
       margin-top: 430px;
       position: absolute;
       z-index: 100;
     }
-    .ampersand {
+
+.ampersand {
       display: none;
     }
-    .missionText {
+
+.missionText {
       padding: 5%;
       font-size: 1em;
       letter-spacing: 0rem;
     }
-    .missionRow{
+
+.missionRow{
       display:flex;
       flex-direction: row;
       justify-content: flex-end;
       padding: 5%;
       padding-top: 20%;
     }
-    .vision {
+
+.vision {
       padding-top: 40%;
     }
-    .visionText {
+
+.visionText {
       font-size: 1em;
       letter-spacing: 0rem;
     }
-  /* Styles */
-  .visionText {
+
+.visionText {
     border-spacing: 15px 50px;
     padding: 5%;
     margin-bottom: 0%;
   }
-  .site {
+
+.site {
     padding-bottom: 13.5%;
   }
-  .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
+
+.accredTitle {
     padding-top: 2%;  
     width:80vw;
     height: 100%;
     position: relative;
     margin-top: -65px;
     z-index: 10;
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
-  .footerRow {
+
+.footerRow {
     padding: 10px;
   }
-  .about {
+
+.about {
     padding-left: -40px;
     padding-right: -40px;
   }
 
-  .mobile3{
+.mobile3{
     padding-bottom: 6%;
   }
   
-  .footerCol{
-    /* display: flex;
-    flex-direction: row; */
+.footerCol{
     text-align: center;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
@@ -1187,7 +1234,7 @@ width: 420px; */
   
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
-  .aboutName {
+.aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 5%;
@@ -1197,12 +1244,14 @@ width: 420px; */
     color: #ae76b8a9;
     font-weight: bold;
 }
+
 .about {
   padding: 3%;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-  .missionName {
+
+.missionName {
     text-transform: uppercase;
     font-size: 2em;
     color: #ae76b897;
@@ -1212,94 +1261,98 @@ width: 420px; */
     padding-left: 10%;
     margin-top: 20px;
   }
-  .mobileName1 {
+
+.mobileName1 {
     margin-top: 430px;
     position: absolute;
     z-index: 100;
   }
-  .ampersand {
+
+.ampersand {
     display: none;
   }
-  .missionText {
+
+.missionText {
     padding: 5%;
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .missionRow{
+
+.missionRow{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 5%;
     padding-top: 20%;
   }
-  .vision {
+
+.vision {
     padding-top: 40%;
   }
-  .visionText {
+
+ .visionText {
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .mobileStickyBar {
+
+.mobileStickyBar {
     display: none;
   }
-  .visionText {
+
+.visionText {
     border-spacing: 15px 50px;
     padding: 5%;
     margin-bottom: 0%;
   }
-  .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
+
+.accredTitle {
     padding-top: 2%;  
     width:80vw;
     height: 100%;
     position: relative;
     margin-top: -65px;
     z-index: 10;
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
-  .accred_1 {
+
+.accred_1 {
     margin-top: 10%;
-    /* padding: 2%; */
     height: 100%;
     width: 90vw;
-    /* width: 30%; */
-  
   }
-  .accred_2 {
+
+.accred_2 {
     margin-top: 9%;
-    /* padding: 3%; */
     height: 100%;
-    /* width: 50%; */
     width: 90vw;
   }
-  .accred_3 {
-    /* padding: 5%; */
+
+.accred_3 {
     height: 100%;
     max-width: 100%;
   }
-  .site {
+
+.site {
     padding-bottom: 13.5%;
   }
-  .footerRow {
+
+.footerRow {
     padding: 10px;
   }
-  .about {
+
+.about {
     padding-left: -40px;
     padding-right: -40px;
   }
 
-  .mobile3{
+.mobile3{
     padding-bottom: 6%;
   }
   
-  .footerCol{
-    /* display: flex;
-    flex-direction: row; */
+.footerCol{
     text-align: center;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
@@ -1309,7 +1362,7 @@ width: 420px; */
   /* iPhone 5 ----------- */
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  .aboutName {
+.aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 5%;
@@ -1319,12 +1372,14 @@ width: 420px; */
     color: #ae76b8a9;
     font-weight: bold;
 }
+
 .about {
   padding: 3%;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-  .missionName {
+
+.missionName {
     text-transform: uppercase;
     font-size: 2em;
     color: #ae76b897;
@@ -1334,77 +1389,85 @@ width: 420px; */
     padding-left: 10%;
     margin-top: 20px;
   }
-  .mobileName1 {
+
+.mobileName1 {
     margin-top: 430px;
     position: absolute;
     z-index: 100;
   }
-  .ampersand {
+
+.ampersand {
     display: none;
   }
-  .missionText {
+
+.missionText {
     padding: 5%;
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .missionRow{
+
+.missionRow{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 5%;
     padding-top: 20%;
   }
-  .vision {
+
+.vision {
     padding-top: 40%;
   }
-  .visionText {
+
+.visionText {
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .visionText {
+
+.visionText {
     border-spacing: 15px 50px;
     padding: 5%;
     margin-bottom: 0%;
   }
-  .smartphone{
+
+.smartphone{
     display: none;
   }
-  .smartphone1{
+
+.smartphone1{
     display: none;
   }
-  .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
+
+.accredTitle {
     padding-top: 2%;  
     width:80vw;
     height: 100%;
     position: relative;
     margin-top: -65px;
     z-index: 10;
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
-  .site {
+
+.site {
     padding-bottom: 13.5%;
   }
-  .footerRow {
+
+.footerRow {
     padding: 10px;
   }
-  .about {
+
+.about {
     padding-left: -40px;
     padding-right: -40px;
   }
 
-  .mobile3{
+.mobile3{
     padding-bottom: 4%;
   }
   
-  .footerCol{
-    /* display: flex;
-    flex-direction: row; */
+.footerCol{
     text-align: center;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
@@ -1413,7 +1476,7 @@ width: 420px; */
   
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  .aboutName {
+.aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 5%;
@@ -1423,12 +1486,14 @@ width: 420px; */
     color: #ae76b8a9;
     font-weight: bold;
 }
+
 .about {
   padding: 3%;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-  .missionName {
+
+.missionName {
     text-transform: uppercase;
     font-size: 2em;
     color: #ae76b897;
@@ -1438,95 +1503,101 @@ width: 420px; */
     padding-left: 10%;
     margin-top: 20px;
   }
-  .mobileName1 {
+
+.mobileName1 {
     margin-top: 145%;
     position: absolute;
     z-index: 100;
   }
-  .ampersand {
+
+.ampersand {
     display: none;
   }
-  .missionText {
+
+.missionText {
     padding: 5%;
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .missionRow{
+
+.missionRow{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 5%;
     padding-top: 20%;
   }
-  .vision {
+
+.vision {
     padding-top: 40%;
   }
-  .visionText {
+
+.visionText {
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .smartphone{
+
+.smartphone{
     display: none;
   }
-  .smartphone1{
+
+.smartphone1{
     display: none;
   }
-  .image {
+
+.image {
     width: 85vw;
     height: 100%;
   }
-  .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
+
+.accredTitle {
     padding-top: 2%;  
     width:80vw;
     height: 100%;
     position: relative;
     margin-top: -55px;
     z-index: 10;
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
-  .accred_1 {
+
+.accred_1 {
     margin-top: 10%;
-    /* padding: 2%; */
     height: 100%;
     width: 90vw;
-    /* width: 30%; */
-  
   }
-  .accred_2 {
+
+.accred_2 {
     margin-top: 9%;
-    /* padding: 3%; */
     height: 100%;
-    /* width: 50%; */
     width: 90vw;
   }
-  .accred_3 {
-    /* padding: 5%; */
+
+.accred_3 {
     height: 100%;
     max-width: 100%;
   }
-  .footerRow {
+
+.footerRow {
     padding: 10px;
   }
-  .about {
+
+.about {
     padding-left: -40px;
     padding-right: -40px;
   }
 
-  .mobile3{
+.mobile3{
     padding-bottom: 5%;
   }
-  .site {
+
+.site {
     padding-bottom: 13.5%;
   }
-  .footerCol{
-    /* display: flex;
-    flex-direction: row; */
+
+.footerCol{
     text-align: center;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
@@ -1536,7 +1607,7 @@ width: 420px; */
   /* iPhone 6, 7, 8 ----------- */
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  .aboutName {
+.aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 5%;
@@ -1546,12 +1617,14 @@ width: 420px; */
     color: #ae76b8a9;
     font-weight: bold;
 }
+
 .about {
   padding: 3%;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-  .missionName {
+
+.missionName {
     text-transform: uppercase;
     font-size: 2em;
     color: #ae76b897;
@@ -1562,76 +1635,88 @@ width: 420px; */
     margin-bottom: -8%;
     margin-top: 20px;
   }
-  .mobileName1 {
+
+.mobileName1 {
     margin-top: 48%;
     position: absolute;
     z-index: 100;
   }
-  .ampersand {
+
+.ampersand {
     display: none;
   }
-  .missionText {
+
+.missionText {
     padding: 5%;
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .missionRow{
+
+.missionRow{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 5%;
     padding-top: 20%;
   }
-  .vision {
+
+.vision {
     padding-top: 25%;
   }
-  .visionText {
+
+.visionText {
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .smartphone{
+
+.smartphone{
     display: none;
   }
-  .smartphone1{
+
+.smartphone1{
     display: none;
   }
-  .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
+
+.accredTitle {
     padding-top: 2%;  
     width:80vw;
     height: 100%;
     position: relative;
     margin-top: -65px;
     z-index: 10;
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
-  .site {
+
+.site {
     padding-bottom: 6%;
   }
-  .mobile3{
+
+.mobile3{
     padding-bottom: 6%;
   }
-  .staffImage{
+
+.staffImage{
     border-radius: 170px;
     height: 50%;
     width: 100%;
     margin-top: 10%;
     padding: -5%;
   }
-  .navbar .nav .fa-caret-square-down {
+
+.navbar .nav .fa-caret-square-down {
     padding: -20px;
     font-family: 'Heebo', sans-serif;
   }
-  .ul {
+
+.ul {
     padding-inline-start: -40px;
    padding: -40px;  
   }
-  .title {
+
+.title {
     padding-left: 2%;
   }
-  .tuition_image {
+
+.tuition_image {
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
@@ -1641,7 +1726,7 @@ width: 420px; */
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
   
-  .aboutName {
+.aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 5%;
@@ -1651,12 +1736,14 @@ width: 420px; */
     color: #ae76b8a9;
     font-weight: bold;
 }
+
 .about {
   padding: 3%;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-  .missionName {
+
+.missionName {
     text-transform: uppercase;
     font-size: 2em;
     color: #ae76b897;
@@ -1666,48 +1753,58 @@ width: 420px; */
     padding-left: 10%;
     margin-top: 20px;
   }
-  .mobileName1 {
+
+.mobileName1 {
     margin-top: 115%;
     position: absolute;
     z-index: 100;
   }
-  .ampersand {
+
+.ampersand {
     display: none;
   }
-  .missionText {
+
+.missionText {
     padding: 5%;
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .missionRow{
+
+.missionRow{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 5%;
     padding-top: 20%;
   }
-  .vision {
+
+.vision {
     padding-top: 40%;
   }
-  .visionText {
+
+.visionText {
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .smartphone{
+
+.smartphone{
     display: none;
   }
-  .smartphone1{
+
+.smartphone1{
     display: none;
   }
-  .image {
+
+.image {
     width: 60vw;
     height: 100%;
   }
-  .site {
+
+.site {
     padding-bottom: 18%;
   }
 
-  .accredTitle {
+.accredTitle {
     padding-top: 2%;  
     width:80vw;
     height: 100%;
@@ -1715,47 +1812,50 @@ width: 420px; */
     margin-top: -65px;
     z-index: 10;
   }
-  .accred_1 {
+
+.accred_1 {
     margin-top: 10%;
-    /* padding: 2%; */
     height: 100%;
     width: 90vw;
-    /* width: 30%; */
-  
   }
-  .accred_2 {
+
+.accred_2 {
     margin-top: 9%;
-    /* padding: 3%; */
     height: 100%;
-    /* width: 50%; */
     width: 90vw;
   }
-  .accred_3 {
-    /* padding: 5%; */
+
+.accred_3 {
     height: 100%;
     max-width: 100%;
   }
-  .mobile3{
+
+.mobile3{
     padding-bottom: 6%;
   }
-  .staffImage{
+
+.staffImage{
     border-radius: 170px;
     height: 50%;
     width: 100%;
     margin-top: 10%;
     padding: -5%;
   }
-  .navbar .nav .fa-caret-square-down {
+
+.navbar .nav .fa-caret-square-down {
     padding: -20px;
   }
-  .title {
+
+.title {
     padding-left: 2%;
   }
-  .ul{
+
+.ul{
     padding-inline-start: -40px;
    padding: -40px;  
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
@@ -1765,115 +1865,7 @@ width: 420px; */
   /* iPhone 6+, 7+, 8+ ----------- */
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  .aboutName {
-    text-transform: uppercase;
-    font-size: 2em;
-    padding: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    /* color: #ae76b8a9; */
-    color: yellow;
-    font-weight: bold;
-}
-.about {
-  padding: 3%;
-  letter-spacing: 0rem;
-  font-size: 1.1em;
-}
-  .missionName {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #ae76b897;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 10%;
-    margin-bottom: -8%;
-    margin-top: 20px;
-  }
-  .mobileName1 {
-    margin-top: 48%;
-    position: absolute;
-    z-index: 100;
-  }
-  .ampersand {
-    display: none;
-  }
-  .missionText {
-    padding: 5%;
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-  .missionRow{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 5%;
-    padding-top: 20%;
-  }
-  .vision {
-    padding-top: 25%;
-  }
-  .visionText {
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-  .smartphone{
-    display: none;
-  }
-  .smartphone1{
-    display: none;
-  }
-  .site {
-    padding-bottom: 0%;
-  }
-  .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
-    padding-top: 2%;  
-    width:80vw;
-    height: 100%;
-    position: relative;
-    margin-top: -65px;
-    z-index: 10;
-    /* margin-right: 15%;
-    margin-left: 15%; */
-  }
-  .mobile3{
-    padding-bottom: 6%;
-  }
-  .staffImage{
-    border-radius: 170px;
-    height: 50%;
-    width: 100%;
-    margin-top: 10%;
-    padding: -5%;
-  }
-  .title {
-    padding-left: 2%;
-  }
-  .navbar .nav .fa-caret-square-down {
-    padding: -20px;
-  }
-  .ul{
-    padding-inline-start: -40px;
-   padding: -40px;  
-  }
-  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .tuition_image{
-    width:100%;
-    padding-bottom: 4%;
-    padding-top: 4%;
-  }
-  }
-  
-  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
-  .aboutName {
+.aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 5%;
@@ -1883,12 +1875,14 @@ width: 420px; */
     color: #ae76b8a9;
     font-weight: bold;
 }
+
 .about {
   padding: 3%;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-  .missionName {
+
+.missionName {
     text-transform: uppercase;
     font-size: 2em;
     color: #ae76b897;
@@ -1899,45 +1893,176 @@ width: 420px; */
     margin-bottom: -8%;
     margin-top: 20px;
   }
-  .mobileName1 {
+  
+.mobileName1 {
     margin-top: 48%;
     position: absolute;
     z-index: 100;
   }
-  .ampersand {
+  
+.ampersand {
     display: none;
   }
-  .missionText {
+  
+.missionText {
     padding: 5%;
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .missionRow{
+  
+.missionRow{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 5%;
     padding-top: 20%;
   }
-  .vision {
+  
+.vision {
     padding-top: 25%;
   }
-  .visionText {
+  
+.visionText {
     font-size: 1em;
     letter-spacing: 0rem;
   }
-  .smartphone{
+  
+.smartphone{
     display: none;
   }
-  .smartphone1{
+.smartphone1{
     display: none;
   }
-  .visionText {
+  
+.site {
+    padding-bottom: 0%;
+  }
+  
+.accredTitle {
+    padding-top: 2%;  
+    width:80vw;
+    height: 100%;
+    position: relative;
+    margin-top: -65px;
+    z-index: 10;
+  }
+  
+.mobile3{
+    padding-bottom: 6%;
+  }
+  
+.staffImage{
+    border-radius: 170px;
+    height: 50%;
+    width: 100%;
+    margin-top: 10%;
+    padding: -5%;
+  }
+  
+.title {
+    padding-left: 2%;
+  }
+  
+.navbar .nav .fa-caret-square-down {
+    padding: -20px;
+  }
+  
+.ul{
+   padding-inline-start: -40px;
+   padding: -40px;  
+  }
+  
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+.tuition_image{
+    width:100%;
+    padding-bottom: 4%;
+    padding-top: 4%;
+  }
+  }
+  
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+.aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+
+.about {
+  padding: 3%;
+  letter-spacing: 0rem;
+  font-size: 1.1em;
+}
+
+.missionName {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ae76b897;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10%;
+    margin-bottom: -8%;
+    margin-top: 20px;
+  }
+
+.mobileName1 {
+    margin-top: 48%;
+    position: absolute;
+    z-index: 100;
+  }
+
+.ampersand {
+    display: none;
+  }
+
+.missionText {
+    padding: 5%;
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+
+.missionRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5%;
+    padding-top: 20%;
+  }
+
+.vision {
+    padding-top: 25%;
+  }
+
+.visionText {
+    font-size: 1em;
+    letter-spacing: 0rem;
+  }
+
+.smartphone{
+    display: none;
+  }
+
+.smartphone1{
+    display: none;
+  }
+
+.visionText {
     border-spacing: 15px 50px;
     padding: 5%;
     margin-bottom: 0%;
   }
-  .accredTitle {
+
+.accredTitle {
     padding-top: 2%;  
     width:80vw;
     height: 100%;
@@ -1945,54 +2070,59 @@ width: 420px; */
     margin-top: -75px;
     z-index: 10;
   }
-  .accred_1 {
+
+.accred_1 {
     margin-top: 10%;
-    /* padding: 2%; */
     height: 100%;
     width: 90vw;
-    /* width: 30%; */
-  
   }
-  .accred_2 {
+
+.accred_2 {
     margin-top: 9%;
-    /* padding: 3%; */
     height: 100%;
-    /* width: 50%; */
     width: 90vw;
   }
-  .accred_3 {
-    /* padding: 5%; */
+
+.accred_3 {
     height: 100%;
     max-width: 100%;
   }
-  .site {
+
+.site {
     padding-bottom: 15%;
   }
-  .mobile3{
+
+.mobile3{
     padding-bottom:6%;
   }
-  .staffImage{
+
+.staffImage{
     border-radius: 170px;
     height: 50%;
     width: 100%;
     margin-top: 10%;
     padding: -10%;
   }
-  .navbar .nav .fa-caret-square-down {
+
+.navbar .nav .fa-caret-square-down {
     padding: -20px;
   }
-  .title {
+
+.title {
     padding-left: 2%;
   }
-  .ul{
+
+.ul{
     padding-inline-start: -40px;
    padding: -40px;  
   }
-  .about {
+
+.about {
     padding-left: -40px;
     padding-right: -40px;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
@@ -2002,51 +2132,56 @@ width: 420px; */
   /* iPhone X ----------- */
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
-  .visionText {
+.visionText {
     border-spacing: 15px 50px;
     padding: 5%;
     margin-bottom: 0%;
   }
-  .site {
+
+.site {
     padding-bottom: 13.5%;
   }
-  .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
+
+.accredTitle {
     padding-top: 2%;  
     width:80vw;
     height: 100%;
     position: relative;
     margin-top: -65px;
     z-index: 10;
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
-  .mobile3{
+
+.mobile3{
     padding-bottom: 6%;
   }
-  .staffImage{
+
+.staffImage{
     border-radius: 170px;
     height: 50%;
     width: 100%;
     margin-top: 10%;
     padding: -10%;
   }
-  .navbar .nav .fa-caret-square-down {
+
+.navbar .nav .fa-caret-square-down {
     padding: -20px;
   }  
-  .title {
+
+.title {
     padding-left: 12%;
   }
-  .image {
+
+.image {
     width: 40vw;
     height: 100%;
   }
-  .ul{
+
+.ul{
     padding-inline-start: -40px;
    padding: -40px;  
   }
-  .about {
+
+.about {
     padding-left: -40px;
     padding-right: -40px;
   }
@@ -2055,7 +2190,8 @@ width: 420px; */
     padding-left: -15px;
     padding-right: -15px;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
@@ -2064,86 +2200,58 @@ width: 420px; */
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
-  .image {
+.image {
     width: 90vw;
     height: 100%;
   }
-  .visionText {
+
+.visionText {
     border-spacing: 15px 50px;
     padding: 5%;
     margin-bottom: 0%;
   }
-  .accred_1 {
-    margin-top: 10%;
-    padding: 2%;
-    height: 100%;
-    width: 100%;
-  }
-  /* height: 150px;
-  width: 420px; */
-  .accred_2 {
-    margin-top: 9%;
-    padding: 3%;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .accred_3 {
-    padding: 5%;
-    height: 100%;
-    width: 100%;
-  } 
 
-  .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
-    /* padding-top: 2%;   */
+.accredTitle {
     width:100%;
     height: 100%;
     position: relative;
-    /* margin-top: -65px; */
-    /* z-index: 10; */
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
-  .accred_1 {
+
+.accred_1 {
     margin-top: 10%;
-    /* padding: 2%; */
     height: 100%;
-    width: 90vw;
-    /* width: 30%; */
-  
+    width: 90vw;  
   }
-  .accred_2 {
+
+.accred_2 {
     margin-top: 9%;
-    /* padding: 3%; */
     height: 100%;
-    /* width: 50%; */
     width: 90vw;
   }
-  .accred_3 {
-    /* padding: 5%; */
+
+.accred_3 {
     height: 100%;
     max-width: 100%;
   }
-  .site {
+
+.site {
     padding-bottom: 13.5%;
   }
-  .footerRow {
+
+.footerRow {
     padding: 10px;
   }
-  .about {
+
+.about {
     padding-left: -40px;
     padding-right: -40px;
   }
 
-  .mobile3{
+.mobile3{
     padding-bottom: 6%;
   }
   
-  .footerCol{
-    /* display: flex;
-    flex-direction: row; */
+.footerCol{
     text-align: center;
   }
 
@@ -2151,7 +2259,8 @@ width: 420px; */
     padding-left: -15px;
     padding-right: -15px;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
@@ -2192,86 +2301,78 @@ width: 420px; */
   
   @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
-  .image {
+.image {
     width: 90vw;
     height: 100%;
   }
-  .visionText {
+
+.visionText {
     border-spacing: 15px 50px;
     padding: 5%;
     margin-bottom: 0%;
   }
-  .accred_1 {
+
+.accred_1 {
     margin-top: 10%;
     padding: 2%;
     height: 100%;
     width: 100%;
   }
-  /* height: 150px;
-  width: 420px; */
-  .accred_2 {
+
+.accred_2 {
     margin-top: 9%;
     padding: 3%;
     height: 100%;
     width: 100%;
   }
   
-  .accred_3 {
+.accred_3 {
     padding: 5%;
     height: 100%;
     width: 100%;
   } 
 
-  .accredTitle {
-    /* background-color: gold; */
-     /* padding-right: 10%; */
-    /* padding-top: 2%;   */
+.accredTitle {
     width:100%;
     height: 100%;
     position: relative;
-    /* margin-top: -65px; */
-    /* z-index: 10; */
-    /* margin-right: 15%;
-    margin-left: 15%; */
   }
-  .accred_1 {
+
+.accred_1 {
     margin-top: 10%;
-    /* padding: 2%; */
     height: 100%;
     width: 90vw;
-    /* width: 30%; */
-  
   }
-  .accred_2 {
+
+.accred_2 {
     margin-top: 9%;
-    /* padding: 3%; */
     height: 100%;
-    /* width: 50%; */
     width: 90vw;
   }
-  .accred_3 {
-    /* padding: 5%; */
+
+.accred_3 {
     height: 100%;
     max-width: 100%;
   }
-  .site {
+
+.site {
     padding-bottom: 13.5%;
   }
-  .footerRow {
+
+.footerRow {
     padding: 10px;
   }
-  .about {
+
+.about {
     padding-left: -40px;
     padding-right: -40px;
   }
 
-  .mobile3{
+.mobile3{
     padding-bottom: 6%;
   }
   
-  .footerCol{
-    /* display: flex;
-    flex-direction: row; */
+.footerCol{
     text-align: center;
   }
 
@@ -2279,74 +2380,10 @@ width: 420px; */
     padding-left: -15px;
     padding-right: -15px;
   }
-  .tuition_image{
+
+.tuition_image{
     width:100%;
     padding-bottom: 4%;
     padding-top: 4%;
   }
   }
-
-
-/* date placeholders for waitlist */
-  .rb-date-picker.placeholder:focus::before{
-    width:0%;
-    content:"";
-}
-
-input[type="date"]:before {
-  content: attr(placeholder) !important;
-  color: rgb(0, 0, 0);
-  margin-right: 0.5em;
-}
-input[type="date"]:focus:before,
-input[type="date"]:valid:before {
-  content: "";
-}
-input[type="text"]:before {
-  content: attr(placeholder) !important;
-  color: rgb(0, 0, 0);
-  margin-right: 0.5em;
-}
-.form-control{
-  color: black;
-  opacity: 1 !important;
-}
-/* .required {
-  color: red;
-} */
-
-/* .required label h5 {
-  font-weight: bold;
-} */
-.required h5:before{
-  color: #e32;
-  content: '* ';
-  display:inline;
-}
-
-.required label:before {
-  color: #e32;
-  content: '* ';
-  display:inline;
-  padding-right: 5%;
-}
-.required input:before {
-  color: #e32;
-  content: '* ';
-  display:inline;
-}
-
-.input-group-text {
-  color: black;
-}
-.disclaimer {
-  padding: 0% 10%;
-}
-.checkbox{
-  margin: 5%;
-}
-.successHeader {
-  background-color: #5cc87ebd;
-  padding: 2%;
-  margin-bottom: 25px;
-}

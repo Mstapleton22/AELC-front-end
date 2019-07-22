@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { MDBCardBody, MDBCardImage, MDBCardTitle, MDBCol } from 'mdbreact';
-import { MDBRow, MDBTabPane, MDBTabContent, MDBNav, MDBNavItem, MDBNavLink } from "mdbreact";
-import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
+import { MDBRow } from "mdbreact";
+import { MDBContainer, MDBModal, MDBModalBody, MDBModalHeader } from 'mdbreact';
 
 
 class StaffCard extends Component {
@@ -40,9 +40,7 @@ class StaffCard extends Component {
         <MDBContainer style={{ width: "18rem" }} className="no-gutters staffImgContainer" >
           <MDBRow className="no-gutters" >
             <MDBCol className="no-gutters" md="12">
-              {/* <MDBTabContent className="no-gutters" activeItem={this.state.items["default"]}>
-                <MDBTabPane className="row justify-content-center" tabId="1"> */}
-              <p>
+              <div>
                 <MDBCardBody className="no-gutters staffImgContainer">
                   <MDBCardImage className="img-fluid no-gutters staffImage" src={`${this.props.image}`} waves />
                   <div className="bioBtn no-gutters">
@@ -56,15 +54,11 @@ class StaffCard extends Component {
                     </MDBModalBody>
                   </MDBModal>
                 </MDBCardBody>
-              </p>
-              {/* </MDBTabPane>
-              </MDBTabContent> */}
+              </div>
             </MDBCol>
           </MDBRow>
-          {/* </MDBCard> */}
         </MDBContainer>
       </div >
-
     );
   }
 }
