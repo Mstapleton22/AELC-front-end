@@ -226,6 +226,7 @@ button:focus {outline:0;}
 .staffImgContainer {
     width: 350px;
     height: 100%;
+    padding:3px;
 }
 
 .staffImage{
