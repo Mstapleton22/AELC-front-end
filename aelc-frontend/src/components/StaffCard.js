@@ -37,7 +37,7 @@ class StaffCard extends Component {
   render() {
     return (
       < div >
-        <MDBContainer style={{ width: "18rem" }} className="no-gutters staffImgContainer" >
+        <MDBContainer className="no-gutters staffImgContainer" >
           <MDBRow className="no-gutters" >
             <MDBCol className="no-gutters" md="12">
               <div>

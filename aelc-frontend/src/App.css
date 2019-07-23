@@ -95,7 +95,8 @@ font-style: normal;
 
 .aboutName {
     text-transform: uppercase;
-    font-size: 11em;
+    width: 50vw;
+    font-size: 5em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -226,6 +227,7 @@ button:focus {outline:0;}
 .staffImgContainer {
     width: 350px;
     height: 100%;
+    padding: 3%;
 }
 
 .staffImage{
@@ -257,6 +259,7 @@ button:focus {outline:0;}
 .accredAll {
   background-color:#ae76b85a;
   padding: 2%;
+  /* display: flex; */
 }
 
 .accredRow {
@@ -272,33 +275,27 @@ button:focus {outline:0;}
 }
 
 .accredTitle { 
-  max-width: 50vw;
+  width: 50vw;
+  /* min-width: 50vw; */
   height: 100%;
 }
 
-.accredFooterBox {
-  max-width: 20%;
-  max-height: 100%;
-}
-
-.accredFooterRow {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.missionRow{
+/* .missionRow{
   display:flex;
   flex-direction: row;
   justify-content: flex-end;
   padding: 2%;
+  padding-top: 5%;
   padding-bottom: 1%;
-}
+} */
 
-.missionName {
+/* .missionName {
   text-transform: uppercase;
   font-size: 11em;
+  font-size: calc(24px + (176 - 24) * ((100vw) / (1600 - 50)));
   display: flex;
+  padding-bottom: 5%;
+  padding-left: 3%;
   flex-direction: row;
   justify-content: space-around;
   color: #ae76b834;
@@ -348,13 +345,104 @@ button:focus {outline:0;}
   border-spacing: 15px 50px;
   font-size: 1.4em;
   letter-spacing: .1rem;
-  margin-top: -100px;
+  margin-top: -3%;
+  margin-left: 4%;
 }
 
 .hoverFont {
   font-size: 2rem;
   letter-spacing: 8px;
   font-weight: bold;
+} */
+
+.missionRow{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6%;
+}
+.missionAndVisionHeader {
+  /* display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ebf0f3; */
+  /* position: relative;
+  z-index: 1; */
+  /* padding: 10%; */
+}
+.mission {
+  border-left: 10px #5cc87f solid;
+  border-bottom: 10px #5cc87f solid;
+  /* border-spacing: 15px 50px; */
+  background-color: white;
+  /* padding: 5%; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ /* padding-left: 3%;  */
+ /* padding-top: .7%; */
+
+}
+.vision {
+    border-right: 10px #5cc87ea6 solid;
+    border-top: 10px #5cc87ea6 solid;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.missionText {
+  /* border-spacing: 15px 50px; */
+  justify-content: center;
+  color: #5cc87ea6;
+  /* font-size: 12px;
+  font-size: calc(16px + (30 - 24) * ((50vw) / (1100 - 300))); */
+  padding: 10%;
+}
+.visionText {
+  /* border-spacing: 15px 50px; */
+  justify-content: center;
+  color: #5cc87ea6;
+  margin-top: -25px;
+  padding: 10% 0%;
+  /* font-size: 12px;
+  font-size: calc(16px + (30 - 24) * ((50vw) / (1100 - 50))); */
+}
+
+.missionStyle {
+  align-self: flex-start;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10%;
+  font-size:4em;
+  font-size: calc(24px + (100 - 24) * ((100vw) / (1600 - 50)));
+  letter-spacing: 8px;
+}
+
+.missionText:hover{
+  color: white;
+}
+.visionText:hover{
+  color: white;
+}
+.hoverFont {
+  /* font-size: 1rem; */
+  /* letter-spacing: 8px; */
+  /* font-weight: bold; */
+  /* padding-bottom: 10%;
+  margin-bottom: 10%; */
+  padding: 5%;
+  /* padding-top: 20%; */
+  /* color: purple; */
+} 
+.hoverVision {
+  /* margin-bottom: -200px; */
+  /* padding-bottom: 10%;
+  padding-top: 10%; */
+
+}
+.hoverMission{
+  margin-bottom: -5px;
+  padding-bottom: 5%;
+  padding-top: 5%;
+
 }
 
 .addressHover:hover {
@@ -1100,8 +1188,8 @@ margin-bottom: 25px;
   @media only screen  and (min-width : 1824px) {
   /* Styles */
 .accredTitle {
-    padding-top: 2%;  
-    width:80vw;
+    padding-top: 2%;
+    /* width:50vw; */
     height: 100%;
     position: relative;
     margin-top: -65px;
@@ -1414,9 +1502,9 @@ margin-bottom: 25px;
     padding-top: 20%;
   }
 
-.vision {
+/* .vision {
     padding-top: 40%;
-  }
+  } */
 
 .visionText {
     font-size: 1em;
@@ -1725,6 +1813,37 @@ margin-bottom: 25px;
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .missionText {
+    /* border-spacing: 15px 50px; */
+    justify-content: center;
+    color: #5cc87ea6;
+    /* font-size: 12px;
+    font-size: calc(16px + (30 - 24) * ((50vw) / (1100 - 300))); */
+    padding: 30%;
+  }
+  .mission {
+    /* margin: 10%; */
+
+  }
+  .visionText {
+    /* border-spacing: 15px 50px; */
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: -25px;
+    padding: 10% 0%;
+    /* font-size: 12px;
+    font-size: calc(16px + (30 - 24) * ((50vw) / (1100 - 50))); */
+  }
+  
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 30%;
+    font-size:4em;
+    font-size: calc(24px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
   
 .aboutName {
     text-transform: uppercase;
@@ -1743,7 +1862,7 @@ margin-bottom: 25px;
   font-size: 1.1em;
 }
 
-.missionName {
+/* .missionName {
     text-transform: uppercase;
     font-size: 2em;
     color: #ae76b897;
@@ -1752,40 +1871,40 @@ margin-bottom: 25px;
     justify-content: flex-start;
     padding-left: 10%;
     margin-top: 20px;
-  }
+  } */
 
-.mobileName1 {
+/* .mobileName1 {
     margin-top: 115%;
     position: absolute;
     z-index: 100;
-  }
+  } */
 
 .ampersand {
     display: none;
   }
 
-.missionText {
+/* .missionText {
     padding: 5%;
     font-size: 1em;
     letter-spacing: 0rem;
-  }
-
+  } */
+/* 
 .missionRow{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 5%;
     padding-top: 20%;
-  }
+  } */
 
 .vision {
-    padding-top: 40%;
+    padding-top: 0%;
   }
 
-.visionText {
+/* .visionText {
     font-size: 1em;
     letter-spacing: 0rem;
-  }
+  } */
 
 .smartphone{
     display: none;
