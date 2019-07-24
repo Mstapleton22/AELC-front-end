@@ -50,7 +50,6 @@ class ParentResources extends Component {
                   </a>
                 </div>
 
-
                 <div id="collapseOne1" className="collapse show" role="tabpanel" aria-labelledby="headingOne1"
                   data-parent="#accordionEx">
                   <FormComponent />
@@ -88,7 +87,7 @@ class ParentResources extends Component {
                   data-parent="#accordionEx">
                   <div className="card-body">
                
-                  <a href={`${this.state.parenthandbook}`} download>Click to download</a>
+                  <a className='ml-3' href={`${this.state.parenthandbook}`} download>Click to download</a>
 
 
                 
