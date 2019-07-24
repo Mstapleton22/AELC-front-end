@@ -95,14 +95,6 @@ and nurturing environment that promotes learning and enhances the child's well-b
           </div>
 
           <div className="no-gutters">
-            {/* <div className="row">
-              <div className="col-lg-6">
-                : Mission
-          </div>
-              <div className="col-lg-6">
-                Vision
-          </div>
-            </div> */}
             <div className="row missionRow no-gutters">
               <div className="col-lg-1 no-gutters"></div>
               <div className="col-lg-4 mission ">
@@ -117,7 +109,6 @@ and nurturing environment that promotes learning and enhances the child's well-b
                       </p>
                     </MDBMask>
                   </div>
-
                 </MDBView>
               </div>
               <div className="col-lg-1"></div>
@@ -137,26 +128,6 @@ and nurturing environment that promotes learning and enhances the child's well-b
               </div>
               <div className="col-lg-1"></div>
             </div>
-            {/* <div className="">
-            <div className="missionName">
-              <div className="name mobileName">
-              </div>
-              <div className="name mobileName1">
-              </div>
-            </div>
-            <div className="ampersand ">{`&`}</div>
-            <div className="row missionRow no-gutters">
-              <div className="col-lg-5 mission no-gutters ">
-                <div className="missionText fontRegular no-gutters">
-                </div>
-              </div>
-              <div className="col-lg-2"></div>
-              <div className="col-lg-4 vision">
-                <div className="visionText">
-                </div>
-              </div>
-              <div className="col-lg-1"></div>
-            </div> */}
           </div>
         </div>
       </div >
