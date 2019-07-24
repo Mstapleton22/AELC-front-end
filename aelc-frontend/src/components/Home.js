@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import CarouselCard from './CarouselCard'
 import Accreditation from './Accreditation'
+import { MDBView, MDBMask, MDBContainer } from
+  "mdbreact";
 
 class HomePage extends Component {
 
@@ -37,11 +39,9 @@ class HomePage extends Component {
     fetch("https://pure-fortress-15361.herokuapp.com/missionandvision")
       .then(data => data.json())
       .then(JSONdata => {
-        console.log("data check", JSONdata)
         this.setState({
           missionAndVision: JSONdata,
         })
-        console.log('mission', this.state.missionAndVision.body)
       })
   }
 
@@ -52,7 +52,6 @@ class HomePage extends Component {
     this.missionFetch()
   }
   render() {
-    console.log(this.state.missionAndVision[1].id)
     return (
       <div>
         <div className="row no-gutters">
@@ -94,28 +93,38 @@ and nurturing environment that promotes learning and enhances the child's well-b
             </div>
 
           </div>
-          <div className="">
-            <div className="missionName">
-              <div className="name mobileName">
-                {this.state.missionAndVision[0].name}
-              </div>
-              <div className="name mobileName1">
-                {this.state.missionAndVision[1].name}
-              </div>
-            </div>
-            <div className="ampersand ">{`&`}</div>
+
+          <div className="no-gutters">
             <div className="row missionRow no-gutters">
-              {/* <div className="col-lg-1 no-gutters"></div> */}
-              <div className="col-lg-5 mission no-gutters ">
-                <div className="missionText fontRegular no-gutters">
-                  {this.state.missionAndVision[0].body}
-                </div>
+              <div className="col-lg-1 no-gutters"></div>
+              <div className="col-lg-4 mission ">
+                <MDBView hover className="hoverMission">
+                  <div className="missionText no-gutters">
+                    <h1 className="missionStyle flex-center">
+                      {this.state.missionAndVision[0].name}
+                    </h1>
+                    <MDBMask className="flex-center hoverFont" overlay="white-strong">
+                      <p className="black-text">
+                        {this.state.missionAndVision[0].body}
+                      </p>
+                    </MDBMask>
+                  </div>
+                </MDBView>
               </div>
-              <div className="col-lg-2"></div>
-              <div className="col-lg-4 vision">
-                <div className="visionText">
-                  {this.state.missionAndVision[1].body}
-                </div>
+              <div className="col-lg-1"></div>
+              <div className="col-lg-4 vision ">
+                <MDBView hover className="hoverMission">
+                  <div className="visionText no-gutters">
+                    <h1 className="missionStyle">
+                      {this.state.missionAndVision[1].name}
+                    </h1>
+                    <MDBMask className="flex-center hoverFont" overlay="white-strong">
+                      <p className="black-text">
+                        {this.state.missionAndVision[1].body}
+                      </p>
+                    </MDBMask>
+                  </div>
+                </MDBView>
               </div>
               <div className="col-lg-1"></div>
             </div>

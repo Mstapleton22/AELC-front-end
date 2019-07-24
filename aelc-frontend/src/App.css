@@ -95,7 +95,8 @@ font-style: normal;
 
 .aboutName {
     text-transform: uppercase;
-    font-size: 11em;
+    width: 50vw;
+    font-size: 5em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -258,6 +259,7 @@ button:focus {outline:0;}
 .accredAll {
   background-color:#ae76b85a;
   padding: 2%;
+  /* display: flex; */
 }
 
 .accredRow {
@@ -273,90 +275,68 @@ button:focus {outline:0;}
 }
 
 .accredTitle { 
-  max-width: 50vw;
+  width: 50vw;
+  /* min-width: 50vw; */
   height: 100%;
-}
-
-.accredFooterBox {
-  max-width: 20%;
-  max-height: 100%;
-}
-
-.accredFooterRow {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
 
 .missionRow{
   display:flex;
   flex-direction: row;
-  justify-content: flex-end;
-  padding: 2%;
-  padding-bottom: 1%;
+  justify-content: space-between;
+  padding: 6%;
 }
 
-.missionName {
-  text-transform: uppercase;
-  font-size: 11em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: #ae76b834;
+.mission {
+  border-left: 10px #5cc87f solid;
+  border-bottom: 10px #5cc87f solid;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.name {
-  margin-left: -25px;
-  font-weight: bold;
-}
-
-.visionName {
-  text-transform: uppercase;
-  font-size: 11em;
-  margin-top: 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: absolute;
-  color: #7e80822b;
-  font-weight: bold;
-}
-
-.ampersand {
-  text-transform: uppercase;
-  font-size: 26em;
-  margin-top: -12%;
-  color: #ae76b837;
-  padding-left: 40%;
-  font-weight: bold;
-  position: absolute;
-  z-index: 0;
-}
-
 .vision {
-  padding-bottom: 6%;
+    border-right: 10px #5cc87ea6 solid;
+    border-top: 10px #5cc87ea6 solid;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .missionText {
-  border-spacing: 15px 50px;
-  padding: 5%;
-  font-size: 1.4em;
-  letter-spacing: .08rem;
-  margin-top: -100px;
+  justify-content: center;
+  color: #5cc87ea6;
+  padding: 10%;
 }
-
 .visionText {
-  border-spacing: 15px 50px;
-  font-size: 1.4em;
-  letter-spacing: .1rem;
-  margin-top: -8%;
-  margin-left: 4%
+  justify-content: center;
+  color: #5cc87ea6;
+  margin-top: -25px;
+  padding: 10% 0%;
 }
 
-.hoverFont {
-  font-size: 2rem;
-  letter-spacing: 8px;
+.missionStyle {
+  align-self: flex-start;
+  text-transform: uppercase;
   font-weight: bold;
+  padding: 10%;
+  font-size:4em;
+  font-size: calc(24px + (100 - 24) * ((100vw) / (1600 - 50)));
+  letter-spacing: 8px;
+}
+
+.missionText:hover{
+  color: white;
+}
+.visionText:hover{
+  color: white;
+}
+.hoverFont {
+
+  padding: 5%;
+} 
+
+
+.hoverMission{
+  margin-bottom: -5px;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 .addressHover:hover {
@@ -567,6 +547,28 @@ margin-bottom: 25px;
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    padding: 10%;
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: -25px;
+    padding: 10% 0%;
+  }
+  
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10%;
+    font-size:4em;
+    font-size: calc(24px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  
   .aboutName {
     text-transform: uppercase;
     font-size: 2em;
@@ -583,50 +585,6 @@ margin-bottom: 25px;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-
-  .missionName {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #ae76b897;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 10%;
-    margin-top: 20px;
-  }
-
-  .mobileName1 {
-    margin-top: 430px;
-    position: absolute;
-    z-index: 100;
-  }
-
-  .ampersand {
-    display: none;
-  }
-
-  .missionText {
-    padding: 5%;
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-
-  .missionRow{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 5%;
-    padding-top: 20%;
-  }
-
-  .vision {
-    padding-top: 40%;
-  }
-
-  .visionText {
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
 
   .logo {
     width:35vw;
@@ -768,6 +726,13 @@ margin-bottom: 25px;
     padding-bottom: 4%;
     padding-top: 4%;
   }
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
 
   /* iPads (portrait and landscape) ----------- */
@@ -825,13 +790,35 @@ margin-bottom: 25px;
  
   /* iPads (landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .missionText {
+      justify-content: center;
+      color: #5cc87ea6;
+      padding: 40%;
+    }
+    .visionText {
+      justify-content: center;
+      color: #5cc87ea6;
+      margin-top: 33px;
+      padding: 10% 0%;
+    }
+    .missionStyle {
+      align-self: flex-start;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 20%;
+      font-size:4em;
+      font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+      letter-spacing: 8px;
+    }
+    .missionRow{
+      padding: 1%;
+    }
 .aboutName {
       text-transform: uppercase;
       font-size: 2em;
-      padding: 3%;
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: center;
       color: #ae76b8a9;
       font-weight: bold;
   }
@@ -841,42 +828,6 @@ margin-bottom: 25px;
     letter-spacing: 0rem;
     font-size: 1.1em;
   }
-
-.missionName {
-      text-transform: uppercase;
-      font-size: 2em;
-      color: #ae76b897;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      padding-left: 10%;
-      margin-top: 20px;
-    }
-
-.mobileName1 {
-      padding-left: 50%;
-    }
-
-.ampersand {
-      display: none;
-    }
-
-.missionText {
-      font-size: 1em;
-      letter-spacing: 0rem;
-    }
-
-.missionRow{
-      display:flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      padding-top: 10%;
-}
-
-.visionText {
-      font-size: 1em;
-      letter-spacing: 0rem;
-    }
 
 .staffImage{
       border-radius: 170px;
@@ -893,12 +844,6 @@ margin-bottom: 25px;
 .smartphone1{
       display:none;
   
-    }
-
-.visionText {
-      border-spacing: 15px 50px;
-      padding: 5%;
-      margin-bottom: 0%;
     }
 
 .staffImage{
@@ -923,13 +868,37 @@ margin-bottom: 25px;
   /* iPads (portrait) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   /* Styles */
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    padding: 40%;
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 35px;
+    /* margin-left: 18%; */
+    padding:10% 0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20%;
+    font-size:4em;
+    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
+  }
 .aboutName {
     text-transform: uppercase;
     font-size: 2em;
-    padding: 0%;
+    /* margin-left: 30%; */
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     color: #ae76b8a9;
     font-weight: bold;
 }
@@ -939,51 +908,6 @@ margin-bottom: 25px;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-
-.missionName {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #ae76b897;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 10%;
-    margin-top: 20px;
-  }
-
-.mobileName1 {
-    margin-top:35%;
-    position: absolute;
-    z-index: 100;
-  }
-
-.ampersand {
-    display: none;
-  }
-
-.missionText {
-    padding: 5%;
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-
-.missionRow{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 5%;
-    padding-top: 10%;
-  }
-
-.vision {
-    padding-top:18%;
-  }
-
-.visionText {
-    font-size: 1em;
-    padding: 5%;
-    letter-spacing: 0rem;
-  }
 
 .mobileStickyBar {
     display: none;
@@ -1038,15 +962,34 @@ margin-bottom: 25px;
   **********/
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    /* padding: 40%; */
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 35px;
+    /* margin-left: 18%; */
+    padding:10% 0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20%;
+    font-size:4em;
+    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
+  }
 .mobileStickyBar {
     display: none;
   }
 
-.visionText {
-    border-spacing: 15px 50px;
-    padding: 5%;
-    margin-bottom: 0%;
-  }
 
 .site {
     padding-bottom: 13.5%;
@@ -1088,6 +1031,13 @@ margin-bottom: 25px;
     width: 40vw;
     height: 100%;
   }
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   /* Portrait */
 
@@ -1102,8 +1052,8 @@ margin-bottom: 25px;
   @media only screen  and (min-width : 1824px) {
   /* Styles */
 .accredTitle {
-    padding-top: 2%;  
-    width:80vw;
+    padding-top: 2%;
+    /* width:50vw; */
     height: 100%;
     position: relative;
     margin-top: -65px;
@@ -1130,7 +1080,31 @@ margin-bottom: 25px;
   
   /* iPhone 4 ----------- */
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-.aboutName {
+    .missionText {
+      justify-content: center;
+      color: #5cc87ea6;
+      padding: 5%;
+    }
+    .visionText {
+      justify-content: center;
+      color: #5cc87ea6;
+      margin-top: 35px;
+      /* margin-left: 18%; */
+      padding:0% 0%;
+    }
+    .missionStyle {
+      align-self: flex-start;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 20%;
+      font-size:4em;
+      font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+      letter-spacing: 8px;
+    }
+    .missionRow{
+      padding: 1%;
+    }
+    .aboutName {
       text-transform: uppercase;
       font-size: 2em;
       padding: 5%;
@@ -1145,56 +1119,6 @@ margin-bottom: 25px;
     padding: 3%;
     letter-spacing: 0rem;
     font-size: 1.1em;
-  }
-
-.missionName {
-      text-transform: uppercase;
-      font-size: 2em;
-      color: #ae76b897;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      padding-left: 10%;
-      margin-top: 20px;
-    }
-
-.mobileName1 {
-      margin-top: 430px;
-      position: absolute;
-      z-index: 100;
-    }
-
-.ampersand {
-      display: none;
-    }
-
-.missionText {
-      padding: 5%;
-      font-size: 1em;
-      letter-spacing: 0rem;
-    }
-
-.missionRow{
-      display:flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      padding: 5%;
-      padding-top: 20%;
-    }
-
-.vision {
-      padding-top: 40%;
-    }
-
-.visionText {
-      font-size: 1em;
-      letter-spacing: 0rem;
-    }
-
-.visionText {
-    border-spacing: 15px 50px;
-    padding: 5%;
-    margin-bottom: 0%;
   }
 
 .site {
@@ -1232,10 +1156,52 @@ margin-bottom: 25px;
     padding-bottom: 4%;
     padding-top: 4%;
   }
+  .accred_1{
+    width: 100%
+  }
+  .accred_2{
+    width: 100%
+
+  }
+  .accred_3{
+    width: 100%
+
+  }
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    padding: 70%;
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 35px;
+    /* margin-left: 18%; */
+    padding:10% 0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20%;
+    font-size:4em;
+    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
+  }
 .aboutName {
     text-transform: uppercase;
     font-size: 2em;
@@ -1253,59 +1219,10 @@ margin-bottom: 25px;
   font-size: 1.1em;
 }
 
-.missionName {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #ae76b897;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 10%;
-    margin-top: 20px;
-  }
-
-.mobileName1 {
-    margin-top: 430px;
-    position: absolute;
-    z-index: 100;
-  }
-
-.ampersand {
-    display: none;
-  }
-
-.missionText {
-    padding: 5%;
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-
-.missionRow{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 5%;
-    padding-top: 20%;
-  }
-
-.vision {
-    padding-top: 40%;
-  }
-
- .visionText {
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-
 .mobileStickyBar {
     display: none;
   }
 
-.visionText {
-    border-spacing: 15px 50px;
-    padding: 5%;
-    margin-bottom: 0%;
-  }
 
 .accredTitle {
     padding-top: 2%;  
@@ -1359,6 +1276,13 @@ margin-bottom: 25px;
     padding-bottom: 4%;
     padding-top: 4%;
   }
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   
   /* iPhone 5 ----------- */
@@ -1380,56 +1304,6 @@ margin-bottom: 25px;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-
-.missionName {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #ae76b897;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 10%;
-    margin-top: 20px;
-  }
-
-.mobileName1 {
-    margin-top: 430px;
-    position: absolute;
-    z-index: 100;
-  }
-
-.ampersand {
-    display: none;
-  }
-
-.missionText {
-    padding: 5%;
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-
-.missionRow{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 5%;
-    padding-top: 20%;
-  }
-
-.vision {
-    padding-top: 40%;
-  }
-
-.visionText {
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-
-.visionText {
-    border-spacing: 15px 50px;
-    padding: 5%;
-    margin-bottom: 0%;
-  }
 
 .smartphone{
     display: none;
@@ -1478,6 +1352,7 @@ margin-bottom: 25px;
   
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  
 .aboutName {
     text-transform: uppercase;
     font-size: 2em;
@@ -1494,50 +1369,6 @@ margin-bottom: 25px;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-
-.missionName {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #ae76b897;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 10%;
-    margin-top: 20px;
-  }
-
-.mobileName1 {
-    margin-top: 145%;
-    position: absolute;
-    z-index: 100;
-  }
-
-.ampersand {
-    display: none;
-  }
-
-.missionText {
-    padding: 5%;
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-
-.missionRow{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 5%;
-    padding-top: 20%;
-  }
-
-.vision {
-    padding-top: 40%;
-  }
-
-.visionText {
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
 
 .smartphone{
     display: none;
@@ -1604,18 +1435,50 @@ margin-bottom: 25px;
     padding-bottom: 4%;
     padding-top: 4%;
   }
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   
   /* iPhone 6, 7, 8 ----------- */
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    padding: 5%;
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 35px;
+    /* margin-left: 18%; */
+    padding:0% 0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* padding: 20%; */
+    font-size:4em;
+    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
+  }
+  
 .aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 5%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     color: #ae76b8a9;
     font-weight: bold;
 }
@@ -1625,51 +1488,6 @@ margin-bottom: 25px;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-
-.missionName {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #ae76b897;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 10%;
-    margin-bottom: -8%;
-    margin-top: 20px;
-  }
-
-.mobileName1 {
-    margin-top: 48%;
-    position: absolute;
-    z-index: 100;
-  }
-
-.ampersand {
-    display: none;
-  }
-
-.missionText {
-    padding: 5%;
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-
-.missionRow{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 5%;
-    padding-top: 20%;
-  }
-
-.vision {
-    padding-top: 25%;
-  }
-
-.visionText {
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
 
 .smartphone{
     display: none;
@@ -1727,14 +1545,37 @@ margin-bottom: 25px;
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    padding: 35%;
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 35px;
+    /* margin-left: 18%; */
+    padding:0% 0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20%;
+    font-size:4em;
+    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
+  }
 .aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 5%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     color: #ae76b8a9;
     font-weight: bold;
 }
@@ -1744,50 +1585,6 @@ margin-bottom: 25px;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-
-.missionName {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #ae76b897;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 10%;
-    margin-top: 20px;
-  }
-
-.mobileName1 {
-    margin-top: 115%;
-    position: absolute;
-    z-index: 100;
-  }
-
-.ampersand {
-    display: none;
-  }
-
-.missionText {
-    padding: 5%;
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-
-.missionRow{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 5%;
-    padding-top: 20%;
-  }
-
-.vision {
-    padding-top: 40%;
-  }
-
-.visionText {
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
 
 .smartphone{
     display: none;
@@ -1878,56 +1675,22 @@ margin-bottom: 25px;
     font-weight: bold;
 }
 
+.aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+
 .about {
   padding: 3%;
   letter-spacing: 0rem;
   font-size: 1.1em;
 }
-
-.missionName {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #ae76b897;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 10%;
-    margin-bottom: -8%;
-    margin-top: 20px;
-  }
-  
-.mobileName1 {
-    margin-top: 48%;
-    position: absolute;
-    z-index: 100;
-  }
-  
-.ampersand {
-    display: none;
-  }
-  
-.missionText {
-    padding: 5%;
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-  
-.missionRow{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 5%;
-    padding-top: 20%;
-  }
-  
-.vision {
-    padding-top: 25%;
-  }
-  
-.visionText {
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
   
 .smartphone{
     display: none;
@@ -1948,7 +1711,7 @@ margin-bottom: 25px;
     margin-top: -65px;
     z-index: 10;
   }
-  
+
 .mobile3{
     padding-bottom: 6%;
   }
@@ -1988,6 +1751,7 @@ margin-bottom: 25px;
   
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  
 .aboutName {
     text-transform: uppercase;
     font-size: 2em;
@@ -2005,51 +1769,6 @@ margin-bottom: 25px;
   font-size: 1.1em;
 }
 
-.missionName {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #ae76b897;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 10%;
-    margin-bottom: -8%;
-    margin-top: 20px;
-  }
-
-.mobileName1 {
-    margin-top: 48%;
-    position: absolute;
-    z-index: 100;
-  }
-
-.ampersand {
-    display: none;
-  }
-
-.missionText {
-    padding: 5%;
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-
-.missionRow{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 5%;
-    padding-top: 20%;
-  }
-
-.vision {
-    padding-top: 25%;
-  }
-
-.visionText {
-    font-size: 1em;
-    letter-spacing: 0rem;
-  }
-
 .smartphone{
     display: none;
   }
@@ -2057,13 +1776,6 @@ margin-bottom: 25px;
 .smartphone1{
     display: none;
   }
-
-.visionText {
-    border-spacing: 15px 50px;
-    padding: 5%;
-    margin-bottom: 0%;
-  }
-
 .accredTitle {
     padding-top: 2%;  
     width:80vw;
@@ -2134,10 +1846,29 @@ margin-bottom: 25px;
   /* iPhone X ----------- */
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
-.visionText {
-    border-spacing: 15px 50px;
-    padding: 5%;
-    margin-bottom: 0%;
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    padding: 0%;
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 35px;
+    /* margin-left: 18%; */
+    padding:0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* padding: 20%; */
+    font-size:4em;
+    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
   }
 
 .site {
@@ -2198,18 +1929,47 @@ margin-bottom: 25px;
     padding-bottom: 4%;
     padding-top: 4%;
   }
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    padding: 35%;
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 35px;
+    /* margin-left: 18%; */
+    padding:0% 0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20%;
+    font-size:4em;
+    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
+  }
 .image {
     width: 90vw;
     height: 100%;
   }
 
 .visionText {
-    border-spacing: 15px 50px;
-    padding: 5%;
     margin-bottom: 0%;
   }
 
@@ -2267,47 +2027,134 @@ margin-bottom: 25px;
     padding-bottom: 4%;
     padding-top: 4%;
   }
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   
   /* iPhone XS Max, XR ----------- */
   @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   
   @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   
   /* Samsung Galaxy S3 ----------- */
   @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
+  
   }
   
   @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   
   /* Samsung Galaxy S4 ----------- */
   @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   
   @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   
   /* Samsung Galaxy S5 ----------- */
   @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
   }
   
   @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    padding: 35%;
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 35px;
+    /* margin-left: 18%; */
+    padding:0% 0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20%;
+    font-size:4em;
+    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
+  }
 .image {
     width: 90vw;
     height: 100%;
   }
-
+  .smartphone {
+    display: none
+  }
+  
+  .smartphone1 {
+    display: none
+  }
 .visionText {
     border-spacing: 15px 50px;
     padding: 5%;
