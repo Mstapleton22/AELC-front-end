@@ -227,7 +227,7 @@ button:focus {outline:0;}
 .staffImgContainer {
     width: 350px;
     height: 100%;
-    padding: 3%;
+    padding:3px;
 }
 
 .staffImage{
@@ -330,8 +330,8 @@ button:focus {outline:0;}
 .hoverFont {
 
   padding: 5%;
-
 } 
+
 
 .hoverMission{
   margin-bottom: -5px;
