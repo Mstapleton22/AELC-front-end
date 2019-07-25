@@ -21,7 +21,7 @@ class ParentResources extends Component {
         })
       })
 
-      fetch("https://pure-fortress-15361.herokuapp.com/parenthandbook")
+    fetch("https://pure-fortress-15361.herokuapp.com/parenthandbook")
       .then(data => data.json())
       .then(JSONdata => {
         // console.log("tuition", JSONdata)
@@ -86,11 +86,11 @@ class ParentResources extends Component {
                 <div id="collapseThree3" className="collapse" role="tabpanel" aria-labelledby="headingThree3"
                   data-parent="#accordionEx">
                   <div className="card-body">
-               
-                  <a className='ml-3' href={`${this.state.parenthandbook}`} download>Click to download</a>
+
+                    <a target="_blank" className='ml-3' href={`${this.state.parenthandbook}`} download>Click to download</a>
 
 
-                
+
                   </div>
                 </div>
 
