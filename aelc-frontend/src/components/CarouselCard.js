@@ -19,7 +19,7 @@ const CarouselCard = (props) => {
                 className=" desktop d-block w-100 carouselImage no-gutters"
                 src={`${props.image}`}
                 alt={`${props.imageName}`}
-                // alt="slide"
+              // alt="slide"
               />
               <MDBMask overlay="grey-light" />
             </MDBView>
