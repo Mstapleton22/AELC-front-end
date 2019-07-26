@@ -55,6 +55,7 @@ font-style: normal;
 .homeCarousel{
   margin-right: -0px !important;
   margin-left: -0px !important;
+  
 }
 
 .smartphone {
@@ -63,7 +64,7 @@ font-style: normal;
 
 .smartphone1 {
   font-size: 1.75em;
-  padding-bottom: 5%;
+  padding-bottom: 1%;
 }
 
 .desktop {
@@ -71,7 +72,11 @@ font-style: normal;
 }
 
 .carouselImage {
-  height: 92vh;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -8%;
+  margin-bottom: -16%;
 }
 
 .image {
@@ -91,17 +96,22 @@ font-style: normal;
 
 .aboutMe {
   border-top: 20px #5cc87f solid;
+  /* margin-top: -10%; */
+  /* position: absolute;
+  z-index: 1000; */
+
 }
 
 .aboutName {
     text-transform: uppercase;
     width: 50vw;
-    font-size: 5em;
+    font-size: 3em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color: #ae76b834;
     font-weight: bold;
+    padding-top: 3%;
 }
 
 .arrow-down {
@@ -569,16 +579,16 @@ margin-bottom: 25px;
     letter-spacing: 8px;
   }
   
-  .aboutName {
+  /* .aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 5%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     color: #ae76b8a9;
     font-weight: bold;
-}
+} */
 
 .about {
   padding: 3%;
@@ -738,7 +748,6 @@ margin-bottom: 25px;
   /* iPads (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   /* Styles */
-  
 .site {
     padding-bottom: 13.5%;
   }
@@ -805,7 +814,7 @@ margin-bottom: 25px;
       align-self: flex-start;
       text-transform: uppercase;
       font-weight: bold;
-      padding: 20%;
+      padding: 0%;
       font-size:4em;
       font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
       letter-spacing: 8px;
@@ -871,22 +880,24 @@ margin-bottom: 25px;
   .missionText {
     justify-content: center;
     color: #5cc87ea6;
-    padding: 40%;
+  }
+  .hoverFont {
+    font-size: 1.6em;
   }
   .visionText {
     justify-content: center;
     color: #5cc87ea6;
     margin-top: 35px;
-    /* margin-left: 18%; */
+    margin-left: 28%;
     padding:10% 0%;
   }
   .missionStyle {
     align-self: flex-start;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 20%;
+    /* padding: 20%; */
     font-size:4em;
-    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    font-size: calc(48px + (100 - 24) * ((100vw) / (1600 - 50)));
     letter-spacing: 8px;
   }
   .missionRow{
@@ -957,11 +968,84 @@ margin-bottom: 25px;
     font-size: 1.5em;
   }
   }
+  /*****iPad Pro *****/
+  /* Portrait */
+@media only screen 
+and (min-width: 1024px) 
+and (max-height: 1366px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 1.5) {
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    padding: 45%;
+  }
+  .hoverFont{
+    font-size: 1em;
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 75px;
+    /* margin-right: 90%; */
+    margin-left: -1%;
+    padding:10% 0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:4em;
+    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
+  }
+}
+
+
+/* Landscape */
+@media only screen 
+and (min-width: 1024px) 
+and (max-height: 1366px) 
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
   /**********
   iPad 3
   **********/
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+  .carouselImage {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -4%;
+    margin-bottom: -4%;
+  }
   .missionText {
     justify-content: center;
     color: #5cc87ea6;
@@ -1082,6 +1166,24 @@ margin-bottom: 25px;
   
   /* iPhone 4 ----------- */
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    .arrow-down {
+      width: 0; 
+      height: 0; 
+      margin-left: 48%;
+      margin-top: -10px;
+      position: absolute;
+      z-index: 100;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      border-top: 35px solid #5cc87f;
+    }
+    .carouselImage {
+      height: auto;
+      width: 100%;
+      overflow: hidden;
+      margin-top: -4%;
+      margin-bottom: -4%;
+    }
     .missionText {
       justify-content: center;
       color: #5cc87ea6;
@@ -1091,6 +1193,7 @@ margin-bottom: 25px;
       justify-content: center;
       color: #5cc87ea6;
       margin-top: 35px;
+      margin-right: 29%;
       /* margin-left: 18%; */
       padding:0% 0%;
     }
@@ -1112,7 +1215,7 @@ margin-bottom: 25px;
       padding: 5%;
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: center;
       color: #ae76b8a9;
       font-weight: bold;
   }
@@ -1176,14 +1279,35 @@ margin-bottom: 25px;
   .smartphone1 {
     display: none
   }
+  .hoverFont {
+    font-size: 1.6em;
+  }
   }
   
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
   /* Styles */
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
+  .carouselImage {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -4%;
+    margin-bottom: -4%;
+  }
   .missionText {
     justify-content: center;
     color: #5cc87ea6;
-    padding: 70%;
+    /* padding: 70%; */
   }
   .visionText {
     justify-content: center;
@@ -1192,11 +1316,14 @@ margin-bottom: 25px;
     /* margin-left: 18%; */
     padding:10% 0%;
   }
+  .hoverFont {
+    font-size: 1.6em;
+  }
   .missionStyle {
     align-self: flex-start;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 20%;
+    /* padding: 20%; */
     font-size:4em;
     font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
     letter-spacing: 8px;
@@ -1210,7 +1337,7 @@ margin-bottom: 25px;
     padding: 5%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     color: #ae76b8a9;
     font-weight: bold;
 }
@@ -1290,16 +1417,59 @@ margin-bottom: 25px;
   /* iPhone 5 ----------- */
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-.aboutName {
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    /* padding: 35%; */
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 35px;
+    margin-left: -100%;
+    /* margin-left: 18%; */
+    padding:0% 0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20%;
+    font-size:4em;
+    font-size: calc(48px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
+  .aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 5%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     color: #ae76b8a9;
     font-weight: bold;
 }
+  .carouselImage {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -4%;
+    margin-bottom: -4%;
+  }
 
 .about {
   padding: 3%;
@@ -1350,18 +1520,67 @@ margin-bottom: 25px;
     padding-bottom: 4%;
     padding-top: 4%;
   }
+  .hoverFont {
+    font-size: 1.6em;
+  }
   }
   
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
-  
+  /* Styles */  
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    /* padding: 35%; */
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 35px;
+    margin-left: 10%;
+    /* margin-left: 18%; */
+    padding:0% 0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20%;
+    font-size:4em;
+    font-size: calc(58px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
+  }
+  .hoverFont {
+    font-size: 1.9em;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
+  .carouselImage {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -4%;
+    margin-bottom: -4%;
+  }
+
 .aboutName {
     text-transform: uppercase;
     font-size: 2em;
     padding: 5%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     color: #ae76b8a9;
     font-weight: bold;
 }
@@ -1449,6 +1668,37 @@ margin-bottom: 25px;
   /* iPhone 6, 7, 8 ----------- */
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .hoverFont {
+    font-size: 1.6em;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+  .carouselImage {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -4%;
+    margin-bottom: -4%;
+  }
   .missionText {
     justify-content: center;
     color: #5cc87ea6;
@@ -1458,6 +1708,7 @@ margin-bottom: 25px;
     justify-content: center;
     color: #5cc87ea6;
     margin-top: 35px;
+    margin-left: 33%;
     /* margin-left: 18%; */
     padding:0% 0%;
   }
@@ -1547,15 +1798,38 @@ margin-bottom: 25px;
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
+  .hoverFont {
+    font-size: 1.6em;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
+
+  .carouselImage {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -4%;
+    margin-bottom: -4%;
+  }
   .missionText {
     justify-content: center;
     color: #5cc87ea6;
-    padding: 35%;
+    /* padding: 35%; */
   }
   .visionText {
     justify-content: center;
     color: #5cc87ea6;
     margin-top: 35px;
+    margin-left: 10%;
     /* margin-left: 18%; */
     padding:0% 0%;
   }
@@ -1565,7 +1839,7 @@ margin-bottom: 25px;
     font-weight: bold;
     padding: 20%;
     font-size:4em;
-    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    font-size: calc(58px + (100 - 24) * ((100vw) / (1600 - 50)));
     letter-spacing: 8px;
   }
   .missionRow{
@@ -1666,16 +1940,27 @@ margin-bottom: 25px;
   /* iPhone 6+, 7+, 8+ ----------- */
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-.aboutName {
-    text-transform: uppercase;
-    font-size: 2em;
-    padding: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    color: #ae76b8a9;
-    font-weight: bold;
-}
+  .hoverFont {
+    font-size: 1.6em;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
+  .carouselImage {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -4%;
+    margin-bottom: -4%;
+  }
 
 .aboutName {
     text-transform: uppercase;
@@ -1683,7 +1968,7 @@ margin-bottom: 25px;
     padding: 5%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     color: #ae76b8a9;
     font-weight: bold;
 }
@@ -1753,7 +2038,42 @@ margin-bottom: 25px;
   
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   /* Styles */
-  
+  .missionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    padding: 35%;
+  }
+  .visionText {
+    justify-content: center;
+    color: #5cc87ea6;
+    margin-top: 35px;
+    margin-left: 20%;
+    /* margin-left: 18%; */
+    padding:0% 0%;
+  }
+  .missionStyle {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20%;
+    font-size:4em;
+    font-size: calc(58px + (100 - 24) * ((100vw) / (1600 - 50)));
+    letter-spacing: 8px;
+  }
+  .missionRow{
+    padding: 1%;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
 .aboutName {
     text-transform: uppercase;
     font-size: 2em;
@@ -1763,6 +2083,14 @@ margin-bottom: 25px;
     justify-content: flex-start;
     color: #ae76b8a9;
     font-weight: bold;
+}
+
+.carouselImage {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -4%;
+  margin-bottom: -4%;
 }
 
 .about {
@@ -1848,6 +2176,30 @@ margin-bottom: 25px;
   /* iPhone X ----------- */
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .hoverFont{
+    font-size: 1.6em;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
   .missionText {
     justify-content: center;
     color: #5cc87ea6;
@@ -1857,6 +2209,7 @@ margin-bottom: 25px;
     justify-content: center;
     color: #5cc87ea6;
     margin-top: 35px;
+    margin-left: 16%;
     /* margin-left: 18%; */
     padding:0%;
   }
@@ -1866,7 +2219,7 @@ margin-bottom: 25px;
     font-weight: bold;
     /* padding: 20%; */
     font-size:4em;
-    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    font-size: calc(58px + (100 - 24) * ((100vw) / (1600 - 50)));
     letter-spacing: 8px;
   }
   .missionRow{
@@ -1942,15 +2295,47 @@ margin-bottom: 25px;
   
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .hoverFont{
+    font-size: 1.9em;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+  .carouselImage {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -4%;
+    margin-bottom: -4%;
+  }
   .missionText {
     justify-content: center;
     color: #5cc87ea6;
-    padding: 35%;
+    /* padding: 35%; */
   }
   .visionText {
     justify-content: center;
     color: #5cc87ea6;
     margin-top: 35px;
+    margin-left: 9%;
     /* margin-left: 18%; */
     padding:0% 0%;
   }
@@ -1960,7 +2345,7 @@ margin-bottom: 25px;
     font-weight: bold;
     padding: 20%;
     font-size:4em;
-    font-size: calc(18px + (100 - 24) * ((100vw) / (1600 - 50)));
+    font-size: calc(58px + (100 - 24) * ((100vw) / (1600 - 50)));
     letter-spacing: 8px;
   }
   .missionRow{
@@ -2007,8 +2392,7 @@ margin-bottom: 25px;
   }
 
 .about {
-    padding-left: -40px;
-    padding-right: -40px;
+    font-size: 1.9em;
   }
 
 .mobile3{
@@ -2099,6 +2483,34 @@ margin-bottom: 25px;
   
   @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+  .carouselImage {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -4%;
+    margin-bottom: -4%;
+  }
   .smartphone {
     display: none
   }
@@ -2122,6 +2534,34 @@ margin-bottom: 25px;
   
   @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 48%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 100;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #5cc87f;
+  }
+  .aboutName {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ae76b8a9;
+    font-weight: bold;
+}
+  .carouselImage {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -4%;
+    margin-bottom: -4%;
+  }
   .missionText {
     justify-content: center;
     color: #5cc87ea6;
